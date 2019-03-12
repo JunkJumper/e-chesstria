@@ -1,3 +1,3 @@
 # e-Chesstria
 
-Projet tutoré de jeux d'échec equestrien par le groupe "Good 3nough Team"
+Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team"
