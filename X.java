@@ -13,7 +13,7 @@ public class X {
 		this.prenom = s2;
 	}
 
-	public getNom() {
+	public getNom() {
 		return this.nom;
 	}
 
