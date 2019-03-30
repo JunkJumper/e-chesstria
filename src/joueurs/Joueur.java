@@ -5,6 +5,10 @@ public class Joueur {
 	private String couleur;
 	//private boolean tour = false;
 	
+	public Joueur() {
+	this.nom = null;
+	this.couleur = null;
+
 	public Joueur(String n, String c) {
 		nom = n;
 		couleur = c;
@@ -25,7 +29,6 @@ public class Joueur {
 	public void setCouleur(String couleur) {
 		this.couleur = couleur;
 	}
-	
-	
+
 
 }
