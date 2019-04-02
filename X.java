@@ -33,6 +33,5 @@ public class X {
 	public String toString() {
 		return "La personne s'appelle " + this.prenom + " " + this.nom;
 	}
-//ajoute methode  nulle
 
 }
