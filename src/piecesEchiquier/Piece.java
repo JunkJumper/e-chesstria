@@ -5,7 +5,7 @@ public class Piece {
 	
 	//variables
 	
-	private boolean couleur;	
+	private boolean couleur;	/* True = blanc & Flase = noir */
 	private Position emplacement;
 	private char lettre = '.';
 	private boolean enVie = true;
