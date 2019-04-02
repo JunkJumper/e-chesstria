@@ -6,4 +6,10 @@ public class Roi extends Piece {
 		super(c, emp,l);
 	}
 	
+	public void enEchec() {
+		int[][] positionCourante;
+		positionCourante=Piece.getPositionCourante();
+		
+	}
+	
 }
