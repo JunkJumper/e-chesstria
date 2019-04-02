@@ -5,7 +5,7 @@ public class Piece {
 	
 	//variables
 	
-	private String couleur;	
+	private boolean couleur;	
 	private String emplacement;
 	private char lettre = '.';
 	private boolean enVie = true;
@@ -21,11 +21,11 @@ public class Piece {
 	
 	// constructeur 
 	
-	public Piece(String c, String emp,char l)
+	public Piece(boolean couleur, String emp,char l)
 	{
-		couleur = c;
-		emplacement = emp;
-		lettre = l;
+		this.setCouleur(couleur);
+		this.emplacement = emp;
+		this.lettre = l;
 	}
 	
 	// gets & sets
@@ -60,11 +60,11 @@ public class Piece {
 
 	///////////
 	
-	public String getCouleur() {
+	public boolean isCouleur() {
 		return couleur;
 	}
 
-	public void setCouleur(String couleur) {
+	public void setCouleur(boolean couleur) {
 		this.couleur = couleur;
 	}
 
