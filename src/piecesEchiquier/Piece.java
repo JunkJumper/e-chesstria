@@ -6,9 +6,10 @@ public class Piece {
 	//variables
 	
 	private boolean couleur;	
-	private String emplacement;
+	private Position emplacement;
 	private char lettre = '.';
 	private boolean enVie = true;
+	private Position depart;
 	
 	
 	
@@ -21,11 +22,12 @@ public class Piece {
 	
 	// constructeur 
 	
-	public Piece(boolean couleur, String emp,char l)
+	public Piece(boolean couleur,char l, int X, int Y)
 	{
 		this.setCouleur(couleur);
-		this.emplacement = emp;
 		this.lettre = l;
+		this.emplacement.setEmplacement(X, Y);
+		this.depart.setEmplacement(X, Y);
 	}
 	
 	// gets & sets
