@@ -8,6 +8,7 @@ public class Joueur {
 	public Joueur() {
 	this.nom = null;
 	this.couleur = null;
+	}
 
 	public Joueur(String n, String c) {
 		nom = n;
