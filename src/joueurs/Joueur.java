@@ -3,6 +3,7 @@ package joueurs;
 public class Joueur {
 	private String nom;
 	private String couleur;
+	private boolean aGagne;
 	//private boolean tour = false;
 	
 	public Joueur() {
@@ -29,6 +30,25 @@ public class Joueur {
 
 	public void setCouleur(String couleur) {
 		this.couleur = couleur;
+	}
+
+	@Override
+	public String toString() {
+		return "Joueur [nom=" + nom + ", couleur=" + couleur + "]";
+	}
+	
+	/**
+	 * @return the aGagne
+	 */
+	public boolean isaGagne() {
+		return aGagne;
+	}
+
+	/**
+	 * @param aGagne the aGagne to set
+	 */
+	public void setaGagne(boolean aGagne) {
+		this.aGagne = aGagne;
 	}
 
 

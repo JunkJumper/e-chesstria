@@ -1,6 +1,6 @@
 package piecesEchiquier;
 
-public class Piece {
+public abstract class Piece {
 	
 	
 	//variables
@@ -29,6 +29,19 @@ public class Piece {
 		this.emplacement = new Position (x, y);
 		this.depart = new Position(x, y);
 	}
+
+	//vérifie une éventuelle collision a chaque case
+	public boolean collision(Case caseArrivee){
+		return caseArrivee.estVide();
+		}
+	
+	//check si la case est alliee
+	public boolean estAllie(Case caseArrivee) {
+		return possesseur.equals(caseArrivee.getPieceCase().getPossesseur()) ;
+	}
+
+
+
 	
 	// gets & sets
 	
@@ -69,6 +82,7 @@ public class Piece {
 	public void setCouleur(boolean couleur) {
 		this.couleur = couleur;
 	}
+
 
 	
 	
