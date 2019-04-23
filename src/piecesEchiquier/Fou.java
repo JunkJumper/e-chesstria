@@ -2,8 +2,9 @@ package piecesEchiquier;
 
 public class Fou extends Piece {
 	
-	public Fou(boolean c, String emp,char l) {
-		super(c, emp,l);
+	public Fou(boolean couleur,char l, int x, int y)
+	{
+		super(couleur, l, x, y);
 	}
 	
 

@@ -2,8 +2,9 @@ package piecesEchiquier;
 
 public class Pion extends Piece {
 	
-	public Pion(String c, String emp,char l) {
-		super(c,emp,l);
+	public Pion(boolean couleur,char l, int x, int y)
+	{
+		super(couleur, l, x, y);
 	}
 	
 	

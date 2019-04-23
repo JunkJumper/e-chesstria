@@ -2,8 +2,8 @@ package piecesEchiquier;
 
 public class Cavalier extends Piece {
 	
-	public Cavalier(boolean c, String emp,char l)
+	public Cavalier(boolean couleur,char l, int x, int y)
 	{
-		super(c, emp,l);
+		super(couleur, l, x, y);
 	}
 }

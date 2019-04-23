@@ -22,12 +22,12 @@ public class Piece {
 	
 	// constructeur 
 	
-	public Piece(boolean couleur,char l, int X, int Y)
+	public Piece(boolean couleur,char l, int x, int y)
 	{
 		this.setCouleur(couleur);
 		this.lettre = l;
-		this.emplacement.setEmplacement(X, Y);
-		this.depart.setEmplacement(X, Y);
+		this.emplacement = new Position (x, y);
+		this.depart = new Position(x, y);
 	}
 	
 	// gets & sets
@@ -42,11 +42,11 @@ public class Piece {
 
 	////////////
 	
-	public String getEmplacement() {
+	public Position getEmplacement() {
 		return emplacement;
 	}
 
-	public void setEmplacement(String emplacement) {
+	public void setEmplacement(Position emplacement) {
 		this.emplacement = emplacement;
 	}
 

@@ -2,13 +2,14 @@ package piecesEchiquier;
 
 public class Roi extends Piece {
 	
-	public Roi(String c, String emp, char l) {
-		super(c, emp,l);
+	public Roi(boolean couleur,char l, int x, int y)
+	{
+		super(couleur, l, x, y);
 	}
 	
 	public void enEchec() {
-		int[][] positionCourante;
-		positionCourante=Piece.getPositionCourante();
+		Position positionCourante;
+		positionCourante= super.getEmplacement();
 		
 	}
 	
