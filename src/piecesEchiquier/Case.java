@@ -1,4 +1,6 @@
-package echec;
+package piecesEchiquier;
+
+import joueurs.Joueur;
 
 public class Case {
 	//attribut
@@ -14,6 +16,7 @@ public class Case {
 			this.posYCase=y;
 		}
 		
+
 		//méthodes
 		public boolean estVide() {
 			return pieceCase == null;
@@ -24,7 +27,7 @@ public class Case {
 		public void pieceClone(Case clone) {
 			clone.setPieceCase(this.getPieceCase());
 		}
-		
+		/*
 		public void ajouterPion(Joueur j) {
 			this.pieceCase = new Pion("Pi"+j.getNom().charAt(0), j);
 		}
@@ -90,5 +93,62 @@ public class Case {
 		public String toString() {
 			return "Case [cNom=" + cNom + ", cX=" + cX + ", cY=" + cY + ", pieceCase=" + pieceCase + "]";
 		}
+*/
+		/**
+		 * @return the nomCase
+		 */
+		public String getNomCase() {
+			return NomCase;
+		}
 
+		/**
+		 * @param nomCase the nomCase to set
+		 */
+		public void setNomCase(String nomCase) {
+			NomCase = nomCase;
+		}
+
+		/**
+		 * @return the posXCase
+		 */
+		public int getPosXCase() {
+			return posXCase;
+		}
+
+		/**
+		 * @param posXCase the posXCase to set
+		 */
+		public void setPosXCase(int posXCase) {
+			this.posXCase = posXCase;
+		}
+
+		/**
+		 * @return the posYCase
+		 */
+		public int getPosYCase() {
+			return posYCase;
+		}
+
+		/**
+		 * @param posYCase the posYCase to set
+		 */
+		public void setPosYCase(int posYCase) {
+			this.posYCase = posYCase;
+		}
+
+		/**
+		 * @return the pieceCase
+		 */
+		public Piece getPieceCase() {
+			return pieceCase;
+		}
+
+		/**
+		 * @param pieceCase the pieceCase to set
+		 */
+		public void setPieceCase(Piece pieceCase) {
+			this.pieceCase = pieceCase;
+		}
+
+		
 	}
