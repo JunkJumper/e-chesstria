@@ -3,55 +3,55 @@ package piecesEchiquier;
 public class Echiquier {
 	
 	private String[][] codes = 
-{
-{"8A","8B","8C","8D","8E","8F","8G","8H"},
-{"7A","7B","7C","7D","7E","7F","7G","7H"},
-{"6A","6B","6C","6D","6E","6F","6G","6H"},
-{"5A","5B","5C","5D","5E","5F","5G","5H"},
-{"4A","4B","4C","4D","4E","4F","4G","4H"},
-{"3A","3B","3C","3D","3E","3F","3G","3H"},
-{"2A","2B","2C","2D","2E","2F","2G","2H"},
-{"1A","1B","1C","1D","1E","1F","1G","1H"}
+    {
+{"A8","B8","C8","D8","E8","F8","G8","H8"},
+{"A7","B7","C7","D7","E7","F7","G7","H7"},
+{"A6","B6","C6","D6","E6","F6","G6","H6"},
+{"A5","B5","C5","D5","E5","F5","G5","H5"},
+{"A4","B4","C4","D4","E4","F4","G4","H4"},
+{"A3","B3","C3","D3","E3","F3","G3","H3"},
+{"A2","B2","C2","D2","E2","F2","G2","H2"},
+{"A1","B1","C1","D1","E1","F1","G1","H1"}
 };
 //a refaire
-	public Pion pionB1 = new Pion("Blanc",codes[6][0],'P');
-	public Pion pionB2 = new Pion("Blanc",codes[6][1],'P');
-	public Pion pionB3 = new Pion("Blanc",codes[6][2],'P');
-	public Pion pionB4 = new Pion("Blanc",codes[6][3],'P');
-	public Pion pionB5 = new Pion("Blanc",codes[6][4],'P');
-	public Pion pionB6 = new Pion("Blanc",codes[6][5],'P');
-	public Pion pionB7 = new Pion("Blanc",codes[6][6],'P');
-	public Pion pionB8 = new Pion("Blanc",codes[6][7],'P');
+	public Pion pionB1 = new Pion(true, 'P', 6, 0);
+	public Pion pionB2 = new Pion(true, 'P', 6, 1);
+	public Pion pionB3 = new Pion(true, 'P', 6, 2);
+	public Pion pionB4 = new Pion(true, 'P', 6, 3);
+	public Pion pionB5 = new Pion(true, 'P', 6, 4);
+	public Pion pionB6 = new Pion(true, 'P', 6, 5);
+	public Pion pionB7 = new Pion(true, 'P', 6, 6);
+	public Pion pionB8 = new Pion(true, 'P', 6, 7);
 	
-	public Pion pionN1 = new Pion("Noir",codes[1][0],'P');
-	public Pion pionN2 = new Pion("Noir",codes[1][1],'P');
-	public Pion pionN3 = new Pion("Noir",codes[1][2],'P');
-	public Pion pionN4 = new Pion("Noir",codes[1][3],'P');
-	public Pion pionN5 = new Pion("Noir",codes[1][4],'P');
-	public Pion pionN6 = new Pion("Noir",codes[1][5],'P');
-	public Pion pionN7 = new Pion("Noir",codes[1][6],'P');
-	public Pion pionN8 = new Pion("Noir",codes[1][7],'P');
+	public Pion pionN1 = new Pion(false, 'P', 1, 0);
+	public Pion pionN2 = new Pion(false, 'P', 1, 1);
+	public Pion pionN3 = new Pion(false, 'P', 1, 2);
+	public Pion pionN4 = new Pion(false, 'P', 1, 3);
+	public Pion pionN5 = new Pion(false, 'P', 1, 4);
+	public Pion pionN6 = new Pion(false, 'P', 1, 5);
+	public Pion pionN7 = new Pion(false, 'P', 1, 6);
+	public Pion pionN8 = new Pion(false, 'P', 1, 7);
 	
-	public Tour TourB1 = new Tour("Blanc",codes[7][0],'T');
-	public Tour TourB2 = new Tour("Blanc",codes[7][7],'T');
-	public Tour TourN1 = new Tour("Noir",codes[0][0],'T');
-	public Tour TourN2 = new Tour("Noir",codes[0][7],'T');
+	public Tour TourB1 = new Tour(true, 'T', 7, 0);
+	public Tour TourB2 = new Tour(true, 'T', 7, 7);
+	public Tour TourN1 = new Tour(false, 'T', 0, 0);
+	public Tour TourN2 = new Tour(false, 'T', 0, 7);
 	
-	public Cavalier CavalierB1 = new Cavalier("Blanc",codes[7][1],'C');
-	public Cavalier CavalierB2 = new Cavalier("Blanc",codes[7][6],'C');
-	public Cavalier CavalierN1 = new Cavalier("Noir",codes[0][1],'C');
-	public Cavalier CavalierN2 = new Cavalier("Noir",codes[0][6],'C');
+	public Cavalier CavalierB1 = new Cavalier(true, 'C', 7, 1);
+	public Cavalier CavalierB2 = new Cavalier(true, 'C', 7, 6);
+	public Cavalier CavalierN1 = new Cavalier(false, 'C', 0, 1);
+	public Cavalier CavalierN2 = new Cavalier(false, 'C', 0, 6);
 	
-	public Fou FouB1 = new Fou("Blanc",codes[7][2],'F');
-	public Fou FouB2 = new Fou("Blanc",codes[7][5],'F');
-	public Fou FouN1 = new Fou("Noir",codes[0][2],'F');
-	public Fou FouN2 = new Fou("Noir",codes[0][5],'F');
+	public Fou FouB1 = new Fou(true ,'F' , 7, 2);
+	public Fou FouB2 = new Fou(true ,'F' , 7, 5);
+	public Fou FouN1 = new Fou(false ,'F' , 0, 2);
+	public Fou FouN2 = new Fou(false ,'F' , 0, 5);
 	
-	public Reine ReineB1 = new Reine("Blanc",codes[7][4],'R');
-	public Reine ReineN1 = new Reine("Noir",codes[0][4],'R');
+	public Reine ReineB1 = new Reine(true ,'R' , 7, 4);
+	public Reine ReineN1 = new Reine(false ,'R' , 0, 4);
 	
-	public Roi RoiB1 = new Roi("Blanc",codes[7][3],'K');
-	public Roi RoiN1 = new Roi("Noir",codes[0][3],'K');
+	public Roi RoiB1 = new Roi(true ,'K' , 7, 3);
+	public Roi RoiN1 = new Roi(false ,'K' , 0, 3);
 	
 	// A choisir soit on enleve abstract de piece pour avoir le vide soit on garde la classe vide
 	
