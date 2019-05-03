@@ -26,6 +26,7 @@ public class Piece {
 		position = pos;
 	}
 	
+	
 	public Piece(String couleur,String emp, char l, Position pos)
 	{
 		this.couleur = couleur;

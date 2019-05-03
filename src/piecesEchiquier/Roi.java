@@ -10,7 +10,8 @@ public class Roi extends Piece {
 	/*
 	public void enEchec() {
 		Position positionCourante;
-		positionCourante= super.getEmplacement();
+		positionCourante = super.getEmplacement();
+		
 		
 	}
 	*/

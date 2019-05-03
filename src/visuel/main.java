@@ -30,10 +30,8 @@ public class main {
 		
 		System.out.println("Bienvenue dans ce jeu d'echec sur console !\n");
 		
-		
+		Echiquier e = new Echiquier();
 		do {
-			
-			Echiquier e = new Echiquier();
 			
 			// AFFICHAGE ECHIQUIER
 				System.out.println(e.toString());
@@ -57,14 +55,8 @@ public class main {
 				System.out.println(e.toString());
 				
 				// JOUEUR2
-				/*System.out.println("Tour de"+j2.getNom()+"\n");
-				System.out.println("Quelle pièce voulez vous déplacer ? Donnez le numero de ligne puis de colonne.\n");
-				x1 = sc.nextInt();
-				y1 = sc.nextInt();
-				System.out.println("A quel endroit la poser ? Donnez le numero de ligne puis de colonne.\n");
-				x2 = sc.nextInt();
-				y2 = sc.nextInt();
-				e.deplacer(x1-1,y1-1,x2-1,y2-1);*/
+				System.out.println("Tour de"+j2.getNom()+"\n");
+
 				do {
 					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant à la pièce à déplacer(ex : A1).\n");
 					

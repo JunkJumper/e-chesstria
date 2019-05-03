@@ -99,6 +99,7 @@ public class Echiquier {
 		String echec = "";
 		for (int i = 0; i < 8;i++)
 		{
+			
 			for (int j = 0; j < 8;j++)
 			{
 				echec +=echiquier[i][j].getLettre();
@@ -172,33 +173,5 @@ public class Echiquier {
 		}
 	System.out.println("Un de vos codes est faux. Recommencez.");
 	return false;
-	}
-	
-	/*
-	public Piece recupererPiece(Joueur J, String A)
-	{
-		for (int i = 1; i <9;i++)
-		{
-			for (int j = 1; j < 9;j++) {
-				if (getCodes()[i][j] == A)
-				{
-					return this.getEchiquier()[i][j];
-				}	
-			}
-		}
-	}*/
-	
-	/*
-	public void deplacer(String A , String B)
-	{
-		
-		if (this.getEchiquier()[x2][y2] != vide && this.getEchiquier()[x2][y2].getCouleur() != this.getEchiquier()[x1][y1].getCouleur())
-			System.out.println("Vous avez manger une piece adverse !");
-		this.getEchiquier()[x2][y2] = this.getEchiquier()[x1][y1];
-		this.getEchiquier()[x1][y1] = vide;
-		*/
-		
-	}
-
-
-
+	}		
+}
