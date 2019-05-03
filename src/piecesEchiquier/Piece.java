@@ -9,7 +9,7 @@ public class Piece {
 	private String emp;
 	private char lettre = '.';
 	private boolean enVie = true;
-	private Position position = new Position(0,0);
+	private Position position;
 	
 	
 	

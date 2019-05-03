@@ -5,14 +5,14 @@ import joueurs.Joueur;
 public class Echiquier {
 	private String[][] codes = 
 {
-{"A8","B8","C8","D8","E8","F8","G8","H8"},
-{"A7","B7","C7","D7","E7","F7","G7","H7"},
-{"A6","B6","C6","D6","E6","F6","G6","H6"},
-{"A5","B5","C5","D5","E5","F5","G5","H5"},
-{"A4","B4","C4","D4","E4","F4","G4","H4"},
-{"A3","B3","C3","D3","E3","F3","G3","H3"},
-{"A2","B2","C2","D2","E2","F2","G2","H2"},
-{"A1","B1","C1","D1","E1","F1","G1","H1"}
+	{"A8","B8","C8","D8","E8","F8","G8","H8"},
+	{"A7","B7","C7","D7","E7","F7","G7","H7"},
+	{"A6","B6","C6","D6","E6","F6","G6","H6"},
+	{"A5","B5","C5","D5","E5","F5","G5","H5"},
+	{"A4","B4","C4","D4","E4","F4","G4","H4"},
+	{"A3","B3","C3","D3","E3","F3","G3","H3"},
+	{"A2","B2","C2","D2","E2","F2","G2","H2"},
+	{"A1","B1","C1","D1","E1","F1","G1","H1"}
 };
 	private Pion pionB1 = new Pion("Blanc",codes[6][0],'P',new Position(1,2));
 	private Pion pionB2 = new Pion("Blanc",codes[6][1],'P',new Position(2,2));
@@ -55,7 +55,7 @@ public class Echiquier {
 	
 	// A choisir soit on enleve abstract de piece pour avoir le vide soit on garde la classe vide
 	//private Vide vide = new Vide();
-	private Piece vide = new Piece();
+	//private Piece vide = new Piece();
 	
 	private Piece[][] echiquier = 
 		{
@@ -122,7 +122,7 @@ public class Echiquier {
 				j++;
 				if (getCodes()[i][j].equals(A))
 				{
-					if (this.getEchiquier()[i][j] == vide)
+					if (this.getEchiquier()[i][j].getClass().getName().equals("Piece"))
 					{
 						System.out.println("Vous avez choisi une case vide. Recommencez.");
 						return false;
@@ -162,8 +162,8 @@ public class Echiquier {
 					}else
 					{
 					System.out.println("Choix validés. Déplacement en cours.");
-					this.getEchiquier()[k][l]=this.getEchiquier()[i][j];
-					this.getEchiquier()[i][j] = vide;
+					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
+					this.getEchiquier()[i][j] = new Piece(new Position(i,j));
 					return true;
 					}
 					
