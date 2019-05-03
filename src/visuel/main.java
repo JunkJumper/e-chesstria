@@ -13,7 +13,6 @@ public class main {
 		//ouvre une porte pour input
 		Scanner sc = new Scanner(System.in);
 		
-		
 		// variable tempo pour tests
 		boolean jeu = true;
 		
@@ -46,13 +45,8 @@ public class main {
 				
 				do {
 					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant à la pièce à déplacer(ex : A1).\n");
-					
-					//entrer  coordonnées piece a bouger APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
 					A = sc.nextLine();
-					//if (A.equals("A1"))
-					//	System.out.println("OK");
 					System.out.println("A quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-					//entrer  coordonnées endroit visé APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
 					B = sc.nextLine();
 					
 				}while (e.VerifFinale(j1, A,B) != true);

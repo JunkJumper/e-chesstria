@@ -4,13 +4,12 @@ package piecesEchiquier;
 public class Piece {
 	
 	
-	//variables
-	
-	private String couleur;	/* True = blanc & Flase = noir */
-	private String emplacement;
+	private String couleur;	
+	//private Position emplacementIni;
+	private String emp;
 	private char lettre = '.';
 	private boolean enVie = true;
-	private Position position;
+	private Position position = new Position(0,0);
 	
 	
 	
@@ -22,12 +21,17 @@ public class Piece {
 	}
 	
 	// constructeur 
+	public Piece(Position pos)
+	{
+		position = pos;
+	}
 	
 	public Piece(String couleur,String emp, char l, Position pos)
 	{
 		this.couleur = couleur;
 		this.lettre = l;
-		this.emplacement = emp;
+		//this.emplacementIni = emp;
+		this.emp = emp;
 		this.position = pos;
 	}
 
@@ -55,7 +59,7 @@ public class Piece {
 	}
 
 	////////////
-	
+	/*
 	public String getEmplacement() {
 		return emplacement;
 	}
@@ -63,7 +67,7 @@ public class Piece {
 	public void setEmplacement(String emplacement) {
 		this.emplacement = emplacement;
 	}
-
+*/
 	///////////
 	
 	public boolean isEnVie() {
