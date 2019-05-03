@@ -1,9 +1,10 @@
 package piecesEchiquier;
 
+import joueurs.Joueur;
+
 public class Echiquier {
-	
 	private String[][] codes = 
-    {
+{
 {"A8","B8","C8","D8","E8","F8","G8","H8"},
 {"A7","B7","C7","D7","E7","F7","G7","H7"},
 {"A6","B6","C6","D6","E6","F6","G6","H6"},
@@ -13,48 +14,46 @@ public class Echiquier {
 {"A2","B2","C2","D2","E2","F2","G2","H2"},
 {"A1","B1","C1","D1","E1","F1","G1","H1"}
 };
-//a refaire
-	public Pion pionB1 = new Pion(true, 'P', 6, 0);
-	public Pion pionB2 = new Pion(true, 'P', 6, 1);
-	public Pion pionB3 = new Pion(true, 'P', 6, 2);
-	public Pion pionB4 = new Pion(true, 'P', 6, 3);
-	public Pion pionB5 = new Pion(true, 'P', 6, 4);
-	public Pion pionB6 = new Pion(true, 'P', 6, 5);
-	public Pion pionB7 = new Pion(true, 'P', 6, 6);
-	public Pion pionB8 = new Pion(true, 'P', 6, 7);
+	private Pion pionB1 = new Pion("Blanc",codes[6][0],'P',new Position(1,2));
+	private Pion pionB2 = new Pion("Blanc",codes[6][1],'P',new Position(2,2));
+	private Pion pionB3 = new Pion("Blanc",codes[6][2],'P',new Position(3,2));
+	private Pion pionB4 = new Pion("Blanc",codes[6][3],'P',new Position(4,2));
+	private Pion pionB5 = new Pion("Blanc",codes[6][4],'P',new Position(5,2));
+	private Pion pionB6 = new Pion("Blanc",codes[6][5],'P',new Position(6,2));
+	private Pion pionB7 = new Pion("Blanc",codes[6][6],'P',new Position(7,2));
+	private Pion pionB8 = new Pion("Blanc",codes[6][7],'P',new Position(8,2));
 	
-	public Pion pionN1 = new Pion(false, 'P', 1, 0);
-	public Pion pionN2 = new Pion(false, 'P', 1, 1);
-	public Pion pionN3 = new Pion(false, 'P', 1, 2);
-	public Pion pionN4 = new Pion(false, 'P', 1, 3);
-	public Pion pionN5 = new Pion(false, 'P', 1, 4);
-	public Pion pionN6 = new Pion(false, 'P', 1, 5);
-	public Pion pionN7 = new Pion(false, 'P', 1, 6);
-	public Pion pionN8 = new Pion(false, 'P', 1, 7);
+	private Pion pionN1 = new Pion("Noir",codes[1][0],'p',new Position(1,7));
+	private Pion pionN2 = new Pion("Noir",codes[1][1],'p',new Position(2,7));
+	private Pion pionN3 = new Pion("Noir",codes[1][2],'p',new Position(3,7));
+	private Pion pionN4 = new Pion("Noir",codes[1][3],'p',new Position(4,7));
+	private Pion pionN5 = new Pion("Noir",codes[1][4],'p',new Position(5,7));
+	private Pion pionN6 = new Pion("Noir",codes[1][5],'p',new Position(6,7));
+	private Pion pionN7 = new Pion("Noir",codes[1][6],'p',new Position(7,7));
+	private Pion pionN8 = new Pion("Noir",codes[1][7],'p',new Position(8,7));
 	
-	public Tour TourB1 = new Tour(true, 'T', 7, 0);
-	public Tour TourB2 = new Tour(true, 'T', 7, 7);
-	public Tour TourN1 = new Tour(false, 'T', 0, 0);
-	public Tour TourN2 = new Tour(false, 'T', 0, 7);
+	private Tour TourB1 = new Tour("Blanc",codes[7][0],'T',new Position(1,1));
+	private Tour TourB2 = new Tour("Blanc",codes[7][7],'T',new Position(8,1));
+	private Tour TourN1 = new Tour("Noir",codes[0][0],'t',new Position(1,8));
+	private Tour TourN2 = new Tour("Noir",codes[0][7],'t',new Position(8,8));
 	
-	public Cavalier CavalierB1 = new Cavalier(true, 'C', 7, 1);
-	public Cavalier CavalierB2 = new Cavalier(true, 'C', 7, 6);
-	public Cavalier CavalierN1 = new Cavalier(false, 'C', 0, 1);
-	public Cavalier CavalierN2 = new Cavalier(false, 'C', 0, 6);
+	private Cavalier CavalierB1 = new Cavalier("Blanc",codes[7][1],'C',new Position(2,1));
+	private Cavalier CavalierB2 = new Cavalier("Blanc",codes[7][6],'C',new Position(7,1));
+	private Cavalier CavalierN1 = new Cavalier("Noir",codes[0][1],'c',new Position(2,8));
+	private Cavalier CavalierN2 = new Cavalier("Noir",codes[0][6],'c',new Position(7,8));
 	
-	public Fou FouB1 = new Fou(true ,'F' , 7, 2);
-	public Fou FouB2 = new Fou(true ,'F' , 7, 5);
-	public Fou FouN1 = new Fou(false ,'F' , 0, 2);
-	public Fou FouN2 = new Fou(false ,'F' , 0, 5);
+	private Fou FouB1 = new Fou("Blanc",codes[7][2],'F',new Position(3,1));
+	private Fou FouB2 = new Fou("Blanc",codes[7][5],'F',new Position(6,1));
+	private Fou FouN1 = new Fou("Noir",codes[0][2],'f',new Position(3,8));
+	private Fou FouN2 = new Fou("Noir",codes[0][5],'f',new Position(6,8));
 	
-	public Reine ReineB1 = new Reine(true ,'R' , 7, 4);
-	public Reine ReineN1 = new Reine(false ,'R' , 0, 4);
+	private Reine ReineB1 = new Reine("Blanc",codes[7][4],'R',new Position(4,1));
+	private Reine ReineN1 = new Reine("Noir",codes[0][4],'r',new Position(4,8));
 	
-	public Roi RoiB1 = new Roi(true ,'K' , 7, 3);
-	public Roi RoiN1 = new Roi(false ,'K' , 0, 3);
+	private Roi RoiB1 = new Roi("Blanc",codes[7][3],'K',new Position(5,1));
+	private Roi RoiN1 = new Roi("Noir",codes[0][3],'k',new Position(5,8));
 	
 	// A choisir soit on enleve abstract de piece pour avoir le vide soit on garde la classe vide
-	
 	//private Vide vide = new Vide();
 	private Piece vide = new Piece();
 	
@@ -88,6 +87,11 @@ public class Echiquier {
 	}
 
 
+	public String[][] getCodes() {
+		return codes;
+	}
+
+
 
 	public String toString()
 	{
@@ -96,20 +100,155 @@ public class Echiquier {
 		{
 			for (int j = 0; j < 8;j++)
 			{
-				echec += echiquier[i][j].getLettre();
+				echec +=echiquier[i][j].getLettre();
 			}
 			echec += "\n";
 		}
 		return echec;
 	}
-	
-	public void deplacer(int x1,int y1,int x2,int y2)
+	/*
+	public boolean verifierSelection(Joueur J, String A)
 	{
+		for (int i = 1; i <9;i++)
+		{
+			for (int j = 1; j < 9;j++) {
+				if (getCodes()[i][j] == A)
+				{
+					if (this.getEchiquier()[i][j] == vide)
+					{
+						System.out.println("Vous avez choisi une case vide. Recommencez.");
+						return false;
+					}
+					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur())
+					{
+						System.out.println("Le pion choisi n'est pas de votre faction. Recommencez.");
+						return false;
+					}
+					else
+						return true;		
+				}	
+			}
+		}
+		System.out.println("Un de vos codes est faux. Recommencez.");
+		return false;
+	}
+	
+	public boolean verifierPlacementEtDeplacement(Joueur J, String A)
+	{
+		for (int i = 1; i <9;i++)
+		{
+			for (int j = 1; j < 9;j++) {
+				if (getCodes()[i][j] == A)
+				{
+					if (this.getEchiquier()[i][j].getCouleur() == J.getCouleur())
+					{
+						System.out.println("Le pion que vous voulez manger est de votre faction. Recommencez.");
+						return false;
+					}else if (this.getEchiquier()[i][j].deplacable)
+					{
+						
+					}
+					else
+						return true;
+				}	
+			}
+		}
+		System.out.println("Un de vos codes est faux. Recommencez.");
+		return false;
+	}
+	*/
+	
+	public boolean VerifFinale(Joueur J, String A, String B)
+	{
+		int i = -1;
+		int j = -1;
+		int k;
+		int l;
+		
+		do {
+			i++;
+			j = -1;
+			do {
+				j++;
+				if (getCodes()[i][j].equals(A))
+				{
+					if (this.getEchiquier()[i][j] == vide)
+					{
+						System.out.println("Vous avez choisi une case vide. Recommencez.");
+						return false;
+					}
+					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur())
+					{
+						System.out.println("Le pion choisi n'est pas de votre faction. Recommencez.");
+						return false;
+					}	
+				}
+				
+			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
+			
+		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
+		if (i == 9)
+		{
+			System.out.println("Code de la pièce a déplacer invalide. Recommencez.");
+			return false;
+		}
+	
+	
+			
+	
+		for (k = 0; k < codes.length;k++)
+		{
+			for (l = 0; l < codes.length;l++) {
+				if (getCodes()[k][l].equals(B) == true)
+				{
+					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())
+					{
+						System.out.println("Le pion que vous voulez manger est de votre faction. Recommencez.");
+						return false;
+					}else if (this.getEchiquier()[i][j].deplacable(this.getEchiquier()[k][l]) == false)
+					{
+						System.out.println("Déplacement impossible. Recommencez.");
+						return false;
+					}else
+					{
+					System.out.println("Choix validés. Déplacement en cours.");
+					this.getEchiquier()[k][l]=this.getEchiquier()[i][j];
+					this.getEchiquier()[i][j] = vide;
+					return true;
+					}
+					
+				}
+			}
+		}
+	System.out.println("Un de vos codes est faux. Recommencez.");
+	return false;
+	}
+	
+	/*
+	public Piece recupererPiece(Joueur J, String A)
+	{
+		for (int i = 1; i <9;i++)
+		{
+			for (int j = 1; j < 9;j++) {
+				if (getCodes()[i][j] == A)
+				{
+					return this.getEchiquier()[i][j];
+				}	
+			}
+		}
+	}*/
+	
+	/*
+	public void deplacer(String A , String B)
+	{
+		
 		if (this.getEchiquier()[x2][y2] != vide && this.getEchiquier()[x2][y2].getCouleur() != this.getEchiquier()[x1][y1].getCouleur())
 			System.out.println("Vous avez manger une piece adverse !");
 		this.getEchiquier()[x2][y2] = this.getEchiquier()[x1][y1];
 		this.getEchiquier()[x1][y1] = vide;
+		*/
+		
 	}
-}
+
 
 

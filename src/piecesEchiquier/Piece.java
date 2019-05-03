@@ -1,15 +1,16 @@
+
 package piecesEchiquier;
 
-public abstract class Piece {
+public class Piece {
 	
 	
 	//variables
 	
-	private boolean couleur;	/* True = blanc & Flase = noir */
-	private Position emplacement;
+	private String couleur;	/* True = blanc & Flase = noir */
+	private String emplacement;
 	private char lettre = '.';
 	private boolean enVie = true;
-	private Position depart;
+	private Position position;
 	
 	
 	
@@ -22,24 +23,24 @@ public abstract class Piece {
 	
 	// constructeur 
 	
-	public Piece(boolean couleur,char l, int x, int y)
+	public Piece(String couleur,String emp, char l, Position pos)
 	{
-		this.setCouleur(couleur);
+		this.couleur = couleur;
 		this.lettre = l;
-		this.emplacement = new Position (x, y);
-		this.depart = new Position(x, y);
+		this.emplacement = emp;
+		this.position = pos;
 	}
 
-	//vérifie une éventuelle collision a chaque case
+/*	//vérifie une éventuelle collision a chaque case
 	public boolean collision(Case caseArrivee){
 		return caseArrivee.estVide();
-		}
-	
+		}*/
+	/*
 	//check si la case est alliee
 	public boolean estAllie(Case caseArrivee) {
 		return possesseur.equals(caseArrivee.getPieceCase().getPossesseur()) ;
 	}
-
+*/
 
 
 	
@@ -55,11 +56,11 @@ public abstract class Piece {
 
 	////////////
 	
-	public Position getEmplacement() {
+	public String getEmplacement() {
 		return emplacement;
 	}
 
-	public void setEmplacement(Position emplacement) {
+	public void setEmplacement(String emplacement) {
 		this.emplacement = emplacement;
 	}
 
@@ -75,13 +76,27 @@ public abstract class Piece {
 
 	///////////
 	
-	public boolean isCouleur() {
+	public String getCouleur() {
 		return couleur;
 	}
 
-	public void setCouleur(boolean couleur) {
+	public void setCouleur(String couleur) {
 		this.couleur = couleur;
 	}
+
+	public Position getPosition() {
+		return position;
+	}
+
+	public void setPosition(Position position) {
+		this.position = position;
+	}
+	
+	public boolean deplacable(Piece p)
+	{
+		return true;
+	}
+
 
 
 	

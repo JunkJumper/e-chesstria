@@ -2,9 +2,10 @@ package piecesEchiquier;
 
 public class Tour extends Piece {
 	
-	public Tour(boolean couleur,char l, int x, int y)
+
+	public Tour(String c, String emp,char l, Position pos)
 	{
-		super(couleur, l, x, y);
+		super(c,emp,l,pos);
 	}
 
 }

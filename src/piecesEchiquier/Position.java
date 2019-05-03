@@ -1,8 +1,8 @@
 package piecesEchiquier;
 
 public class Position {
-	private int ligne;
-	private int colonne;
+	private int x;
+	private int y;
 	
 	public Position() {
 		
@@ -10,24 +10,24 @@ public class Position {
 	
 	public Position(int x, int y)
 	{
-		ligne = x;
-		colonne = y;
+		this.x = x;
+		this.y = y;
 	}
 
-	public int getLigne() {
-		return ligne;
+	public int getX() {
+		return x;
 	}
 
-	public void setLigne(int ligne) {
-		this.ligne = ligne;
+	public void setX(int x) {
+		this.x = x;
 	}
 
-	public int getColonne() {
-		return colonne;
+	public int getY() {
+		return y;
 	}
 
-	public void setColonne(int colonne) {
-		this.colonne = colonne;
+	public void setY(int y) {
+		this.y = y;
 	}
 	
 	
