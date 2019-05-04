@@ -1,10 +1,23 @@
 package piecesEchiquier;
 
 public class Tour extends Piece {
+	private boolean verif=false;
 	
-	public Tour(String c, String emp,String l, Position pos)
+	public Tour(String couleur,String l, Position pos)
 	{
-		super(c,emp,l,pos);
+		super(couleur,l,pos);
 	}
-
+	
+	public boolean aBouge()
+	{
+		if(this.getIni() != this.getPosition())
+		{
+			verif=true;
+		}
+		if(this.getIni() == this.getPosition() && verif == false)
+		{
+			verif=false;
+		}
+		return verif;
+	}
 }

@@ -14,48 +14,45 @@ public class Echiquier {
 	{"A2","B2","C2","D2","E2","F2","G2","H2"},
 	{"A1","B1","C1","D1","E1","F1","G1","H1"}
 };
-	private Pion pionB1 = new Pion("Blanc",codes[6][0],"PB",new Position(1,2));
-	private Pion pionB2 = new Pion("Blanc",codes[6][1],"PB",new Position(2,2));
-	private Pion pionB3 = new Pion("Blanc",codes[6][2],"PB",new Position(3,2));
-	private Pion pionB4 = new Pion("Blanc",codes[6][3],"PB",new Position(4,2));
-	private Pion pionB5 = new Pion("Blanc",codes[6][4],"PB",new Position(5,2));
-	private Pion pionB6 = new Pion("Blanc",codes[6][5],"PB",new Position(6,2));
-	private Pion pionB7 = new Pion("Blanc",codes[6][6],"PB",new Position(7,2));
-	private Pion pionB8 = new Pion("Blanc",codes[6][7],"PB",new Position(8,2));
+	private Pion pionB1 = new Pion("Blanc","PB",new Position(1,2));
+	private Pion pionB2 = new Pion("Blanc","PB",new Position(2,2));
+	private Pion pionB3 = new Pion("Blanc","PB",new Position(3,2));
+	private Pion pionB4 = new Pion("Blanc","PB",new Position(4,2));
+	private Pion pionB5 = new Pion("Blanc","PB",new Position(5,2));
+	private Pion pionB6 = new Pion("Blanc","PB",new Position(6,2));
+	private Pion pionB7 = new Pion("Blanc","PB",new Position(7,2));
+	private Pion pionB8 = new Pion("Blanc","PB",new Position(8,2));
 	
-	private Pion pionN1 = new Pion("Noir",codes[1][0],"PN",new Position(1,7));
-	private Pion pionN2 = new Pion("Noir",codes[1][1],"PN",new Position(2,7));
-	private Pion pionN3 = new Pion("Noir",codes[1][2],"PN",new Position(3,7));
-	private Pion pionN4 = new Pion("Noir",codes[1][3],"PN",new Position(4,7));
-	private Pion pionN5 = new Pion("Noir",codes[1][4],"PN",new Position(5,7));
-	private Pion pionN6 = new Pion("Noir",codes[1][5],"PN",new Position(6,7));
-	private Pion pionN7 = new Pion("Noir",codes[1][6],"PN",new Position(7,7));
-	private Pion pionN8 = new Pion("Noir",codes[1][7],"PN",new Position(8,7));
+	private Pion pionN1 = new Pion("Noir","PN",new Position(1,7));
+	private Pion pionN2 = new Pion("Noir","PN",new Position(2,7));
+	private Pion pionN3 = new Pion("Noir","PN",new Position(3,7));
+	private Pion pionN4 = new Pion("Noir","PN",new Position(4,7));
+	private Pion pionN5 = new Pion("Noir","PN",new Position(5,7));
+	private Pion pionN6 = new Pion("Noir","PN",new Position(6,7));
+	private Pion pionN7 = new Pion("Noir","PN",new Position(7,7));
+	private Pion pionN8 = new Pion("Noir","PN",new Position(8,7));
 	
-	private Tour TourB1 = new Tour("Blanc",codes[7][0],"TB",new Position(1,1));
-	private Tour TourB2 = new Tour("Blanc",codes[7][7],"TB",new Position(8,1));
-	private Tour TourN1 = new Tour("Noir",codes[0][0],"TN",new Position(1,8));
-	private Tour TourN2 = new Tour("Noir",codes[0][7],"TN",new Position(8,8));
+	private Tour TourB1 = new Tour("Blanc","TB",new Position(1,1));
+	private Tour TourB2 = new Tour("Blanc","TB",new Position(8,1));
+	private Tour TourN1 = new Tour("Noir","TN",new Position(1,8));
+	private Tour TourN2 = new Tour("Noir","TN",new Position(8,8));
 	
-	private Cavalier CavalierB1 = new Cavalier("Blanc",codes[7][1],"CB",new Position(2,1));
-	private Cavalier CavalierB2 = new Cavalier("Blanc",codes[7][6],"CB",new Position(7,1));
-	private Cavalier CavalierN1 = new Cavalier("Noir",codes[0][1],"CN",new Position(2,8));
-	private Cavalier CavalierN2 = new Cavalier("Noir",codes[0][6],"CN",new Position(7,8));
+	private Cavalier CavalierB1 = new Cavalier("Blanc","CB",new Position(2,1));
+	private Cavalier CavalierB2 = new Cavalier("Blanc","CB",new Position(7,1));
+	private Cavalier CavalierN1 = new Cavalier("Noir","CN",new Position(2,8));
+	private Cavalier CavalierN2 = new Cavalier("Noir","CN",new Position(7,8));
 	
-	private Fou FouB1 = new Fou("Blanc",codes[7][2],"FB",new Position(3,1));
-	private Fou FouB2 = new Fou("Blanc",codes[7][5],"FB",new Position(6,1));
-	private Fou FouN1 = new Fou("Noir",codes[0][2],"FN",new Position(3,8));
-	private Fou FouN2 = new Fou("Noir",codes[0][5],"FN",new Position(6,8));
+	private Fou FouB1 = new Fou("Blanc","FB",new Position(3,1));
+	private Fou FouB2 = new Fou("Blanc","FB",new Position(6,1));
+	private Fou FouN1 = new Fou("Noir","FN",new Position(3,8));
+	private Fou FouN2 = new Fou("Noir","FN",new Position(6,8));
 	
-	private Reine ReineB1 = new Reine("Blanc",codes[7][4],"RB",new Position(4,1));
-	private Reine ReineN1 = new Reine("Noir",codes[0][4],"RN",new Position(4,8));
+	private Reine ReineB1 = new Reine("Blanc","RB",new Position(4,1));
+	private Reine ReineN1 = new Reine("Noir","RN",new Position(4,8));
 	
-	private Roi RoiB1 = new Roi("Blanc",codes[7][3],"KB",new Position(5,1));
-	private Roi RoiN1 = new Roi("Noir",codes[0][3],"KN",new Position(5,8));
+	private Roi RoiB1 = new Roi("Blanc","KB",new Position(5,1));
+	private Roi RoiN1 = new Roi("Noir","KN",new Position(5,8));
 	
-	// A choisir soit on enleve abstract de piece pour avoir le vide soit on garde la classe vide
-	//private Vide vide = new Vide();
-	//private Piece vide = new Piece();
 	
 	private Piece[][] echiquier = 
 		{

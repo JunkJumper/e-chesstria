@@ -1,9 +1,11 @@
 package piecesEchiquier;
 
 public class Pion extends Piece {
-	public Pion(String couleur, String emp,String l, Position pos) {
+	private boolean verif=false;
+	
+	public Pion(String couleur,String l, Position pos) {
 		
-		super(couleur,emp,l, pos);
+		super(couleur,l, pos);
 		
 	}
 	
@@ -21,5 +23,17 @@ public class Pion extends Piece {
 			return true;
 	}
 	
+	public boolean aBouge()
+	{
+		if(this.getIni() != this.getPosition())
+		{
+			verif=true;
+		}
+		if(this.getIni() == this.getPosition() && verif == false)
+		{
+			verif=false;
+		}
+		return verif;
+	}
 
 }

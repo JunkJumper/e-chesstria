@@ -1,10 +1,11 @@
 package piecesEchiquier;
 
 public class Roi extends Piece {
+	private boolean verif=false;
 	
-	public Roi(String c, String emp,String l, Position pos)
+	public Roi(String c,String l, Position pos)
 	{
-		super(c,emp,l,pos);
+		super(c,l,pos);
 	}
 	
 	/*
@@ -15,4 +16,16 @@ public class Roi extends Piece {
 		
 	}
 	*/
+	public boolean aBouge()
+	{
+		if(this.getIni() != this.getPosition())
+		{
+			verif=true;
+		}
+		if(this.getIni() == this.getPosition() && verif == false)
+		{
+			verif=false;
+		}
+		return verif;
+	}
 }

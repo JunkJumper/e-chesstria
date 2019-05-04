@@ -5,12 +5,10 @@ public class Piece {
 	
 	
 	private String couleur;	
-	//private Position emplacementIni;
-	private String emp;
 	private String lettre = "..";
 	private boolean enVie = true;
 	private Position position;
-	
+	private Position ini;
 	
 	
 	//constructeur par defaut qui devrait probablement remplacer vide
@@ -27,13 +25,14 @@ public class Piece {
 	}
 	
 	
-	public Piece(String couleur,String emp, String l, Position pos)
+	public Piece(String couleur,String l, Position pos)
 	{
 		this.couleur = couleur;
 		this.lettre = l;
 		//this.emplacementIni = emp;
-		this.emp = emp;
 		this.position = pos;
+		this.ini=pos;
+		
 	}
 
 /*	//vérifie une éventuelle collision a chaque case
@@ -95,6 +94,14 @@ public class Piece {
 
 	public void setPosition(Position position) {
 		this.position = position;
+	}
+	
+	public Position getIni() {
+		return ini;
+	}
+
+	public void setIni(Position ini) {
+		this.ini = ini;
 	}
 	
 	public boolean deplacable(Piece p)
