@@ -2,7 +2,7 @@ package piecesEchiquier;
 
 public class Tour extends Piece {
 	
-	public Tour(String c, String emp,char l, Position pos)
+	public Tour(String c, String emp,String l, Position pos)
 	{
 		super(c,emp,l,pos);
 	}

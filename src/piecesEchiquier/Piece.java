@@ -7,7 +7,7 @@ public class Piece {
 	private String couleur;	
 	//private Position emplacementIni;
 	private String emp;
-	private char lettre = '.';
+	private String lettre = "..";
 	private boolean enVie = true;
 	private Position position;
 	
@@ -27,7 +27,7 @@ public class Piece {
 	}
 	
 	
-	public Piece(String couleur,String emp, char l, Position pos)
+	public Piece(String couleur,String emp, String l, Position pos)
 	{
 		this.couleur = couleur;
 		this.lettre = l;
@@ -52,10 +52,10 @@ public class Piece {
 	// gets & sets
 	
 	
-	public char getLettre() {
+	public String getLettre() {
 		return lettre;
 	}
-	public void setLettre(char lettre) {
+	public void setLettre(String lettre) {
 		this.lettre = lettre;
 	}
 
