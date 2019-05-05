@@ -18,8 +18,8 @@ public class main {
 		
 		
 		// joueurs APRES ON DEMANDERA NOM
-		Joueur j1 = new Joueur("Manon","Blanc");
-		Joueur j2 = new Joueur("Autre","Noir");
+		Joueur j1 = new Joueur("Personne A","Blanc");
+		Joueur j2 = new Joueur("Personne B","Noir");
 		
 		
 		// vars pour deplacer
@@ -55,7 +55,7 @@ public class main {
 				System.out.println(e.toString());
 				
 				// JOUEUR2
-				System.out.println("Tour de"+j2.getNom()+"\n");
+				System.out.println("Tour de "+j2.getNom()+"\n");
 
 				do {
 					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant à la pièce à déplacer(ex : A1).\n");
