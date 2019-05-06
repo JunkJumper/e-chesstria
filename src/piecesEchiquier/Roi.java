@@ -9,13 +9,16 @@ public class Roi extends Piece {
 	}
 	
 	/*
-	public void enEchec() {
-		Position positionCourante;
+	public void enEchec(Piece piece, Position position) {
+		boolean[][] mouvementsPossibles;
+		mouvementsPossibles=piece.getMouvementsPossibles();
+		
 		positionCourante = super.getEmplacement();
 		
 		
 	}
 	*/
+
 	public boolean aBouge()
 	{
 		if(this.getIni() != this.getPosition())

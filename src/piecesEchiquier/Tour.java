@@ -20,4 +20,20 @@ public class Tour extends Piece {
 		}
 		return verif;
 	}
+	
+	public boolean[][] deplacementsPossibles() {
+		boolean[][] deplacementsPossibles = new boolean[8][8];
+		Position position = this.getPosition();
+		int x = position.getX();
+		int y = position.getY();
+		for(int i=x; i<8; i++) {
+			//if(echiquier.estVide(position))
+			deplacementsPossibles[i][y]=true;
+		}	
+		for(int j=0; j<8; j++) {
+			deplacementsPossibles[x][j]=true;
+		}
+		deplacementsPossibles[x][y]=false;
+		return deplacementsPossibles;
+	}
 }
