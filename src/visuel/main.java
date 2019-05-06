@@ -1,6 +1,6 @@
 package visuel;
 // sert pour recup input clavier
-import java.util.Scanner;
+import java.util.Scanner; //a voir si on fait une classe 'leScan' pour gÃ©rer le scan du clavier plus simplement
 
 import joueurs.Joueur;
 
@@ -8,7 +8,9 @@ import piecesEchiquier.Echiquier;
 
 public class main {
 
+	//	public main (String[] args) { //EVENTUELLEMENT SOLUTION POSSIBLE AVEC FORCE RETURN
 	public static void main (String[] args) {
+		
 		
 		//ouvre une porte pour input
 		Scanner sc = new Scanner(System.in);
@@ -28,7 +30,7 @@ public class main {
 		
 		
 		
-		System.out.println("Bienvenue dans ce jeu d'echec sur console !\n");
+		System.out.println("Bienvenue dans le jeu e-Chesstria ! Le jeu d'echec sur console fait en java !\n");
 		
 		Echiquier e = new Echiquier();
 		do {
@@ -42,9 +44,9 @@ public class main {
 				
 				
 				do {
-					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant à la pièce à déplacer(ex : A1).\n");
+					System.out.println("Quelle piÃ¨ce voulez vous dÃ©placer ? Donnez le code correspondant de la piÃ¨ce Ã  dÃ©placer(ex : A1).\n");
 					A = sc.nextLine();
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit oÃ¹ poser la piÃ¨ce.\n");
 					B = sc.nextLine();
 					
 				}while (e.VerifFinale(j1, A,B) != true);
@@ -58,13 +60,13 @@ public class main {
 				System.out.println("Tour de "+j2.getNom()+"\n");
 
 				do {
-					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant à la pièce à déplacer(ex : A1).\n");
+					System.out.println("Quelle piÃ¨ce voulez vous dÃ©placer ? Donnez le code correspondant de la piÃ¨ce Ã  dÃ©placer(ex : A1).\n");
 					
-					//entrer  coordonnées piece a bouger APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
+					//entrer  coordonnï¿½es piece a bouger APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
 					A = sc.nextLine();
 					
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-					//entrer  coordonnées endroit visé APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
+					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit oÃ¹ poser la piÃ¨ce.\n");
+					//entrer  coordonnï¿½es endroit visï¿½ APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
 					B = sc.nextLine();
 					
 				}while (e.VerifFinale(j2, A,B) != true);

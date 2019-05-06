@@ -23,7 +23,7 @@ public class Pion extends Piece {
 					System.out.println("Vous tentez de manger une case vide.");
 					return false;
 				}
-				System.out.println("Vous avez mangé une pièce !");
+				System.out.println("Vous avez mangÃ© une piÃ¨ce !");
 				return true;
 			}
 			
