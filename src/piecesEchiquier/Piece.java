@@ -28,7 +28,6 @@ public class Piece {
 	public Piece(String couleur,String l, Position pos)
 	{
 		this.couleur = couleur;
-		//this.lettre = l;
 		this.nom = l;
 		//this.emplacementIni = emp;
 		this.position = pos;
@@ -66,14 +65,6 @@ public class Piece {
 	
 	// gets & sets
 	
-	/*
-	public String getLettre() {
-		return lettre;
-	}
-	public void setLettre(String lettre) {
-		this.lettre = lettre;
-	}
-	*/
 	public String getNom() {
 		return nom;
 	}

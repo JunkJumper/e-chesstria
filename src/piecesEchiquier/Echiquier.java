@@ -115,8 +115,12 @@ public class Echiquier {
 		int j = -1;
 		int k;
 		int l;
-		int stockX;
-		int stockY;
+		//int stockX;
+		//int stockY;
+		//int stockX2;
+		//int stockY2;
+		Position stock;
+		Position stock2;
 		
 		do {  							/// TEST 1ERE COORS
 			i++;
@@ -170,11 +174,11 @@ public class Echiquier {
 					else
 					{
 					System.out.println("Choix validés. déplacement en cours.");
-					stockX = this.getEchiquier()[k][l].getPosition().getX();
-					stockY = this.getEchiquier()[k][l].getPosition().getY();
+					stock = new Position(l+1,8-k);
+					stock2 = new Position(j+1,8-i);
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
-					this.getEchiquier()[k][l].setPosition(new Position(stockX,stockY));
-					this.getEchiquier()[i][j] = new Piece(new Position(this.getEchiquier()[i][j].getPosition().getX(),this.getEchiquier()[i][j].getPosition().getY()));
+					this.getEchiquier()[k][l].setPosition(stock);
+					this.getEchiquier()[i][j] = new Piece(stock2);
 					return true;
 					}
 					
