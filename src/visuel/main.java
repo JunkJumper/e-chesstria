@@ -18,7 +18,7 @@ public class Main {
 		
 		
 		// joueurs APRES ON DEMANDERA NOM
-		Joueur j1 = new Joueur("Manon","Blanc");
+		Joueur j1 = new Joueur("Marion la Stagiaire","Blanc");
 		Joueur j2 = new Joueur("Autre","Noir");
 		
 		
