@@ -103,7 +103,7 @@ public class Piece {
 		this.ini = ini;
 	}
 	
-	public boolean deplacable(Piece p)
+	public boolean deplacable(Echiquier e,Piece p)
 	{
 		return true;
 	}

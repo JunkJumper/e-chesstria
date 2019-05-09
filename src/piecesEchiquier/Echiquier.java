@@ -121,19 +121,21 @@ public class Echiquier {
 		int k;
 		int l;
 		
-		do {
+		do {  /// Tests pour la premiere piece
 			i++;
 			j = -1;
+			
+			
 			do {
 				j++;
-				if (getCodes()[i][j].equals(A))
+				if (getCodes()[i][j].equals(A))		//Cherche dans la mqtrice code si on trouve un string en accord avec celui donné par le joueur
 				{
-					if (this.getEchiquier()[i][j].getClass().getName().equals("Piece"))
+					if (this.getEchiquier()[i][j].getClass().getName().equals("Piece")) // Verifie si la case choisie n'est pas vide
 					{
 						System.out.println("Vous avez choisi une case vide. Recommencez.");
 						return false;
 					}
-					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur())
+					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur()) // Verifie si la piece choisie n'est pas de la faction opposée
 					{
 						System.out.println("Le pion choisi n'est pas de votre faction. Recommencez.");
 						return false;
@@ -141,21 +143,34 @@ public class Echiquier {
 				}
 			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
 		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
+		
+		
+		
+		
 	
-		for (k = 0; k < codes.length;k++)
+		for (k = 0; k < codes.length;k++)	// Tests pour la 2 eme piece/case choisie
 		{
-			for (l = 0; l < codes.length;l++) {
+			for (l = 0; l < codes.length;l++) 
+			{
 				if (getCodes()[k][l].equals(B) == true)
 				{
-					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())
+					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie que la  piece visée n'est pas de ta faction
 					{
 						System.out.println("Le pion que vous voulez manger est de votre faction. Recommencez.");
 						return false;
-					}else if (this.getEchiquier()[i][j].deplacable(this.getEchiquier()[k][l]) == false)
+						
+					}
+					
+					
+					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
 						System.out.println("D�placement impossible. Recommencez.");
 						return false;
-					}else
+						
+					}
+					
+					
+					else
 					{
 					System.out.println("Choix validés. déplacement en cours.");
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
