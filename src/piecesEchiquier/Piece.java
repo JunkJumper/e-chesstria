@@ -1,4 +1,3 @@
-
 package piecesEchiquier;
 
 public class Piece {
@@ -35,7 +34,7 @@ public class Piece {
 		
 	}
 
-/*	//vérifie une éventuelle collision a chaque case
+/*	//verifie une eventuelle collision a chaque case
 	public boolean collision(Case caseArrivee){
 		return caseArrivee.estVide();
 		}*/

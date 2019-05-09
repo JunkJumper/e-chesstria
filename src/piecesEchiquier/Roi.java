@@ -18,7 +18,7 @@ public class Roi extends Piece {
 		
 	}
 	*/
-
+	
 	public boolean aBouge()
 	{
 		if(this.getIni() != this.getPosition())

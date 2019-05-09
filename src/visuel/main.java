@@ -1,16 +1,14 @@
 package visuel;
 // sert pour recup input clavier
-import java.util.Scanner; //a voir si on fait une classe 'leScan' pour gérer le scan du clavier plus simplement
+import java.util.Scanner;
 
 import joueurs.Joueur;
 
 import piecesEchiquier.Echiquier;
 
-public class main {
+public class Main {
 
-	//	public main (String[] args) { //EVENTUELLEMENT SOLUTION POSSIBLE AVEC FORCE RETURN
 	public static void main (String[] args) {
-		
 		
 		//ouvre une porte pour input
 		Scanner sc = new Scanner(System.in);
@@ -20,8 +18,8 @@ public class main {
 		
 		
 		// joueurs APRES ON DEMANDERA NOM
-		Joueur j1 = new Joueur("Personne A","Blanc");
-		Joueur j2 = new Joueur("Personne B","Noir");
+		Joueur j1 = new Joueur("Manon","Blanc");
+		Joueur j2 = new Joueur("Autre","Noir");
 		
 		
 		// vars pour deplacer
@@ -30,7 +28,7 @@ public class main {
 		
 		
 		
-		System.out.println("Bienvenue dans le jeu e-Chesstria ! Le jeu d'echec sur console fait en java !\n");
+		System.out.println("Bienvenue dans ce jeu d'echec sur console !\n");
 		
 		Echiquier e = new Echiquier();
 		do {
@@ -44,9 +42,9 @@ public class main {
 				
 				
 				do {
-					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+					System.out.println("Quelle pi�ce voulez vous d�placer ? Donnez le code correspondant � la pi�ce � d�placer(ex : A1).\n");
 					A = sc.nextLine();
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit où poser la pièce.\n");
+					System.out.println("A quel endroit la poser ?  Donnez le code correspondant � l'endroit o� poser la pi�ce.\n");
 					B = sc.nextLine();
 					
 				}while (e.VerifFinale(j1, A,B) != true);
@@ -57,16 +55,16 @@ public class main {
 				System.out.println(e.toString());
 				
 				// JOUEUR2
-				System.out.println("Tour de "+j2.getNom()+"\n");
+				System.out.println("Tour de"+j2.getNom()+"\n");
 
 				do {
-					System.out.println("Quelle pièce voulez vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+					System.out.println("Quelle pi�ce voulez vous d�placer ? Donnez le code correspondant � la pi�ce � d�placer(ex : A1).\n");
 					
-					//entrer  coordonn�es piece a bouger APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
+					//entrer coordonn�es piece a bouger APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
 					A = sc.nextLine();
 					
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit où poser la pièce.\n");
-					//entrer  coordonn�es endroit vis� APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
+					System.out.println("A quel endroit la poser ?  Donnez le code correspondant � l'endroit o� poser la pi�ce.\n");
+					//entrer coordonn�es endroit vis� APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
 					B = sc.nextLine();
 					
 				}while (e.VerifFinale(j2, A,B) != true);
@@ -76,5 +74,5 @@ public class main {
 		}while (jeu == true);	
 		sc.close();
 	}
-
+	
 }

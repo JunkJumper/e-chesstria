@@ -3,6 +3,7 @@ package piecesEchiquier;
 import joueurs.Joueur;
 
 public class Echiquier {
+	
 	private String[][] codes = 
 {
 	{"A8","B8","C8","D8","E8","F8","G8","H8"},
@@ -67,9 +68,8 @@ public class Echiquier {
 		};
 	
 	
-	public Echiquier()
-	{
-		
+	public Echiquier() {
+	
 	}
 	
 	
@@ -139,18 +139,8 @@ public class Echiquier {
 						return false;
 					}	
 				}
-				
 			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
-			
 		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
-		if (i == 9)
-		{
-			System.out.println("Code de la pièce a déplacer invalide. Recommencez.");
-			return false;
-		}
-	
-	
-			
 	
 		for (k = 0; k < codes.length;k++)
 		{
@@ -163,11 +153,11 @@ public class Echiquier {
 						return false;
 					}else if (this.getEchiquier()[i][j].deplacable(this.getEchiquier()[k][l]) == false)
 					{
-						System.out.println("Déplacement impossible. Recommencez.");
+						System.out.println("Dï¿½placement impossible. Recommencez.");
 						return false;
 					}else
 					{
-					System.out.println("Choix validés. Déplacement en cours.");
+					System.out.println("Choix validÃ©s. dÃ©placement en cours.");
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
 					this.getEchiquier()[i][j] = new Piece(new Position(i,j));
 					return true;
@@ -179,4 +169,13 @@ public class Echiquier {
 	System.out.println("Un de vos codes est faux. Recommencez.");
 	return false;
 	}		
+	
+	public boolean estVide(Position position) {
+		int x = position.getX();
+		int y = position.getY();
+		if(this.echiquier[x][y].getLettre()=="..") {
+			return true;
+		}
+		return false;
+	}
 }
