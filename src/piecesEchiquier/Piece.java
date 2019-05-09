@@ -4,7 +4,8 @@ public class Piece {
 	
 	
 	private String couleur;	
-	private String lettre = "..";
+	//private String lettre = "..";
+	private String nom = "..";
 	private boolean enVie = true;
 	private Position position;
 	private Position ini;
@@ -27,7 +28,8 @@ public class Piece {
 	public Piece(String couleur,String l, Position pos)
 	{
 		this.couleur = couleur;
-		this.lettre = l;
+		//this.lettre = l;
+		this.nom = l;
 		//this.emplacementIni = emp;
 		this.position = pos;
 		this.ini=pos;
@@ -64,14 +66,20 @@ public class Piece {
 	
 	// gets & sets
 	
-	
+	/*
 	public String getLettre() {
 		return lettre;
 	}
 	public void setLettre(String lettre) {
 		this.lettre = lettre;
 	}
-
+	*/
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
 	////////////
 	/*
 	public String getEmplacement() {

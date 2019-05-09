@@ -1,12 +1,12 @@
 package visuel;
 // sert pour recup input clavier
-import java.util.Scanner;
+import java.util.Scanner; //a voir si on fait une classe 'leScan' pour gerer le scan du clavier plus simplement
 
 import joueurs.Joueur;
 
 import piecesEchiquier.Echiquier;
 
-public class Main {
+public class main {
 
 	public static void main (String[] args) {
 		
@@ -42,33 +42,27 @@ public class Main {
 				
 				
 				do {
-					
-					System.out.println("Quelle pi�ce voulez vous d�placer ? Donnez le code correspondant � la pi�ce � d�placer(ex : A1).\n");
+					System.out.println("Quelle piece voulez vous deplacer ? Donnez le code correspondant de la piece a  deplacer(ex : A1).\n");
 					A = sc.nextLine();
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant � l'endroit o� poser la pi�ce.\n");
+					System.out.println("A quel endroit la poser ?  Donnez le code correspondant a l'endroit ou poser la piece.\n");
 					B = sc.nextLine();
 					
-				}while (e.VerifFinale(j1, A,B) != true);
-				
-				//e.deplacer(A,B);
+				}while (e.VerifFinale(j1, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 				
 				//REAFFICHAGE ECHIQUIER
 				System.out.println(e.toString());
 				
 				// JOUEUR2
-				System.out.println("Tour de"+j2.getNom()+"\n");
+				System.out.println("Tour de "+j2.getNom()+"\n");
 
 				do {
-					System.out.println("Quelle pi�ce voulez vous d�placer ? Donnez le code correspondant � la pi�ce � d�placer(ex : A1).\n");
-					
-					//entrer coordonn�es piece a bouger APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
+					System.out.println("Quelle piece voulez vous deplacer ? Donnez le code correspondant de la piece a  deplacer(ex : A1).\n");
 					A = sc.nextLine();
 					
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant � l'endroit o� poser la pi�ce.\n");
-					//entrer coordonn�es endroit vis� APRES ON PASSERA PAR DIRECT COMBINAISON LETTRE-CHIFFRE
+					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit la poser la piece.\n");
 					B = sc.nextLine();
 					
-				}while (e.VerifFinale(j2, A,B) != true);
+				}while (e.VerifFinale(j2, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 
 			//jeu = false;
 			 

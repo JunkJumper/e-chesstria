@@ -15,6 +15,7 @@ public class Echiquier {
 	{"A2","B2","C2","D2","E2","F2","G2","H2"},
 	{"A1","B1","C1","D1","E1","F1","G1","H1"}
 };
+
 	private Pion pionB1 = new Pion("Blanc","PB",new Position(1,2));
 	private Pion pionB2 = new Pion("Blanc","PB",new Position(2,2));
 	private Pion pionB3 = new Pion("Blanc","PB",new Position(3,2));
@@ -79,19 +80,13 @@ public class Echiquier {
 	}
 
 
-
-	public void setEchiquier(Piece[][] echiquier) {
-		this.echiquier = echiquier;
-	}
-
-
 	public String[][] getCodes() {
 		return codes;
 	}
 
 
 
-	public String toString()
+	public String toString()	// FONCTION AFFICHAGE
 	{
 		char alphabet[]= {'A','B','C','D','E','F','G','H'};
 		String echec = "";
@@ -101,7 +96,7 @@ public class Echiquier {
 			echec+= compteur + " ";
 			for (int j = 0; j < 8;j++)
 			{
-				echec +=echiquier[i][j].getLettre();
+				echec +=echiquier[i][j].getNom();
 				echec += " ";
 			}
 			echec += "\n";
@@ -114,21 +109,23 @@ public class Echiquier {
 		return echec;
 	}
 	
-	public boolean VerifFinale(Joueur J, String A, String B)
+	public boolean VerifFinale(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
 	{
 		int i = -1;
 		int j = -1;
 		int k;
 		int l;
+		int stockX;
+		int stockY;
 		
-		do {  /// Tests pour la premiere piece
+		do {  							/// TEST 1ERE COORS
 			i++;
 			j = -1;
 			
 			
 			do {
 				j++;
-				if (getCodes()[i][j].equals(A))		//Cherche dans la mqtrice code si on trouve un string en accord avec celui donné par le joueur
+				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
 				{
 					if (this.getEchiquier()[i][j].getClass().getName().equals("Piece")) // Verifie si la case choisie n'est pas vide
 					{
@@ -148,7 +145,7 @@ public class Echiquier {
 		
 		
 	
-		for (k = 0; k < codes.length;k++)	// Tests pour la 2 eme piece/case choisie
+		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
 		{
 			for (l = 0; l < codes.length;l++) 
 			{
@@ -164,7 +161,7 @@ public class Echiquier {
 					
 					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
-						System.out.println("D�placement impossible. Recommencez.");
+						System.out.println("Déplacement impossible. Recommencez.");
 						return false;
 						
 					}
@@ -173,24 +170,28 @@ public class Echiquier {
 					else
 					{
 					System.out.println("Choix validés. déplacement en cours.");
+					stockX = this.getEchiquier()[k][l].getPosition().getX();
+					stockY = this.getEchiquier()[k][l].getPosition().getY();
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
-					this.getEchiquier()[i][j] = new Piece(new Position(i,j));
+					this.getEchiquier()[k][l].setPosition(new Position(stockX,stockY));
+					this.getEchiquier()[i][j] = new Piece(new Position(this.getEchiquier()[i][j].getPosition().getX(),this.getEchiquier()[i][j].getPosition().getY()));
 					return true;
 					}
 					
 				}
 			}
 		}
-	System.out.println("Un de vos codes est faux. Recommencez.");
+	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
 	return false;
 	}		
 	
 	public boolean estVide(Position position) {
 		int x = position.getX();
 		int y = position.getY();
-		if(this.echiquier[x][y].getLettre()=="..") {
-			return true;
-		}
+
+		if(this.echiquier[x][y].getNom()=="..") {
+		return true;
+	}
 		return false;
 	}
 }
