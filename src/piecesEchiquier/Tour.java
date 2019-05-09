@@ -1,7 +1,6 @@
 package piecesEchiquier;
 
 public class Tour extends Piece {
-	private boolean verif=false;
 	
 	public Tour(String couleur,String l, Position pos)
 	{

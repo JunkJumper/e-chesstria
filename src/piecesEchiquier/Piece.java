@@ -1,6 +1,6 @@
 package piecesEchiquier;
 
-public class Piece {
+public abstract class Piece {
 	
 	
 	private String couleur;	
@@ -8,7 +8,7 @@ public class Piece {
 	private boolean enVie = true;
 	private Position position;
 	private Position ini;
-	
+	private boolean verif = false;
 	
 	//constructeur par defaut qui devrait probablement remplacer vide
 	
@@ -34,6 +34,23 @@ public class Piece {
 		
 	}
 
+	public boolean aBouge()
+	{
+		
+		if(this.getIni() != this.getPosition())
+		{
+			verif=true;
+		}
+		if(this.getIni() == this.getPosition() && verif == false)
+		{
+			verif=false;
+		}
+		return verif;
+	}
+	
+	public abstract boolean[][] deplacable(Echiquier e,Piece p);
+
+	
 /*	//verifie une eventuelle collision a chaque case
 	public boolean collision(Case caseArrivee){
 		return caseArrivee.estVide();
