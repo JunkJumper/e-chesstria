@@ -1,6 +1,6 @@
 package piecesEchiquier;
 
-public abstract class Piece {
+public class Piece {
 	
 	
 	private String couleur;	
@@ -47,8 +47,6 @@ public abstract class Piece {
 		}
 		return verif;
 	}
-	
-	public abstract boolean[][] deplacable(Echiquier e,Piece p);
 
 	
 /*	//verifie une eventuelle collision a chaque case
