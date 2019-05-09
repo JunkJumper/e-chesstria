@@ -42,6 +42,7 @@ public class Main {
 				
 				
 				do {
+					
 					System.out.println("Quelle pi�ce voulez vous d�placer ? Donnez le code correspondant � la pi�ce � d�placer(ex : A1).\n");
 					A = sc.nextLine();
 					System.out.println("A quel endroit la poser ?  Donnez le code correspondant � l'endroit o� poser la pi�ce.\n");
