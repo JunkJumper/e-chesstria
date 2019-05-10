@@ -54,7 +54,7 @@ public class Pion extends Piece {
 		{
 			verif=true;
 		}
-		else if(this.getIni() == this.getPosition() && this.verif == false)
+		else if(this.getIni() == this.getPosition())
 		{
 			verif=false;
 		}
