@@ -198,4 +198,400 @@ public class Echiquier {
 	}
 		return false;
 	}
+
+
+	//getters and setters
+	public Pion getPionB1() {
+		return pionB1;
+	}
+
+
+
+	public void setPionB1(Pion pionB1) {
+		this.pionB1 = pionB1;
+	}
+
+
+
+	public Pion getPionB2() {
+		return pionB2;
+	}
+
+
+
+	public void setPionB2(Pion pionB2) {
+		this.pionB2 = pionB2;
+	}
+
+
+
+	public Pion getPionB3() {
+		return pionB3;
+	}
+
+
+
+	public void setPionB3(Pion pionB3) {
+		this.pionB3 = pionB3;
+	}
+
+
+
+	public Pion getPionB4() {
+		return pionB4;
+	}
+
+
+
+	public void setPionB4(Pion pionB4) {
+		this.pionB4 = pionB4;
+	}
+
+
+
+	public Pion getPionB5() {
+		return pionB5;
+	}
+
+
+
+	public void setPionB5(Pion pionB5) {
+		this.pionB5 = pionB5;
+	}
+
+
+
+	public Pion getPionB6() {
+		return pionB6;
+	}
+
+
+
+	public void setPionB6(Pion pionB6) {
+		this.pionB6 = pionB6;
+	}
+
+
+
+	public Pion getPionB7() {
+		return pionB7;
+	}
+
+
+
+	public void setPionB7(Pion pionB7) {
+		this.pionB7 = pionB7;
+	}
+
+
+
+	public Pion getPionB8() {
+		return pionB8;
+	}
+
+
+
+	public void setPionB8(Pion pionB8) {
+		this.pionB8 = pionB8;
+	}
+
+
+
+	public Pion getPionN1() {
+		return pionN1;
+	}
+
+
+
+	public void setPionN1(Pion pionN1) {
+		this.pionN1 = pionN1;
+	}
+
+
+
+	public Pion getPionN2() {
+		return pionN2;
+	}
+
+
+
+	public void setPionN2(Pion pionN2) {
+		this.pionN2 = pionN2;
+	}
+
+
+
+	public Pion getPionN3() {
+		return pionN3;
+	}
+
+
+
+	public void setPionN3(Pion pionN3) {
+		this.pionN3 = pionN3;
+	}
+
+
+
+	public Pion getPionN4() {
+		return pionN4;
+	}
+
+
+
+	public void setPionN4(Pion pionN4) {
+		this.pionN4 = pionN4;
+	}
+
+
+
+	public Pion getPionN5() {
+		return pionN5;
+	}
+
+
+
+	public void setPionN5(Pion pionN5) {
+		this.pionN5 = pionN5;
+	}
+
+
+
+	public Pion getPionN6() {
+		return pionN6;
+	}
+
+
+
+	public void setPionN6(Pion pionN6) {
+		this.pionN6 = pionN6;
+	}
+
+
+
+	public Pion getPionN7() {
+		return pionN7;
+	}
+
+
+
+	public void setPionN7(Pion pionN7) {
+		this.pionN7 = pionN7;
+	}
+
+
+
+	public Pion getPionN8() {
+		return pionN8;
+	}
+
+
+
+	public void setPionN8(Pion pionN8) {
+		this.pionN8 = pionN8;
+	}
+
+
+
+	public Tour getTourB1() {
+		return TourB1;
+	}
+
+
+
+	public void setTourB1(Tour tourB1) {
+		TourB1 = tourB1;
+	}
+
+
+
+	public Tour getTourB2() {
+		return TourB2;
+	}
+
+
+
+	public void setTourB2(Tour tourB2) {
+		TourB2 = tourB2;
+	}
+
+
+
+	public Tour getTourN1() {
+		return TourN1;
+	}
+
+
+
+	public void setTourN1(Tour tourN1) {
+		TourN1 = tourN1;
+	}
+
+
+
+	public Tour getTourN2() {
+		return TourN2;
+	}
+
+
+
+	public void setTourN2(Tour tourN2) {
+		TourN2 = tourN2;
+	}
+
+
+
+	public Cavalier getCavalierB1() {
+		return CavalierB1;
+	}
+
+
+
+	public void setCavalierB1(Cavalier cavalierB1) {
+		CavalierB1 = cavalierB1;
+	}
+
+
+
+	public Cavalier getCavalierB2() {
+		return CavalierB2;
+	}
+
+
+
+	public void setCavalierB2(Cavalier cavalierB2) {
+		CavalierB2 = cavalierB2;
+	}
+
+
+
+	public Cavalier getCavalierN1() {
+		return CavalierN1;
+	}
+
+
+
+	public void setCavalierN1(Cavalier cavalierN1) {
+		CavalierN1 = cavalierN1;
+	}
+
+
+
+	public Cavalier getCavalierN2() {
+		return CavalierN2;
+	}
+
+
+
+	public void setCavalierN2(Cavalier cavalierN2) {
+		CavalierN2 = cavalierN2;
+	}
+
+
+
+	public Fou getFouB1() {
+		return FouB1;
+	}
+
+
+
+	public void setFouB1(Fou fouB1) {
+		FouB1 = fouB1;
+	}
+
+
+
+	public Fou getFouB2() {
+		return FouB2;
+	}
+
+
+
+	public void setFouB2(Fou fouB2) {
+		FouB2 = fouB2;
+	}
+
+
+
+	public Fou getFouN1() {
+		return FouN1;
+	}
+
+
+
+	public void setFouN1(Fou fouN1) {
+		FouN1 = fouN1;
+	}
+
+
+
+	public Fou getFouN2() {
+		return FouN2;
+	}
+
+
+
+	public void setFouN2(Fou fouN2) {
+		FouN2 = fouN2;
+	}
+
+
+
+	public Reine getReineB1() {
+		return ReineB1;
+	}
+
+
+
+	public void setReineB1(Reine reineB1) {
+		ReineB1 = reineB1;
+	}
+
+
+
+	public Reine getReineN1() {
+		return ReineN1;
+	}
+
+
+
+	public void setReineN1(Reine reineN1) {
+		ReineN1 = reineN1;
+	}
+
+
+
+	public Roi getRoiB1() {
+		return RoiB1;
+	}
+
+
+
+	public void setRoiB1(Roi roiB1) {
+		RoiB1 = roiB1;
+	}
+
+
+
+	public Roi getRoiN1() {
+		return RoiN1;
+	}
+
+
+
+	public void setRoiN1(Roi roiN1) {
+		RoiN1 = roiN1;
+	}
+
+
+
+	public void setCodes(String[][] codes) {
+		this.codes = codes;
+	}
+
+
+
+	public void setEchiquier(Piece[][] echiquier) {
+		this.echiquier = echiquier;
+	}
 }
