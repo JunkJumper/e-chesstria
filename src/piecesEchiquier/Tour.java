@@ -9,13 +9,6 @@ public class Tour extends Piece {
 	
 	public boolean deplacable(Echiquier e,Piece p) 
 	{
-		System.out.println("test");
-
-		System.out.println(this.getPosition().getX());
-		System.out.println(this.getPosition().getY());
-		System.out.println(p.getPosition().getX());
-		System.out.println(p.getPosition().getY());
-		System.out.println("tet");
 		if(p.getPosition().getX() == this.getPosition().getX()) // verification les 2 pieces sont sur la meme colonne
 		{
 			System.out.println("test");
