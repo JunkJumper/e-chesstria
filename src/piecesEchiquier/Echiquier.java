@@ -131,7 +131,7 @@ public class Echiquier {
 				j++;
 				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
 				{
-					if (this.getEchiquier()[i][j].getClass().getName().equals("Piece")) // Verifie si la case choisie n'est pas vide
+					if (this.getEchiquier()[i][j].getNom().equals("..")) // Verifie si la case choisie n'est pas vide
 					{
 						System.out.println("Vous avez choisi une case vide. Recommencez.");
 						return false;

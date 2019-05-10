@@ -51,7 +51,7 @@ public class Fou extends Piece {
 				
 				
 			}
-
+ 
 			else if ( p.getPosition().getX() == this.getPosition().getX()-i)	// 2eme coors a gauche de la 1 ere
 			{
 				
