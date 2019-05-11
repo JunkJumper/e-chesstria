@@ -31,4 +31,74 @@ public class Roi extends Piece {
 		}
 		return verif;
 	}
+	
+	public boolean deplacable(Echiquier e, Piece p) // vérifie que le roi peut être déplacé
+	{
+		//Côté droit
+		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()+1)) //Verifie deplacement y+1 vers le haut et x+1 vers la droite
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		
+		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY())) //Verifie deplacement x+1 vers la droite
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		
+		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()-1)) //Verifie deplacement y-1 vers le bas et x+1 vers la droite
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		//Coté haut
+		if((p.getPosition().getX()) == (this.getPosition().getX()) && (p.getPosition().getY()) == (this.getPosition().getY()+1)) //Verifie deplacement y+1 vers le haut
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		//Côté bas
+		if((p.getPosition().getX()) == (this.getPosition().getX()) && (p.getPosition().getY()) == (this.getPosition().getY()-1)) //Verifie deplacement y-1 vers le bas
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		//Côté gauche
+		if((p.getPosition().getX()) == (this.getPosition().getX()-1) && (p.getPosition().getY()) == (this.getPosition().getY()+1)) //Verifie deplacement y+1 vers le haut et x-1 vers la gauche
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		
+		if((p.getPosition().getX()) == (this.getPosition().getX()-1) && (p.getPosition().getY()) == (this.getPosition().getY())) //Verifie deplacement x-1 vers la gauche
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		
+		if((p.getPosition().getX()) == (this.getPosition().getX()-1) && (p.getPosition().getY()) == (this.getPosition().getY()-1)) //Verifie deplacement y-1 vers le bas et x-1 vers la gauche
+		{
+			if(p.getCouleur()!=this.getCouleur())
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 }
+
