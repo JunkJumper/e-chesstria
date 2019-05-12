@@ -49,11 +49,11 @@ public class Echiquier {
 	private Fou FouN1 = new Fou("Noir","FN",new Position(3,8));
 	private Fou FouN2 = new Fou("Noir","FN",new Position(6,8));
 	
-	private Reine ReineB1 = new Reine("Blanc","RB",new Position(4,1));
-	private Reine ReineN1 = new Reine("Noir","RN",new Position(4,8));
+	private Reine ReineB1 = new Reine("Blanc","RB",new Position(5,1));
+	private Reine ReineN1 = new Reine("Noir","RN",new Position(5,8));
 	
-	private Roi RoiB1 = new Roi("Blanc","KB",new Position(5,1));
-	private Roi RoiN1 = new Roi("Noir","KN",new Position(5,8));
+	private Roi RoiB1 = new Roi("Blanc","KB",new Position(4,1));
+	private Roi RoiN1 = new Roi("Noir","KN",new Position(4,8));
 	
 	
 	private Piece[][] echiquier = 
@@ -83,6 +83,8 @@ public class Echiquier {
 	public String[][] getCodes() {
 		return codes;
 	}
+	
+	
 
 
 
@@ -141,9 +143,6 @@ public class Echiquier {
 			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
 		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
 		
-		
-		
-		
 	
 		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
 		{
@@ -161,7 +160,7 @@ public class Echiquier {
 					
 					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
-						System.out.println("Déplacement impossible. Recommencez. /n");
+						System.out.println("Déplacement impossible. Recommencez. \n");
 						return false;
 						
 					}
@@ -183,15 +182,84 @@ public class Echiquier {
 		}
 	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
 	return false;
-	}		
+	}
+	
+	public boolean verificationMouvementSilencieuse(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
+	{
+		int i = -1;
+		int j = -1;
+		int k;
+		int l;
+		Position stock;
+		Position stock2;
+		
+		do {  							/// TEST 1ERE COORS
+			i++;
+			j = -1;
+			
+			
+			do {
+				j++;
+				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
+				{
+					if (this.getEchiquier()[i][j].getNom().equals("..")) // Verifie si la case choisie n'est pas vide
+					{
+						return false;
+					}
+					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur()) // Verifie si la piece choisie n'est pas de la faction opposée
+					{
+						return false;
+					}	
+				}
+			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
+		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
+		
+	
+		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
+		{
+			for (l = 0; l < codes.length;l++) 
+			{
+				if (getCodes()[k][l].equals(B) == true)
+				{
+					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie que la  piece visée n'est pas de ta faction
+					{
+						return false;
+						
+					}
+					
+					
+					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
+					{
+						return false;
+						
+					}
+					
+					
+					else
+					{		// Partie déplacement
+					stock = new Position(l+1,8-k);
+					stock2 = new Position(j+1,8-i);
+					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
+					this.getEchiquier()[k][l].setPosition(stock);
+					this.getEchiquier()[i][j] = new Piece(stock2);
+					return true;
+					}
+					
+				}
+			}
+		}
+	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
+	return false;
+	}
 	
 	public boolean estVide(Position position) {
 		int x = position.getX();
 		int y = position.getY();
 
-		if(this.echiquier[8-y][x-1].getNom()=="..") {
-		return true;
-	}
+		if(this.echiquier[8-y][x-1].getNom()=="..") 
+		{
+			return true;
+		}
 		return false;
 	}
 

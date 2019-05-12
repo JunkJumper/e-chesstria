@@ -48,22 +48,34 @@ public class main {
 					B = sc.nextLine();
 					
 				}while (e.verificationMouvement(j1, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
-				
+				if (e.getRoiN1().enEchec(e,j2) && e.getRoiN1().enEchecEtMat(e,j2))
+				{
+					System.out.println("Le joueur 2 est echec et mat, il a perdu !");
+					jeu = false;
+				}
 				//REAFFICHAGE ECHIQUIER
 				System.out.println(e.toString());
 				
 				// JOUEUR2
 				System.out.println("Tour de "+j2.getNom()+"\n");
 
-				do {
-					System.out.println("Quelle piece voulez vous deplacer ? Donnez le code correspondant de la piece a  deplacer(ex : A1).\n");
-					A = sc.nextLine();
-					
-					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit la poser la piece.\n");
-					B = sc.nextLine();
-					
-				}while (e.verificationMouvement(j2, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
-
+				if (jeu == true)
+				{
+					do {
+						System.out.println("Quelle piece voulez vous deplacer ? Donnez le code correspondant de la piece a  deplacer(ex : A1).\n");
+						A = sc.nextLine();
+						
+						System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit la poser la piece.\n");
+						B = sc.nextLine();
+						
+					}while (e.verificationMouvement(j2, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+				}
+				
+				if (e.getRoiB1().enEchec(e,j1) && e.getRoiN1().enEchecEtMat(e,j1))
+				{
+					System.out.println("Le joueur 1 est echec et mat, il a perdu !");
+					jeu = false;
+				}
 			//jeu = false;
 			 
 		}while (jeu == true);	

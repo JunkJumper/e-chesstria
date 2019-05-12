@@ -1,5 +1,7 @@
 package piecesEchiquier;
 
+import joueurs.Joueur;
+
 public class Roi extends Piece {
 	private boolean verif=false;
 	
@@ -99,6 +101,77 @@ public class Roi extends Piece {
 			}
 		}
 		return false;
+	}
+	
+	public boolean enEchec(Echiquier e, Joueur Jopp)
+	{
+		for (int i = 0; i < e.getEchiquier().length;i++)
+		{
+			for (int j = 0; j < e.getEchiquier().length;j++)
+			{
+				if ( !(e.getEchiquier()[i][j].getCouleur() == this.getCouleur() ) && (e.verificationMouvementSilencieuse(Jopp,e.getCodes()[i][j],e.getCodes()[8-this.getPosition().getY()][this.getPosition().getX()-1]) == true) )
+				{
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	public boolean enEchecEtMat(Echiquier e, Joueur Jopp)
+	{
+		if (this.getPosition().getY() <= 7 && e.getEchiquier()[8-(this.getPosition().getY()+1)][this.getPosition().getX()-1].getNom().equals("..")) // verification mouvement vers le haut libre
+		{
+			e.getEchiquier()[8-(this.getPosition().getY()+1)][this.getPosition().getX()-1] = this; // on fait un fantome roi
+			e.getEchiquier()[8-(this.getPosition().getY()+1)][this.getPosition().getX()-1].getPosition().setY(this.getPosition().getY()+1); // on corrige sa position
+			if (!(this.enEchec(e,Jopp) )) // si pas en echec possibilité de mouvement donc pas echec et mat
+			{
+				e.getEchiquier()[8-(this.getPosition().getY()+1)][this.getPosition().getX()-1] = new Piece(new Position(this.getPosition().getX(),this.getPosition().getY()+1));
+				// on tue le fantome de test
+				return false;
+			}
+				
+		}
+		
+		if (e.getEchiquier()[8-(this.getPosition().getY()-1)][this.getPosition().getX()-1].getNom().equals("..")) // verification mouvement vers le bas libre
+		{
+			e.getEchiquier()[8-(this.getPosition().getY()-1)][this.getPosition().getX()-1] = this; // on fait un fantome roi
+			e.getEchiquier()[8-(this.getPosition().getY()-1)][this.getPosition().getX()-1].getPosition().setY(this.getPosition().getY()-1); // on corrige sa position
+			if (!(this.enEchec(e,Jopp) )) // si pas en echec possibilité de mouvement donc pas echec et mat
+			{
+				e.getEchiquier()[8-(this.getPosition().getY()-1)][this.getPosition().getX()-1] = new Piece(new Position(this.getPosition().getX(),this.getPosition().getY()-1));
+				// on tue le fantome de test
+				return false;
+			}
+				
+		}
+		
+		if (e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)-1].getNom().equals("..")) // verification mouvement vers la gauche libre
+		{
+			e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)-1] = this; // on fait un fantome roi
+			e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)-1].getPosition().setX(this.getPosition().getX()-1); // on corrige sa position
+			if (!(this.enEchec(e,Jopp) )) // si pas en echec possibilité de mouvement donc pas echec et mat
+			{
+				e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)-1] = new Piece(new Position(this.getPosition().getX()-1,this.getPosition().getY()) );
+				// on tue le fantome de test
+				return false;
+			}
+				
+		}
+		
+		if (e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)+1].getNom().equals("..")) // verification mouvement vers la droite libre
+		{
+			e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)+1] = this; // on fait un fantome roi
+			e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)+1].getPosition().setX(this.getPosition().getX()+1); // on corrige sa position
+			if (!(this.enEchec(e,Jopp) )) // si pas en echec possibilité de mouvement donc pas echec et mat
+			{
+				e.getEchiquier()[8-this.getPosition().getY()][(this.getPosition().getX()-1)+1] = new Piece(new Position(this.getPosition().getX()+1,this.getPosition().getY()) );
+				// on tue le fantome de test
+				return false;
+			}
+				
+		}
+		return true;
 	}
 }
 
