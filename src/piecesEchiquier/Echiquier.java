@@ -109,16 +109,12 @@ public class Echiquier {
 		return echec;
 	}
 	
-	public boolean VerifFinale(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
+	public boolean verificationMouvement(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
 	{
 		int i = -1;
 		int j = -1;
 		int k;
 		int l;
-		//int stockX;
-		//int stockY;
-		//int stockX2;
-		//int stockY2;
 		Position stock;
 		Position stock2;
 		
@@ -165,7 +161,7 @@ public class Echiquier {
 					
 					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
-						System.out.println("Déplacement impossible. Recommencez.");
+						System.out.println("Déplacement impossible. Recommencez. /n");
 						return false;
 						
 					}
@@ -173,7 +169,7 @@ public class Echiquier {
 					
 					else
 					{
-					System.out.println("Choix validés. déplacement en cours.");
+					System.out.println("Choix validés. déplacement en cours.");		// Partie déplacement
 					stock = new Position(l+1,8-k);
 					stock2 = new Position(j+1,8-i);
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
@@ -193,7 +189,7 @@ public class Echiquier {
 		int x = position.getX();
 		int y = position.getY();
 
-		if(this.echiquier[x][y].getNom()=="..") {
+		if(this.echiquier[8-y][x-1].getNom()=="..") {
 		return true;
 	}
 		return false;

@@ -47,7 +47,7 @@ public class main {
 					System.out.println("A quel endroit la poser ?  Donnez le code correspondant a l'endroit ou poser la piece.\n");
 					B = sc.nextLine();
 					
-				}while (e.VerifFinale(j1, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+				}while (e.verificationMouvement(j1, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 				
 				//REAFFICHAGE ECHIQUIER
 				System.out.println(e.toString());
@@ -62,7 +62,7 @@ public class main {
 					System.out.println("A quel endroit la poser ?  Donnez le code correspondant de l'endroit la poser la piece.\n");
 					B = sc.nextLine();
 					
-				}while (e.VerifFinale(j2, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+				}while (e.verificationMouvement(j2, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 
 			//jeu = false;
 			 
