@@ -111,7 +111,7 @@ public class Echiquier {
 		return echec;
 	}
 	
-	public boolean verificationMouvement(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
+	public boolean verificationMouvement(Joueur J, String coorA, String coorB)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
 	{
 		int i = -1;
 		int j = -1;
