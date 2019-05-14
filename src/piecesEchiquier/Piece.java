@@ -3,7 +3,7 @@ package piecesEchiquier;
 public class Piece {
 	
 	
-	private String couleur;	
+	private String couleur = "";	
 	//private String lettre = "..";
 	private String nom = "..";
 	private boolean enVie = true;

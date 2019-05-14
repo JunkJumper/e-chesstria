@@ -9,11 +9,6 @@ public class Fou extends Piece {
 	
 	public boolean deplacable(Echiquier e,Piece p)
 	{
-		System.out.println("test");
-		System.out.println(p.getPosition().getX());
-		System.out.println(p.getPosition().getY());
-		System.out.println(this.getPosition().getX());
-		System.out.println(this.getPosition().getY());
 		for (int i = 1; i < 8; i++)				// ON CHERCHE SI LA 2EME COORS EST EN DIAGONALE DE LA 1 ERE
 		{
 
@@ -51,7 +46,7 @@ public class Fou extends Piece {
 				
 				
 			}
-
+ 
 			else if ( p.getPosition().getX() == this.getPosition().getX()-i)	// 2eme coors a gauche de la 1 ere
 			{
 				

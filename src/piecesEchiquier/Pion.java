@@ -10,7 +10,7 @@ public class Pion extends Piece {
 		
 	}
 	
-	public boolean deplacable(Piece p)   // CHECK QUE PION PEUT ETRE DEPLACE
+	public boolean deplacable(Echiquier e, Piece p)   // CHECK QUE PION PEUT ETRE DEPLACE
 	{
 		if (p.getPosition().getX()-1 == this.getPosition().getX() || p.getPosition().getX()+1 == this.getPosition().getX())		//vERIFICATION SI LA PERSONNE SOUHAITE MANGER LA PIECE
 		{
@@ -31,13 +31,18 @@ public class Pion extends Piece {
 		// Avancer tout droit
 		else if (p.getPosition().getX() == this.getPosition().getX())
 		{
-			
-			if ((this.getCouleur().equals("Blanc")) && (p.getPosition().getY()-1 == this.getPosition().getY()) || (this.getCouleur().equals("Noir")) && (p.getPosition().getY()+1 == this.getPosition().getY()))
+			if (!(p.getNom().equals(".."))) // SI case non vide
+			{
+				System.out.println("Vous ne pouvez pas manger en avancant tout droit.");
+				return false;
+			}
+			if ( ((this.getCouleur().equals("Blanc")) && (p.getPosition().getY()-1 == this.getPosition().getY()) ) || ((this.getCouleur().equals("Noir")) && (p.getPosition().getY()+1 == this.getPosition().getY())))
 			{
 				return true;
 			}
 
-			if (this.aBouge() == false && ((this.getCouleur().equals("Blanc") && p.getPosition().getY()-2 == this.getPosition().getY()) || (this.getCouleur().equals("Noir") && p.getPosition().getY()+2 == this.getPosition().getY())))
+			if ( (this.aBouge() == false && (this.getCouleur().equals("Blanc") && p.getPosition().getY()-2 == this.getPosition().getY()) )
+					|| (this.getCouleur().equals("Noir") && p.getPosition().getY()+2 == this.getPosition().getY()) )
 			{
 				return true;	
 			}
@@ -51,7 +56,7 @@ public class Pion extends Piece {
 		{
 			verif=true;
 		}
-		else if(this.getIni() == this.getPosition() && this.verif == false)
+		else if(this.getIni() == this.getPosition())
 		{
 			verif=false;
 		}
