@@ -58,14 +58,14 @@ public class Echiquier {
 	
 	private Piece[][] echiquier = 
 		{
-			{TourN1,CavalierN1,FouN1,RoiN1,ReineN1,FouN2,CavalierN2,TourN2},
+			{TourN1,CavalierN1,FouN1,ReineN1,RoiN1,FouN2,CavalierN2,TourN2},
 			{pionN1,pionN2,pionN3,pionN4,pionN5,pionN6,pionN7,pionN8},
 			{new Piece(new Position(1,6)),new Piece(new Position(2,6)),new Piece(new Position(3,6)),new Piece(new Position(4,6)),new Piece(new Position(5,6)),new Piece(new Position(6,6)),new Piece(new Position(7,6)),new Piece(new Position(8,6))},
 			{new Piece(new Position(1,5)),new Piece(new Position(2,5)),new Piece(new Position(3,5)),new Piece(new Position(4,5)),new Piece(new Position(5,5)),new Piece(new Position(6,5)),new Piece(new Position(7,5)),new Piece(new Position(8,5))},
 			{new Piece(new Position(1,4)),new Piece(new Position(2,4)),new Piece(new Position(3,4)),new Piece(new Position(4,4)),new Piece(new Position(5,4)),new Piece(new Position(6,4)),new Piece(new Position(7,4)),new Piece(new Position(8,4))},
 			{new Piece(new Position(1,3)),new Piece(new Position(2,3)),new Piece(new Position(3,3)),new Piece(new Position(4,3)),new Piece(new Position(5,3)),new Piece(new Position(6,3)),new Piece(new Position(7,3)),new Piece(new Position(8,3))},
 			{pionB1,pionB2,pionB3,pionB4,pionB5,pionB6,pionB7,pionB8},
-			{TourB1,CavalierB1,FouB1,RoiB1,ReineB1,FouB2,CavalierB2,TourB2}
+			{TourB1,CavalierB1,FouB1,ReineB1,RoiB1,FouB2,CavalierB2,TourB2}
 		};
 	
 	
