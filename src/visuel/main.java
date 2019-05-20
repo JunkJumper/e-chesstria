@@ -69,14 +69,14 @@ public class main {
 					if (choixP.equalsIgnoreCase("1")) {
 						j1.setCouleur("Blanc");
 						j2.setCouleur("Noir");
-						System.out.println("Le joueur " + j1.getNom() + " jouera les blanc et le joueur " + j2.getNom()
+						System.out.println("Le joueur " + j1.getNom() + " jouera les blancs et le joueur " + j2.getNom()
 								+ " jouera les noirs.");
 						choixPartie = 2;
 
 					} else if (choixP.equalsIgnoreCase("2")) {
 						j2.setCouleur("Blanc");
 						j1.setCouleur("Noir");
-						System.out.println("Le joueur " + j2.getNom() + " jouera les blanc et le joueur " + j1.getNom()
+						System.out.println("Le joueur " + j2.getNom() + " jouera les blancs et le joueur " + j1.getNom()
 								+ " jouera les noirs.");
 						choixPartie = 2;
 
@@ -99,10 +99,10 @@ public class main {
 
 					do {
 						System.out.println(
-								"Quelle pièce voulez vous déplacer ? Donnez le code correspondant de la piece à déplacer(ex : A1).\n");
+								"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 						A = sc.nextLine();
 						System.out.println(
-								"À quel endroit la poser ?  Donnez le code correspondant à l'endroit ou poser la pièce.\n");
+								"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 						B = sc.nextLine();
 
 					} while (e.verificationMouvement(j1, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
@@ -120,11 +120,11 @@ public class main {
 					if (jeu == true) {
 						do {
 							System.out.println(
-									"Quelle piece voulez vous deplacer ? Donnez le code correspondant de la piece à déplacer(ex : A1).\n");
+									"Quelle piece voulez-vous deplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 							A = sc.nextLine();
 
 							System.out.println(
-									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit la poser la pièce.\n");
+									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où la poser la pièce.\n");
 							B = sc.nextLine();
 
 						} while (e.verificationMouvement(j2, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
@@ -157,10 +157,10 @@ public class main {
 				} else if(choixRedem.equalsIgnoreCase("non")) {
 						System.out.println("Merci d'avoir joué à notre jeu d'échec - Team G00D3NOUGHT - CC BY !");
 				} else {
-					System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrée lors de la fin du programme.");
+					System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors de la fin du programme.");
 				}
 			}
-		System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrée lors du démarrage du programme. (l'un des joueurs a un nom vide par exemple)");
+		System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors du démarrage du programme. (nom de joueur vide OU un mauvais numéro de configuration par exemple)");
 		sc.close();
 	}
 	
