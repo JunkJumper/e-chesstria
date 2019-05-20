@@ -1,6 +1,6 @@
 # e-Chesstria - Projet Tutoré Equipe G00D3N0UGHT Semestre 2
 
-##Sommaire
+## Sommaire
 
 1. Description
 2. Installation
