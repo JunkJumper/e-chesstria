@@ -1,5 +1,5 @@
 package piecesEchiquier;
-
+//voir equalsIgnoreCase
 import joueurs.Joueur;
 
 public class Echiquier {
