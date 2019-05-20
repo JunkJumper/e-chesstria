@@ -183,76 +183,7 @@ public class Echiquier {
 	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
 	return false;
 	}
-	
-	/*
-	 * public boolean verificationMouvementSilencieuse(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
-	{// String A = coords A; String B = coord B
-		int i = -1;
-		int j = -1;
-		int k;
-		int l;
-		Position stock;
-		Position stock2;
-		
-		do {  							/// TEST 1ERE COORS
-			i++;
-			j = -1;
-			
-			
-			do {
-				j++;
-				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
-				{
-					if (this.getEchiquier()[i][j].getNom().equalsIgnoreCase("..")) // Verifie si la case choisie n'est pas vide
-					{
-						return false;
-					}
-					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur()) // Verifie si la piece choisie n'est pas de la faction opposée
-					{
-						return false;
-					}	
-				}
-			}while(( (getCodes()[i][j].equalsIgnoreCase(A)) == false) && (j+1 < codes.length));
-		}while((getCodes()[i][j].equalsIgnoreCase(A) == false) && (i+1 < codes.length));
-		
-	
-		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
-		{
-			for (l = 0; l < codes.length;l++) 
-			{
-				if (getCodes()[k][l].equals(B) == true)
-				{
-					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie que la  piece visée n'est pas de ta faction
-					{
-						return false;
-						
-					}
-					
-					
-					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
-					{
-						return false;
-						
-					}
-					
-					
-					else
-					{		// Partie déplacement
-					stock = new Position(l+1,8-k);
-					stock2 = new Position(j+1,8-i);
-					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
-					this.getEchiquier()[k][l].setPosition(stock);
-					this.getEchiquier()[i][j] = new Piece(stock2);
-					return true;
-					}
-					
-				}
-			}
-		}
-	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
-	return false;
-	}
-	*/
+
 	
 	public boolean estVide(Position position) {
 		int x = position.getX();

@@ -49,20 +49,6 @@ public class Piece {
 		return verif;
 	}
 
-	
-/*	//verifie une eventuelle collision a chaque case
-	public boolean collision(Case caseArrivee){
-		return caseArrivee.estVide();
-		}*/
-	/*
-	//check si la case est alliee
-	public boolean estAllie(Case caseArrivee) {
-		return possesseur.equals(caseArrivee.getPieceCase().getPossesseur()) ;
-	}
-*/
-
-
-	
 	// gets & sets
 	
 	public String getNom() {
@@ -72,16 +58,7 @@ public class Piece {
 		this.nom = nom;
 	}
 	////////////
-	/*
-	public String getEmplacement() {
-		return emplacement;
-	}
 
-	public void setEmplacement(String emplacement) {
-		this.emplacement = emplacement;
-	}
-*/
-	///////////
 	
 	public boolean isEnVie() {
 		return enVie;
