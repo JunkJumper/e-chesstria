@@ -1,6 +1,6 @@
 package piecesEchiquier;
 
-import joueurs.Joueur;
+//import joueurs.Joueur;
 
 public class Roi extends Piece {
 	private boolean verif=false;
@@ -103,7 +103,7 @@ public class Roi extends Piece {
 		return false;
 	}
 	
-	public boolean enEchec(Echiquier e, Joueur Jopp)
+/*	public boolean enEchec(Echiquier e, Joueur Jopp)
 	{
 		for (int i = 0; i < e.getEchiquier().length;i++)
 		{
@@ -172,6 +172,6 @@ public class Roi extends Piece {
 				
 		}
 		return true;
-	}
+	}*/
 }
 
