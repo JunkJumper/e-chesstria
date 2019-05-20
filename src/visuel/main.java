@@ -36,7 +36,7 @@ public class main {
 			// AFFICHAGE ECHIQUIER
 				System.out.println(e.toString());
 				
-				// JOUEUR1
+				/*JOUEUR1*/
 				
 				System.out.println("Tour de "+j1.getNom()+"\n");
 				
