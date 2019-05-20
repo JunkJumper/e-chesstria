@@ -14,3 +14,6 @@ Ajout de cette ligne pour le td git
 ### 2 - Installation
 
 ### 3 - Commandes
+
+
+License creative commons Attributions 4.0 (voir LICENSE.md)
