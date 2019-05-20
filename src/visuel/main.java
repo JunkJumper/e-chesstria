@@ -17,10 +17,13 @@ public class main {
 		boolean jeu = true;
 		
 		
-		// joueurs APRES ON DEMANDERA NOM
-		Joueur j1 = new Joueur("Marion la Stagiaire","Blanc");
-		Joueur j2 = new Joueur("Autre","Noir");
+		// joueurs
 		
+		System.out.println("Entrez le nom du joueur 1 (blanc) : ");
+		Joueur j1 = new Joueur(sc.nextLine(),"Blanc");
+		
+		System.out.println("Entrez le nom du joueur 2 (noir) : ");
+		Joueur j2 = new Joueur(sc.nextLine(),"Noir");
 		
 		// vars pour deplacer
 		String A;
@@ -48,11 +51,11 @@ public class main {
 					B = sc.nextLine();
 					
 				}while (e.verificationMouvement(j1, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
-				if (e.getRoiN1().enEchec(e,j2) && e.getRoiN1().enEchecEtMat(e,j2))
+				/*if (e.getRoiN1().enEchec(e,j2) && e.getRoiN1().enEchecEtMat(e,j2))
 				{
 					System.out.println("Le joueur 2 est echec et mat, il a perdu !");
 					jeu = false;
-				}
+				}*/
 				//REAFFICHAGE ECHIQUIER
 				System.out.println(e.toString());
 				
@@ -71,11 +74,11 @@ public class main {
 					}while (e.verificationMouvement(j2, A,B) != true);  // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 				}
 				
-				if (e.getRoiB1().enEchec(e,j1) && e.getRoiN1().enEchecEtMat(e,j1))
+				/*if (e.getRoiB1().enEchec(e,j1) && e.getRoiN1().enEchecEtMat(e,j1))
 				{
 					System.out.println("Le joueur 1 est echec et mat, il a perdu !");
 					jeu = false;
-				}
+				}*/
 			//jeu = false;
 			 
 		}while (jeu == true);	
