@@ -22,7 +22,7 @@ public class Fou extends Piece {
 					{
 						if ( !(e.getEchiquier()[8-(this.getPosition().getY()+j)][this.getPosition().getX()+j-1].getNom().equals(".."))   )
 						{
-							System.out.println("Le chemin n'est pas libre.");
+							System.err.println("Le chemin n'est pas libre.");
 							return false;
 						}
 					}
@@ -36,7 +36,7 @@ public class Fou extends Piece {
 					{
 						if ( !(e.getEchiquier()[8-(this.getPosition().getY()-j)][this.getPosition().getX()+j-1].getNom().equals(".."))   )
 						{
-							System.out.println("Le chemin n'est pas libre.");
+							System.err.println("Le chemin n'est pas libre.");
 							return false;
 						}
 					}

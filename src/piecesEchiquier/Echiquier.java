@@ -131,12 +131,12 @@ public class Echiquier {
 				{
 					if (this.getEchiquier()[i][j].getNom().equalsIgnoreCase("..")) // Verifie si la case choisie n'est pas vide
 					{
-						System.out.println("Vous avez choisi une case vide. Recommencez.");
+						System.err.println("Vous avez choisi une case vide. Recommencez.");
 						return false;
 					}
 					else if (this.getEchiquier()[i][j].getCouleur() != J.getCouleur()) // Verifie si la piece choisie n'est pas de la faction opposée
 					{
-						System.out.println("Le pion choisi n'est pas de votre faction. Recommencez.");
+						System.err.println("Le pion choisi n'est pas de votre faction. Recommencez !");
 						return false;
 					}	
 				}
@@ -152,7 +152,7 @@ public class Echiquier {
 				{
 					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie que la  piece visée n'est pas de ta faction
 					{
-						System.out.println("Le pion que vous voulez manger est de votre faction. Recommencez.");
+						System.err.println("Le pion que vous voulez manger est de votre faction. Recommencez !");
 						return false;
 						
 					}
@@ -160,7 +160,7 @@ public class Echiquier {
 					
 					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
-						System.out.println("Déplacement impossible. Recommencez. \n");
+						System.err.println("Déplacement impossible. Recommencez ! \n");
 						return false;
 						
 					}
@@ -168,7 +168,7 @@ public class Echiquier {
 					
 					else
 					{
-					System.out.println("Choix validés. déplacement en cours.");		// Partie déplacement
+					System.out.println("Choix validé ! Déplacement en cours.");		// Partie déplacement
 					stock = new Position(l+1,8-k);
 					stock2 = new Position(j+1,8-i);
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];

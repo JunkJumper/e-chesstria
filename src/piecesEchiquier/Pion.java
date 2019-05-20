@@ -18,7 +18,7 @@ public class Pion extends Piece {
 			{
 				if (p.getNom().equals(".."))
 				{
-					System.out.println("Vous tentez de manger une case vide.");
+					System.err.println("Vous tentez de manger une case vide.");
 					return false;
 				}
 
@@ -33,7 +33,7 @@ public class Pion extends Piece {
 		{
 			if (!(p.getNom().equals(".."))) // SI case non vide
 			{
-				System.out.println("Vous ne pouvez pas manger en avancant tout droit.");
+				System.err.println("Vous ne pouvez pas manger en avancant tout droit.");
 				return false;
 			}
 			if ( ((this.getCouleur().equals("Blanc")) && (p.getPosition().getY()-1 == this.getPosition().getY()) ) || ((this.getCouleur().equals("Noir")) && (p.getPosition().getY()+1 == this.getPosition().getY())))
