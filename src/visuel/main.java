@@ -20,10 +20,10 @@ public class main {
 		
 		// joueurs
 		
-		System.out.println("Entrez le nom du joueur 1 (blanc) : ");
+		System.out.println("Entrez le nom du joueur 1 : ");
 		Joueur j1 = new Joueur(sc.nextLine(), null);
 		
-		System.out.println("Entrez le nom du joueur 2 (noir) : ");
+		System.out.println("Entrez le nom du joueur 2 : ");
 		Joueur j2 = new Joueur(sc.nextLine(),null);
 		
 		while(while1 == 1) {
