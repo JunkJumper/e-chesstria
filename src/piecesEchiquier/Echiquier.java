@@ -111,8 +111,8 @@ public class Echiquier {
 		return echec;
 	}
 	
-	public boolean verificationMouvement(Joueur J, String coorA, String coorB)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
-	{
+	public boolean verificationMouvement(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
+	{// String A = coordonées de A; String B = coordonées de B 
 		int i = -1;
 		int j = -1;
 		int k;
@@ -129,7 +129,7 @@ public class Echiquier {
 				j++;
 				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
 				{
-					if (this.getEchiquier()[i][j].getNom().equals("..")) // Verifie si la case choisie n'est pas vide
+					if (this.getEchiquier()[i][j].getNom().equalsIgnoreCase("..")) // Verifie si la case choisie n'est pas vide
 					{
 						System.out.println("Vous avez choisi une case vide. Recommencez.");
 						return false;
@@ -140,15 +140,15 @@ public class Echiquier {
 						return false;
 					}	
 				}
-			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
-		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
+			}while(( (getCodes()[i][j].equalsIgnoreCase(A)) == false) && (j+1 < codes.length));
+		}while((getCodes()[i][j].equalsIgnoreCase(A) == false) && (i+1 < codes.length));
 		
 	
 		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
 		{
 			for (l = 0; l < codes.length;l++) 
 			{
-				if (getCodes()[k][l].equals(B) == true)
+				if (getCodes()[k][l].equalsIgnoreCase(B) == true)
 				{
 					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie que la  piece visée n'est pas de ta faction
 					{
@@ -184,8 +184,9 @@ public class Echiquier {
 	return false;
 	}
 	
-	public boolean verificationMouvementSilencieuse(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
-	{
+	/*
+	 * public boolean verificationMouvementSilencieuse(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
+	{// String A = coords A; String B = coord B
 		int i = -1;
 		int j = -1;
 		int k;
@@ -202,7 +203,7 @@ public class Echiquier {
 				j++;
 				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
 				{
-					if (this.getEchiquier()[i][j].getNom().equals("..")) // Verifie si la case choisie n'est pas vide
+					if (this.getEchiquier()[i][j].getNom().equalsIgnoreCase("..")) // Verifie si la case choisie n'est pas vide
 					{
 						return false;
 					}
@@ -211,8 +212,8 @@ public class Echiquier {
 						return false;
 					}	
 				}
-			}while(( (getCodes()[i][j].equals(A)) == false) && (j+1 < codes.length));
-		}while((getCodes()[i][j].equals(A) == false) && (i+1 < codes.length));
+			}while(( (getCodes()[i][j].equalsIgnoreCase(A)) == false) && (j+1 < codes.length));
+		}while((getCodes()[i][j].equalsIgnoreCase(A) == false) && (i+1 < codes.length));
 		
 	
 		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
@@ -251,6 +252,7 @@ public class Echiquier {
 	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
 	return false;
 	}
+	*/
 	
 	public boolean estVide(Position position) {
 		int x = position.getX();
