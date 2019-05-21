@@ -2,10 +2,10 @@
 
 ## Sommaire
 
-1. [Description](###Description)
+1. [Description](#1 - Description)
 2. [Pré-requis](#)
-3. [Installation](###Installation)
-3. [Commandes](###Commandes)
+3. [Installation](#3 - Installation)
+3. [Commandes](#4 - Commandes)
 
 ### 1 - Description
 
@@ -16,7 +16,7 @@ Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team".
 Poue fonctionner, 
 
 
-### 3 - Commandes
+### 4 - Commandes
 
 
 License creative commons Attributions 4.0 (voir LICENSE.md)
