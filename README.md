@@ -2,16 +2,19 @@
 
 ## Sommaire
 
-1. Description
-2. Installation
-3. Commandes
+1. [Description](#Description)
+2. [Pré-requis](#)
+3. [Installation](#Installation)
+3. [Commandes](#Commandes)
 
 ### 1 - Description
 
-Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team"
-Ajout de cette ligne pour le td git
+Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team".
 
-### 2 - Installation
+### 3 - Installation
+
+Poue fonctionner, 
+
 
 ### 3 - Commandes
 
