@@ -24,7 +24,11 @@ Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou b
 
 ## Commandes
 
-Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueurs, si ces derniers sont vides, le jeu ne se lancera pas. Dans un second temps, vous devrez choisir qui jouera les blancs et qui jouera les noirs, vous pouvez également laisser le jeu choisir pour vous.
+Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueurs, si ces derniers sont vides, le jeu ne se lancera pas.
+![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/joueurs.PNG)
+
+Dans un second temps, vous devrez choisir qui jouera les blancs et qui jouera les noirs, vous pouvez également laisser le jeu choisir pour vous.
+
 
 ## Crédits
 
