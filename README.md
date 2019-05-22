@@ -7,16 +7,20 @@
 3. [Installation](#3 - Installation)
 3. [Commandes](#4 - Commandes)
 
-### 1 - Description
+### Description
 
 Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team".
 
-### 3 - Installation
+### Pré-requis
+
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et lancer le programme.
+
+### Installation
 
 Poue fonctionner, 
 
 
-### 4 - Commandes
+### Commandes
 
 
 License creative commons Attributions 4.0 (voir LICENSE.md)
