@@ -2,7 +2,7 @@ package visuel;
 // sert pour recup input clavier
 import java.util.Scanner;
 
-import joueurs.Joueur;
+import joueurs.Joueur; 
 
 import piecesEchiquier.Echiquier;
 
