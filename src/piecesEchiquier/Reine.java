@@ -24,6 +24,7 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
+				System.out.println("Vous avez mangé une pièce !");
 				return true; 
 			}
 			
@@ -37,6 +38,7 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 			return false;
@@ -54,6 +56,7 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 			
@@ -66,6 +69,7 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 			return false;
@@ -88,6 +92,7 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -102,6 +107,7 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -122,6 +128,7 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -136,6 +143,7 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
