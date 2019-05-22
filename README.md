@@ -7,8 +7,9 @@
 1. **Description**
 2. **Pré-requis**
 3. **Installation**
-4. **Commandes**
-5. **Crédits**
+4. **Pièces Echiquier**
+5. **Commandes**
+6. **Crédits**
 
 ## Description
 
@@ -36,7 +37,11 @@ Une fois ces choix effectués, le jeu demarrera en vous affichant le nom du joue
 
 ![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/echi1.PNG) 
 
+Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la première étant celle d'une pièce de l'échiquier et la seconde étant la position de destination. 
 
+![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/pos-E.PNG) 
+
+Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
 ## Crédits
 
