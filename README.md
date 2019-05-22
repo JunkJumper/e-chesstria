@@ -4,11 +4,11 @@
 
 ## Sommaire
 
-1. [Description](#Description)
-2. [Pré-requis](#Pré-requis)
-3. [Installation](#Installation)
-4. [Commandes](#Commandes)
-5. [Crédits](#Crédits)
+1. **Description**
+2. **Pré-requis**
+3. **Installation**
+4. **Commandes**
+5. **Crédits**
 
 ## Description
 
