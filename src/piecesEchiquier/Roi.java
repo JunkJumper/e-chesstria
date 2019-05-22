@@ -19,8 +19,9 @@ public class Roi extends Piece {
 		
 		
 	}
-	*/
+	*/	
 	
+	// verifie si le roi a bougé de sa place initiale NE SERT PAS POUR ROI 
 	public boolean aBouge()
 	{
 		if(this.getIni() != this.getPosition())
@@ -41,6 +42,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -49,6 +51,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -57,6 +60,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -65,6 +69,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -73,6 +78,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -81,6 +87,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -89,6 +96,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -97,6 +105,7 @@ public class Roi extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}

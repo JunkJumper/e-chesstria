@@ -26,6 +26,7 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -40,6 +41,7 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -61,6 +63,7 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -75,11 +78,12 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
+					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
 				
-				
+				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
