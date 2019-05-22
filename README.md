@@ -13,7 +13,7 @@ Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team".
 
 ### Pré-requis
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et lancer le programme.
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et lancer le programme.
 
 ### Installation
 
