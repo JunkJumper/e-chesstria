@@ -1,4 +1,4 @@
-# e-Chesstria - Projet Tutoré Equipe G00D3N0UGHT Semestre 2
+# e-Chesstria - Projet Tutoré Equipe [G00D3N0UGHT](https://git-iutinfo.unice.fr/good3nought) Semestre 2
 
 ## Sommaire
 
@@ -8,23 +8,23 @@
 4. [Commandes](#Commandes)
 5. [Crédits](#Crédits)
 
-### Description
+## Description
 
-Projet tutoré de jeux d'échec équestrien par le groupe "Good 3nough Team".
+Projet tutoré de jeux d'échec équestrien par le groupe "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)".
 
-### Pré-requis
+## Pré-requis
 
 Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et lancer le programme.
 
-### Installation
+## Installation
 
 Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous Eclipse ou Intellij.
 
-### Commandes
+## Commandes
 
 Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueurs, si ces derniers sont vides, le jeu ne se lancera pas. Dans un second temps, vous devrez choisir qui jouera les blancs et qui jouera les noirs, vous pouvez également laisser le jeu choisir pour vous.
 
-### Crédits
+## Crédits
 
 - [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)
 - [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)
@@ -32,4 +32,4 @@ Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueur
 - [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)
 - [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)
 
-License creative commons Attributions 4.0 (voir [LICENSE.md]())
+License creative commons Attributions 4.0 (voir [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md))
