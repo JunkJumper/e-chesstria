@@ -1,6 +1,6 @@
 # e-Chesstria - Projet Tutoré Equipe [G00D3N0UGHT](https://git-iutinfo.unice.fr/good3nought) Semestre 2
 
-![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/logo.png "e-Chesstria logo")
+![logo]
 
 ## Sommaire
 
