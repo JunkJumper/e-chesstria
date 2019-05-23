@@ -95,7 +95,7 @@ public class main {
 
 					/*JOUEUR1*/
 
-					System.out.println("Tour de " + j1.getNom() + "\n");
+					System.out.println("\n" + "Tour de " + j1.getNom() + "\n");
 
 					do {
 						System.out.println(
