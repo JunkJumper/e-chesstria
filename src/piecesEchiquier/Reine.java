@@ -10,7 +10,12 @@ public class Reine extends Piece {
 	public boolean deplacable(Echiquier e,Piece p)
 	{
 		if (e.estVide(p.getPosition()) == false) //si on mange une piece
-			System.out.println("Vous avez mangé une pièce !");
+		{
+			if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+			{
+				System.out.println("Vous avez mangé une pièce !");
+			}
+		}
 		
 		if(p.getPosition().getX() == this.getPosition().getX()) // verification les 2 pieces sont sur la meme colonne
 		{

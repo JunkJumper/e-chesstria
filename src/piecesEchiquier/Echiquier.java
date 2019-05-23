@@ -147,7 +147,7 @@ public class Echiquier {
 					
 					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
-						System.err.println("Déplacement impossible. Recommencez ! \n");
+						System.err.println("Déplacement impossiblec6. Recommencez ! \n");
 						return false;
 					}
 					
@@ -162,7 +162,6 @@ public class Echiquier {
 					this.getEchiquier()[i][j] = new Piece(stock2); //mettre piece vide dans la pos source, car la case est maintenant vide
 					return true;
 					}
-					
 				}
 			}
 		}

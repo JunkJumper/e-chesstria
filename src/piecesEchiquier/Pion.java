@@ -18,11 +18,13 @@ public class Pion extends Piece {
 			{
 				if (p.getNom().equals(".."))
 				{
-					System.err.println("Vous tentez de manger une case vide.");
+						System.err.println("Vous tentez de manger une case vide.");
 					return false;
 				}
-
-				System.out.println("Vous avez mangé une pièce !");
+				if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+				{
+					System.out.println("Vous avez mangé une pièce !");
+				}
 				return true;
 			}	
 		}

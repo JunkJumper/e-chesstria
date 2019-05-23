@@ -38,7 +38,12 @@ public class Roi extends Piece {
 	public boolean deplacable(Echiquier e, Piece p) // vérifie que le roi peut être déplacé
 	{
 		if (e.estVide(p.getPosition()) == false) //si on mange une piece
-			System.out.println("Vous avez mangé une pièce !");
+		{
+			if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+			{
+				System.out.println("Vous avez mangé une pièce !");
+			}
+		}
 		
 		//Côté droit
 		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()+1)) //Verifie deplacement y+1 vers le haut et x+1 vers la droite
@@ -106,7 +111,10 @@ public class Roi extends Piece {
 		}
 		return false;
 	}
-	
-
+	/*
+	public boolean isEnEchec()
+	{
+		
+	}*/
 }
 

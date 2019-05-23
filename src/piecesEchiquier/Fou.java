@@ -9,8 +9,18 @@ public class Fou extends Piece {
 	
 	public boolean deplacable(Echiquier e,Piece p)
 	{
+
 		//if (e.estVide(p.getPosition()) == false) //si on mange une piece
 		//	System.out.println("Vous avez mangé une pièce !");
+
+		if (e.estVide(p.getPosition()) == false) //si on mange une piece
+		{
+			if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+			{
+				System.out.println("Vous avez mangé une pièce !");
+			}
+		}
+
 		
 		if (p.getPosition().getX() < this.getPosition().getX())
 		{
