@@ -22,7 +22,7 @@ Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.o
 
 ## Installation [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
-Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous Eclipse ou Intellij.
+Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous [Eclipse](https://www.eclipse.org/downloads/) ou [Intellij](https://www.jetbrains.com/idea/download/#section=windows).
 
 
 ## Commandes [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
