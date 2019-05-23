@@ -16,10 +16,6 @@ class testPiece {
 		e = new Echiquier();
 		jb = new Joueur("Joueur Blanc","Blanc");
 		jn = new Joueur("Joueur Noir", "Noir");
-		
-		System.out.println();
-		System.out.println("nouveau test : ");
-		System.out.println();
 	}
 	
 	@AfterEach
