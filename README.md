@@ -12,20 +12,20 @@
 7. **[Crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits)**
 8. **[License](https://git-iutinfo.unice.fr/good3nought/echesstria#license)**
 
-## Description
+## Description [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
 Projet tutoré de jeux d'échec ~~sérieux~~ équestrien par le groupe "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)".
 
-## Pré-requis
+## Pré-requis [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
 Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme. Pour pouvoir jouer, il est conseillé de savoir jouer aux échecs.
 
-## Installation
+## Installation [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
 Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous Eclipse ou Intellij.
 
 
-## Commandes
+## Commandes [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
 Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueurs, si ces derniers sont vides, le jeu ne se lancera pas. 
 
@@ -45,7 +45,7 @@ Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la prem
 
 Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
-## Règles du jeu d'échec
+## Règles du jeu d'échec [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 > source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir crédits) 
 
 ### Déroulement du jeu
@@ -66,7 +66,7 @@ S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez
 
 Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les crédits.
 
-## Crédits
+## Crédits [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
 | Peronne ou Source                                                                | Role                                                                                                    |
 | :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
@@ -81,6 +81,6 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 |                                                                                                                                                                                            |
 
 
-## License
+## License [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
 [![logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) This project is available under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (or check [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md)).
