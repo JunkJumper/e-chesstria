@@ -55,4 +55,4 @@ Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire 
 
 ## License
 
-[![logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) This project is available under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) or check [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md).
+[![logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) This project is available under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (or check [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md)).
