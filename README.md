@@ -9,8 +9,9 @@
 3. **Installation**
 4. **Pièces Echiquier**
 5. **Commandes**
-6. **Crédits**
-7. **License**
+6. **Règles des échecs**
+7. **Crédits**
+8. **License**
 
 ## Description
 
@@ -18,7 +19,7 @@ Projet tutoré de jeux d'échec équestrien par le groupe "[Good 3nough Team](ht
 
 ## Pré-requis
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) à jour lancer le programme.
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme.
 
 ## Installation
 
@@ -45,13 +46,18 @@ Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la prem
 
 Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
+## Règles du jeu d'échec
+
+
+
+
 ## Crédits
 
-- [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)
-- [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)
-- [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)
-- [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)
-- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)
+- [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867) : Conception et Développement
+- [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143) :  Conception et Développement
+- [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998) : Secrétariat, Conception et Développement
+- [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446) : Gestion de projet, Conception et Développement
+- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036) : Conception et Développement
 
 ## License
 
