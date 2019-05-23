@@ -14,7 +14,7 @@ public class Pion extends Piece {
 	{
 		if (p.getPosition().getX()-1 == this.getPosition().getX() || p.getPosition().getX()+1 == this.getPosition().getX())		//Verification si la personne souhaite manger la piece
 		{
-			if ((this.getCouleur().equals("Blanc") && p.getPosition().getY()-1 == this.getPosition().getY()) || (this.getCouleur() == "noir" && p.getPosition().getY()+1 == this.getPosition().getY()))
+			if ((this.getCouleur().equals("Blanc") && p.getPosition().getY()-1 == this.getPosition().getY()) || (this.getCouleur() == "Noir" && p.getPosition().getY()+1 == this.getPosition().getY()))
 			{
 				if (p.getNom().equals(".."))
 				{

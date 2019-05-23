@@ -51,11 +51,11 @@ public class Echiquier {
 	private Fou FouN1 = new Fou("Noir","FN",new Position(3,8));
 	private Fou FouN2 = new Fou("Noir","FN",new Position(6,8));
 	
-	private Reine ReineB1 = new Reine("Blanc","QB",new Position(5,1));
-	private Reine ReineN1 = new Reine("Noir","QN",new Position(5,8));
+	private Reine ReineB1 = new Reine("Blanc","QB",new Position(4,1));
+	private Reine ReineN1 = new Reine("Noir","QN",new Position(4,8));
 	
-	private Roi RoiB1 = new Roi("Blanc","KB",new Position(4,1));
-	private Roi RoiN1 = new Roi("Noir","KN",new Position(4,8));
+	private Roi RoiB1 = new Roi("Blanc","KB",new Position(5,1));
+	private Roi RoiN1 = new Roi("Noir","KN",new Position(5,8));
 	
 	//remplissage de l'echiquier
 	private Piece[][] echiquier = 
