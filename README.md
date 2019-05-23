@@ -19,7 +19,7 @@ Projet tutoré de jeux d'échec ~~sérieux~~ équestrien par le groupe "[Good 3n
 
 ## Pré-requis
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme.
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme. Pour pouvoir jouer, il est conseillé de savoir jouer aux échecs.
 
 ## Installation
 
@@ -47,9 +47,25 @@ Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la prem
 Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
 ## Règles du jeu d'échec
+> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [Crédits](#Crédits)) 
 
+### Déroulement du jeu
 
+Au début d’une partie d’échecs, ce sont toujours les blancs qui commencent. Lors d’un tour de jeu, le joueur peut effectuer soit un déplacement, soit une prise soit un coup spécial.
 
+### But du jeu
+
+Ces différents déplacements sont proposées aux joueurs pour parvenir à réaliser leur objectif qui est de prendre le roi adverse. Lorsque ce but est atteint, le joueur qui y est parvenu gagne immédiatement la partie qui prend fin automatiquement. 
+
+### Échec
+
+Chaque fois que vous pouvez prendre le roi de votre adversaire à votre prochain coup, vous devez le prévenir en annonçant « échec ». Il doit alors tenter de parer votre échec, lors de son tour de jeu. 
+
+### Échec et mat
+
+S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez donc la partie.
+
+Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les [crédits](#Crédits).
 
 ## Crédits
 
@@ -57,7 +73,10 @@ Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire 
 - [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143) :  Conception et Développement
 - [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998) : Secrétariat, Conception et Développement
 - [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446) : Gestion de projet, Conception et Développement
-- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036) : Conception et Développement
+- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036) : Conception et Développement 
+
+- [PRITCHARD Adam](https://github.com/adam-p) : [Utilisation & syntaxe Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [http://www.echecs.club](http://www.echecs.club) : [Règles](http://www.echecs.club/regles/) du jeu d'échec
 
 ## License
 
