@@ -185,7 +185,7 @@ public class Echiquier {
 	}
 
 	
-	public boolean estVide(Position position) {
+	public boolean estVide(Position position) { //Voir si la piece dans la position indiqué est vide
 		int x = position.getX();
 		int y = position.getY();
 
