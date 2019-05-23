@@ -7,20 +7,24 @@
 1. **Description**
 2. **Pré-requis**
 3. **Installation**
-4. **Commandes**
-5. **Crédits**
+4. **Pièces Echiquier**
+5. **Commandes**
+6. **Règles des échecs**
+7. **Crédits**
+8. **License**
 
 ## Description
 
-Projet tutoré de jeux d'échec équestrien par le groupe "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)".
+Projet tutoré de jeux d'échec ~~sérieux~~ équestrien par le groupe "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)".
 
 ## Pré-requis
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et lancer le programme.
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme.
 
 ## Installation
 
 Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous Eclipse ou Intellij.
+
 
 ## Commandes
 
@@ -36,14 +40,25 @@ Une fois ces choix effectués, le jeu demarrera en vous affichant le nom du joue
 
 ![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/echi1.PNG) 
 
+Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la première étant celle d'une pièce de l'échiquier et la seconde étant la position de destination. 
+
+![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/pos-E.PNG) 
+
+Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
+
+## Règles du jeu d'échec
+
+
 
 
 ## Crédits
 
-- [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)
-- [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)
-- [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)
-- [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)
-- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)
+- [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867) : Conception et Développement
+- [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143) :  Conception et Développement
+- [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998) : Secrétariat, Conception et Développement
+- [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446) : Gestion de projet, Conception et Développement
+- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036) : Conception et Développement
 
-License creative commons Attributions 4.0 (voir [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md))
+## License
+
+[![logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) This project is available under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (or check [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md)).
