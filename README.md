@@ -69,16 +69,18 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 
 ## Crédits
 
-- [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867) : Conception et Développement
-- [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143) :  Conception et Développement
-- [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998) : Secrétariat, Conception et Développement
-- [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446) : Gestion de projet, Conception et Développement
-- [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036) : Conception et Développement 
+| Source                                                                           | Role                                                                                                    |
+| ---------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------:|
+| [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception et Développement                                                                             |
+| [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception et Développement                                                                             |
+| [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)                          | Conception et Développement                                                                             |
+| [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)                              | Conception et Développement                                                                             |
+| [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)                          | Conception et Développement                                                                             |
+|                                                                                  |                                                                                                         |
+| [PRITCHARD Adam](https://github.com/adam-p)                                      | [Utilisation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) & syntaxe Markdown      |
+| [http://www.echecs.club](http://www.echecs.club)                                 | [Règles](http://www.echecs.club/regles/) du jeu d'échec                                                 |
+|                                                                                  |                                                                                                         |
 
-**==========**
-
-- [PRITCHARD Adam](https://github.com/adam-p) : [Utilisation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) & syntaxe Markdown
-- [http://www.echecs.club](http://www.echecs.club) : [Règles](http://www.echecs.club/regles/) du jeu d'échec
 
 ## License
 
