@@ -14,7 +14,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -23,7 +22,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -32,7 +30,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -49,7 +46,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -58,7 +54,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -67,7 +62,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
@@ -76,7 +70,6 @@ public class Cavalier extends Piece {
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
