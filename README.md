@@ -4,13 +4,13 @@
 
 ## Sommaire
 
-1. **[Description](https://git-iutinfo.unice.fr/good3nought/echesstria#description)**
-2. **[Pré-requis](https://git-iutinfo.unice.fr/good3nought/echesstria#pr%C3%A9-requis)**
-3. **[Installation](https://git-iutinfo.unice.fr/good3nought/echesstria#installation)**
-4. **[Commandes](https://git-iutinfo.unice.fr/good3nought/echesstria#commandes)**
-6. **[Règles des échecs](https://git-iutinfo.unice.fr/good3nought/echesstria#r%C3%A8gles-du-jeu-d%C3%A9chec)**
-7. **[Crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits)**
-8. **[License](https://git-iutinfo.unice.fr/good3nought/echesstria#license)**
+1. **[Description](https://git-iutinfo.unice.fr/good3nought/echesstria#description-revenir-au-sommaire)**
+2. **[Pré-requis](https://git-iutinfo.unice.fr/good3nought/echesstria#pr%C3%A9-requis-revenir-au-sommaire)**
+3. **[Installation](https://git-iutinfo.unice.fr/good3nought/echesstria#installation-revenir-au-sommaire)**
+4. **[Commandes](https://git-iutinfo.unice.fr/good3nought/echesstria#commandes-revenir-au-sommaire)**
+6. **[Règles des échecs](https://git-iutinfo.unice.fr/good3nought/echesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-revenir-au-sommaire)**
+7. **[Crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire)**
+8. **[License](https://git-iutinfo.unice.fr/good3nought/echesstria#license-revenir-au-sommaire)**
 
 ## Description [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#license)
 
