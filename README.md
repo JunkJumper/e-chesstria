@@ -4,14 +4,13 @@
 
 ## Sommaire
 
-1. **Description**
-2. **Pré-requis**
-3. **Installation**
-4. **Pièces Echiquier**
-5. **Commandes**
-6. **Règles des échecs**
-7. **Crédits**
-8. **License**
+1. **[Description](https://git-iutinfo.unice.fr/good3nought/echesstria#description)**
+2. **[Pré-requis](https://git-iutinfo.unice.fr/good3nought/echesstria#pr%C3%A9-requis)**
+3. **[Installation](https://git-iutinfo.unice.fr/good3nought/echesstria#installation)**
+4. **[Commandes](https://git-iutinfo.unice.fr/good3nought/echesstria#commandes)**
+6. **[Règles des échecs](https://git-iutinfo.unice.fr/good3nought/echesstria#r%C3%A8gles-du-jeu-d%C3%A9chec)**
+7. **[Crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits)**
+8. **[License](https://git-iutinfo.unice.fr/good3nought/echesstria#license)**
 
 ## Description
 
@@ -69,7 +68,7 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 
 ## Crédits
 
-| Source                                                                           | Role                                                                                                    |
+| Peronne ou Source                                                                | Role                                                                                                    |
 | :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
 | [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception et Développement                                                                             |
 | [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception et Développement                                                                             |
