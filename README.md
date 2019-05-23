@@ -10,6 +10,7 @@
 4. **Pièces Echiquier**
 5. **Commandes**
 6. **Crédits**
+7. **License**
 
 ## Description
 
@@ -17,11 +18,12 @@ Projet tutoré de jeux d'échec équestrien par le groupe "[Good 3nough Team](ht
 
 ## Pré-requis
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et lancer le programme.
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) à jour pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) à jour lancer le programme.
 
 ## Installation
 
 Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous Eclipse ou Intellij.
+
 
 ## Commandes
 
@@ -51,4 +53,6 @@ Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire 
 - [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)
 - [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)
 
-License creative commons Attributions 4.0 (voir [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md))
+## License
+
+![logo](https://licensebuttons.net/l/by/4.0/88x31.png)This page is available under the terms of the [Creative Commons Attribution 4.0 International License](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md).
