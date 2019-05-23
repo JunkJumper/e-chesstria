@@ -70,7 +70,7 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 ## Crédits
 
 | Source                                                                           | Role                                                                                                    |
-| ---------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------:|
+| :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
 | [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception et Développement                                                                             |
 | [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception et Développement                                                                             |
 | [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)                          | Conception et Développement                                                                             |
