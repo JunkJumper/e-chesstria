@@ -18,7 +18,7 @@ Projet tutoré de jeux d'échec ~~sérieux~~ équestrien par le groupe "[Good 3n
 
 ## Pré-requis [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme. Pour pouvoir jouer, il est conseillé de savoir jouer aux échecs.
+Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme. Si vous ne savez pas jouer aux échecs, vous pouvez consulter les [règles des échecs](https://git-iutinfo.unice.fr/good3nought/echesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-revenir-au-sommaire).
 
 ## Installation [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
@@ -64,7 +64,7 @@ Chaque fois que vous pouvez prendre le roi de votre adversaire à votre prochain
 
 S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez donc la partie.
 
-Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les [crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire).
+Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) ou visitez les [crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire).
 
 ## Crédits [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
