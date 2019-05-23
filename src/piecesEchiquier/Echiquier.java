@@ -4,6 +4,7 @@ import joueurs.Joueur;
 
 public class Echiquier {
 	
+	//ATTRIBUTS
 	private String[][] codes = 
 { 
 	{"A8","B8","C8","D8","E8","F8","G8","H8"},
@@ -68,21 +69,14 @@ public class Echiquier {
 			{TourB1,CavalierB1,FouB1,ReineB1,RoiB1,FouB2,CavalierB2,TourB2}
 		};
 	
-	
+	//CONSTRUCTEURS
 	public Echiquier() {
 	
 	}
 	
 	
 	
-	public Piece[][] getEchiquier() {
-		return echiquier;
-	}
-
-
-	public String[][] getCodes() {
-		return codes;
-	}
+	
 	
 	
 
@@ -93,10 +87,10 @@ public class Echiquier {
 		char alphabet[]= {'A','B','C','D','E','F','G','H'};
 		String echec = "";
 		int compteur=8;
-		for (int i = 0; i < 8;i++)
+		for (int i = 0; i < 8;i++) //pour chaque ligne
 		{
-			echec+= compteur + " ";
-			for (int j = 0; j < 8;j++)
+			echec+= compteur + " "; //afichage num ligne
+			for (int j = 0; j < 8;j++) //pour chaque colonne
 			{
 				echec +=echiquier[i][j].getNom();
 				echec += " ";
@@ -106,7 +100,7 @@ public class Echiquier {
 		}
 		for (int i=0; i<8;i++)
 		{
-			echec+= "  " + alphabet[i];
+			echec+= "  " + alphabet[i]; //affichage des lettres
 		}
 		return echec;
 	}
@@ -120,14 +114,15 @@ public class Echiquier {
 		Position stock;
 		Position stock2;
 		
-		do {  							/// TEST 1ERE COORS
+		/// TEST 1ERE SOURCE
+		do {  							
 			i++;
 			j = -1;
 			
 			
 			do {
 				j++;
-				if (getCodes()[i][j].equals(A))		//Cherche dans la matrice code si on trouve une string = celle donnée par le joueur
+				if (getCodes()[i][j].equals(A))		//Si la coors entré est un code possible
 				{
 					if (this.getEchiquier()[i][j].getNom().equalsIgnoreCase("..")) // Verifie si la case choisie n'est pas vide
 					{
@@ -143,18 +138,17 @@ public class Echiquier {
 			}while(( (getCodes()[i][j].equalsIgnoreCase(A)) == false) && (j+1 < codes.length));
 		}while((getCodes()[i][j].equalsIgnoreCase(A) == false) && (i+1 < codes.length));
 		
-	
-		for (k = 0; k < codes.length;k++)	/// TEST 2EME COORS
+		/// TEST 2EME DESTINATION
+		for (k = 0; k < codes.length;k++)	
 		{
 			for (l = 0; l < codes.length;l++) 
 			{
 				if (getCodes()[k][l].equalsIgnoreCase(B) == true)
 				{
-					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie que la  piece visée n'est pas de ta faction
+					if (this.getEchiquier()[k][l].getCouleur() == J.getCouleur())  // Verifie si la  piece visée est de ta faction
 					{
 						System.err.println("Le pion que vous voulez manger est de votre faction. Recommencez !");
 						return false;
-						
 					}
 					
 					
@@ -162,13 +156,12 @@ public class Echiquier {
 					{
 						System.err.println("Déplacement impossible. Recommencez ! \n");
 						return false;
-						
 					}
 					
 					
-					else
+					else //PARTIE DEPLACEMENT
 					{
-					System.out.println("Choix validé ! Déplacement en cours.");		// Partie déplacement
+					System.out.println("Choix validé ! Déplacement en cours.");
 					stock = new Position(l+1,8-k);
 					stock2 = new Position(j+1,8-i);
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
@@ -180,7 +173,7 @@ public class Echiquier {
 				}
 			}
 		}
-	System.out.println("Un de vos codes est faux. Recommencez.");			// SI COORS INEXISTANTE (EX : A)
+	System.out.println("Un de vos codes est faux. Recommencez.");			// si coors entré inexistante
 	return false;
 	}
 
@@ -197,7 +190,16 @@ public class Echiquier {
 	}
 
 
-	//getters and setters
+	//GETTESRS AND SETTERS
+	public Piece[][] getEchiquier() {
+		return echiquier;
+	}
+
+
+	public String[][] getCodes() {
+		return codes;
+	}
+	
 	public Pion getPionB1() {
 		return pionB1;
 	}
