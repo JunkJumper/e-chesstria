@@ -9,6 +9,8 @@ public class Reine extends Piece {
 	
 	public boolean deplacable(Echiquier e,Piece p)
 	{
+		if (e.estVide(p.getPosition()) == false) //si on mange une piece
+			System.out.println("Vous avez mangé une pièce !");
 		
 		if(p.getPosition().getX() == this.getPosition().getX()) // verification les 2 pieces sont sur la meme colonne
 		{
@@ -24,7 +26,6 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
-				System.out.println("Vous avez mangé une pièce !");
 				return true; 
 			}
 			
@@ -38,7 +39,6 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 			return false;
@@ -56,7 +56,6 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 			
@@ -69,7 +68,6 @@ public class Reine extends Piece {
 						return false;
 					}
 				}
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 			return false;
@@ -92,7 +90,6 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -107,7 +104,6 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -128,7 +124,6 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -143,7 +138,6 @@ public class Reine extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				

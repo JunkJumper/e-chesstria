@@ -9,6 +9,9 @@ public class Fou extends Piece {
 	
 	public boolean deplacable(Echiquier e,Piece p)
 	{
+		if (e.estVide(p.getPosition()) == false) //si on mange une piece
+			System.out.println("Vous avez mangé une pièce !");
+		
 		for (int i = 1; i < 8; i++)				// ON CHERCHE SI LA 2EME COORS EST EN DIAGONALE DE LA 1 ERE
 		{
 

@@ -9,6 +9,9 @@ public class Cavalier extends Piece {
 	
 	public boolean deplacable(Echiquier e, Piece p) // vérifie que le Cavalier peut être déplacé
 	{
+		if (e.estVide(p.getPosition()) == false) //si on mange une piece
+			System.out.println("Vous avez mangé une pièce !");
+		
 		//Côté droit
 		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()+2)) //Verifie deplacement y+2 vers le haut et x+1 vers la droite
 		{
