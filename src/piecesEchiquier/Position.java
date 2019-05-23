@@ -1,9 +1,11 @@
 package piecesEchiquier;
 
 public class Position {
+	//ATTRIBUTS
 	private int x;
 	private int y;
 	
+	//CONSTRUCTEURS
 	public Position() {
 		
 	}
@@ -14,6 +16,7 @@ public class Position {
 		this.y = y;
 	}
 
+	//GETTERS AND SETTERS
 	public int getX() {
 		return x;
 	}

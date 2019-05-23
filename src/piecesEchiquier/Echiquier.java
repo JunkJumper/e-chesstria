@@ -5,7 +5,7 @@ import joueurs.Joueur;
 public class Echiquier {
 	
 	//ATTRIBUTS
-	private String[][] codes = 
+	private String[][] codes = //pour définir quel code correspond a quel case
 { 
 	{"A8","B8","C8","D8","E8","F8","G8","H8"},
 	{"A7","B7","C7","D7","E7","F7","G7","H7"},
@@ -17,6 +17,7 @@ public class Echiquier {
 	{"A1","B1","C1","D1","E1","F1","G1","H1"}
 };
 
+	//declaration de toutes les pieces de l'echiquier
 	private Pion pionB1 = new Pion("Blanc","PB",new Position(1,2));
 	private Pion pionB2 = new Pion("Blanc","PB",new Position(2,2));
 	private Pion pionB3 = new Pion("Blanc","PB",new Position(3,2));
@@ -56,7 +57,7 @@ public class Echiquier {
 	private Roi RoiB1 = new Roi("Blanc","KB",new Position(4,1));
 	private Roi RoiN1 = new Roi("Noir","KN",new Position(4,8));
 	
-	
+	//remplissage de l'echiquier
 	private Piece[][] echiquier = 
 		{
 			{TourN1,CavalierN1,FouN1,ReineN1,RoiN1,FouN2,CavalierN2,TourN2},
@@ -73,14 +74,6 @@ public class Echiquier {
 	public Echiquier() {
 	
 	}
-	
-	
-	
-	
-	
-	
-
-
 
 	public String toString()	// FONCTION AFFICHAGE
 	{
@@ -159,14 +152,14 @@ public class Echiquier {
 					}
 					
 					
-					else //PARTIE DEPLACEMENT
+					else //PARTIE DEPLACEMENT DE LA PIECE
 					{
 					System.out.println("Choix validé ! Déplacement en cours.");
-					stock = new Position(l+1,8-k);
-					stock2 = new Position(j+1,8-i);
-					this.getEchiquier()[k][l] = this.getEchiquier()[i][j];
-					this.getEchiquier()[k][l].setPosition(stock);
-					this.getEchiquier()[i][j] = new Piece(stock2);
+					stock = new Position(l+1,8-k); //stockage de la pos destination
+					stock2 = new Position(j+1,8-i); //stockage de la pos source 
+					this.getEchiquier()[k][l] = this.getEchiquier()[i][j]; //deplacement de la piece
+					this.getEchiquier()[k][l].setPosition(stock); //donner nouvelle position a la piece dépalcer
+					this.getEchiquier()[i][j] = new Piece(stock2); //mettre piece vide dans la pos source, car la case est maintenant vide
 					return true;
 					}
 					
@@ -199,6 +192,8 @@ public class Echiquier {
 	public String[][] getCodes() {
 		return codes;
 	}
+	
+	//////////////////
 	
 	public Pion getPionB1() {
 		return pionB1;
@@ -294,7 +289,7 @@ public class Echiquier {
 		this.pionB8 = pionB8;
 	}
 
-
+	//////////////////
 
 	public Pion getPionN1() {
 		return pionN1;

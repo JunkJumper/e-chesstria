@@ -12,7 +12,8 @@ public class Cavalier extends Piece {
 		if (e.estVide(p.getPosition()) == false) //si on mange une piece
 			System.out.println("Vous avez mangé une pièce !");
 		
-		//Côté droit
+		//COTE DROIT
+			//HAUT
 		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()+2)) //Verifie deplacement y+2 vers le haut et x+1 vers la droite
 		{
 			if(p.getCouleur()!=this.getCouleur())
@@ -29,6 +30,7 @@ public class Cavalier extends Piece {
 			}
 		}
 		
+			//BAS
 		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()-2)) //Verifie deplacement y-2 vers le bas et x+1 vers la droite
 		{
 			if(p.getCouleur()!=this.getCouleur())
@@ -44,7 +46,8 @@ public class Cavalier extends Piece {
 				return true;
 			}
 		}
-		//Côté gauche
+		//COTE GAUCHE
+			//HAUT
 		if((p.getPosition().getX()) == (this.getPosition().getX()-1) && (p.getPosition().getY()) == (this.getPosition().getY()+2)) //Verifie deplacement y+2 vers le haut et x-1 vers la gauche
 		{
 			if(p.getCouleur()!=this.getCouleur())
@@ -61,6 +64,7 @@ public class Cavalier extends Piece {
 			}
 		}
 		
+			//BAS
 		if((p.getPosition().getX()) == (this.getPosition().getX()-1) && (p.getPosition().getY()) == (this.getPosition().getY()-2)) //Verifie deplacement y-2 vers le bas et x-1 vers la gauche
 		{
 			if(p.getCouleur()!=this.getCouleur())

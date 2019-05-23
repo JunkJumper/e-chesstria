@@ -12,7 +12,7 @@ public class Pion extends Piece {
 	
 	public boolean deplacable(Echiquier e, Piece p)   // CHECK QUE PION PEUT ETRE DEPLACE
 	{
-		if (p.getPosition().getX()-1 == this.getPosition().getX() || p.getPosition().getX()+1 == this.getPosition().getX())		//vERIFICATION SI LA PERSONNE SOUHAITE MANGER LA PIECE
+		if (p.getPosition().getX()-1 == this.getPosition().getX() || p.getPosition().getX()+1 == this.getPosition().getX())		//Verification si la personne souhaite manger la piece
 		{
 			if ((this.getCouleur().equals("Blanc") && p.getPosition().getY()-1 == this.getPosition().getY()) || (this.getCouleur() == "noir" && p.getPosition().getY()+1 == this.getPosition().getY()))
 			{
@@ -28,7 +28,7 @@ public class Pion extends Piece {
 		}
 		
 		
-		// Avancer tout droit
+		// AVANCER TOUT DROIT
 		else if (p.getPosition().getX() == this.getPosition().getX())
 		{
 			if (!(p.getNom().equals(".."))) // SI case non vide

@@ -2,23 +2,20 @@ package piecesEchiquier;
 
 public class Piece {
 	
-	
+	//ATTRIBUTS
 	private String couleur = "";	
-	//private String lettre = "..";
 	private String nom = "..";
 	private boolean enVie = true;
 	private Position position;
 	private Position ini;
 	private boolean verif = false;
 	
-	//constructeur par defaut qui devrait probablement remplacer vide
-	
+	//CONSTRUCTEURS
 	public Piece()
 	{
 		
 	}
 	
-	// constructeur 
 	public Piece(Position pos)
 	{
 		position = pos;
@@ -29,13 +26,13 @@ public class Piece {
 	{
 		this.couleur = couleur;
 		this.nom = l;
-		//this.emplacementIni = emp;
 		this.position = pos;
 		this.ini=pos;
 		
 	}
 
-	public boolean aBouge()
+	//METHODES
+	public boolean aBouge() //voir si la piece a bouger pour certains deplacement
 	{
 		
 		if(this.getIni() != this.getPosition())
@@ -49,7 +46,7 @@ public class Piece {
 		return verif;
 	}
 
-	// gets & sets
+	//GETTERS AND SETTERS
 	
 	public String getNom() {
 		return nom;
@@ -98,10 +95,4 @@ public class Piece {
 	{
 		return true;
 	}
-
-
-
-	
-	
-	
 }
