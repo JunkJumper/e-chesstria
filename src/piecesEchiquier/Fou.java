@@ -15,7 +15,7 @@ public class Fou extends Piece {
 			if ( p.getPosition().getX() == this.getPosition().getX()+i)		// 2eme coors a droite de la 1 ere
 			{
 				
-				
+				//DEPLACEMENT HAUT DROITE
 				if (p.getPosition().getY() == this.getPosition().getY()+i )	// on teste si quand on avance de x vers la droite on monte aussi de x
 				{
 					for (int j = 1;this.getPosition().getX()+j <= p.getPosition().getX()-1;j++) // on verifie que le chemin est libre
@@ -26,11 +26,10 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
-				
+				//DEPLACEMENT BAS DROITE
 				else if (p.getPosition().getY() == this.getPosition().getY()-i)  // on teste si quand on avance de x vers la droite on descend aussi de x
 				{
 					for (int j = 1;this.getPosition().getX()+j <= p.getPosition().getX()-1;j++) 	// on verifie que le chemin est libre
@@ -41,7 +40,6 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
@@ -52,7 +50,7 @@ public class Fou extends Piece {
 			else if ( p.getPosition().getX() == this.getPosition().getX()-i)	// 2eme coors a gauche de la 1 ere
 			{
 				
-				
+				//DEPLACEMENT HAUT GAUCHE
 				if (p.getPosition().getY() == this.getPosition().getY()+i )	// on teste si quand on va en x vers la gauche on monte aussi de x
 				{
 					for (int j = 1;this.getPosition().getX()-j >= p.getPosition().getX()+1;j++) // on verifie que le chemin est libre
@@ -63,11 +61,10 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
 				
-				
+				//DEPLACEMENT BAS DROITE
 				else if (p.getPosition().getY() == this.getPosition().getY()-i)  // on teste si quand on va de x vers la droite on descend aussi de x
 				{
 					for (int j = 1;this.getPosition().getX()-j >= p.getPosition().getX()+1;j++) 	// on verifie que le chemin est libre
@@ -78,12 +75,8 @@ public class Fou extends Piece {
 							return false;
 						}
 					}
-					System.out.println("Vous avez mangé une pièce !");
 					return true;
 				}
-				
-				
-				System.out.println("Vous avez mangé une pièce !");
 				return true;
 			}
 		}
