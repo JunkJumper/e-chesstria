@@ -47,7 +47,7 @@ Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la prem
 Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
 ## Règles du jeu d'échec
-> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [Crédits](#Crédits)) 
+> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir crédits) 
 
 ### Déroulement du jeu
 
@@ -65,7 +65,7 @@ Chaque fois que vous pouvez prendre le roi de votre adversaire à votre prochain
 
 S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez donc la partie.
 
-Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les [crédits](#Crédits).
+Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les crédits.
 
 ## Crédits
 
@@ -75,7 +75,9 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 - [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446) : Gestion de projet, Conception et Développement
 - [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036) : Conception et Développement 
 
-- [PRITCHARD Adam](https://github.com/adam-p) : [Utilisation & syntaxe Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+**==========**
+
+- [PRITCHARD Adam](https://github.com/adam-p) : [Utilisation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) & syntaxe Markdown
 - [http://www.echecs.club](http://www.echecs.club) : [Règles](http://www.echecs.club/regles/) du jeu d'échec
 
 ## License
