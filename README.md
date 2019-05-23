@@ -46,7 +46,7 @@ Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la prem
 Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
 ## Règles du jeu d'échec [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
-> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir crédits) 
+> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire)) 
 
 ### Déroulement du jeu
 
@@ -64,7 +64,7 @@ Chaque fois que vous pouvez prendre le roi de votre adversaire à votre prochain
 
 S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez donc la partie.
 
-Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les crédits.
+Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) visitez les [crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire).
 
 ## Crédits [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
