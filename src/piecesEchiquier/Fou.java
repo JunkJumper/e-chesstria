@@ -26,7 +26,10 @@ public class Fou extends Piece {
 				{
 					if ( !(e.getEchiquier()[8-this.getPosition().getY()-i][this.getPosition().getX()-i-1].getNom().equals(".."))   )
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
@@ -38,7 +41,10 @@ public class Fou extends Piece {
 				{
 					if ( !(e.getEchiquier()[8-this.getPosition().getY()+i][this.getPosition().getX()-i-1].getNom().equals(".."))   )
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
@@ -52,7 +58,10 @@ public class Fou extends Piece {
 				{
 					if ( !(e.getEchiquier()[8-this.getPosition().getY()-i][this.getPosition().getX()+i-1].getNom().equals(".."))   )
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
@@ -64,7 +73,10 @@ public class Fou extends Piece {
 				{
 					if ( !(e.getEchiquier()[8-this.getPosition().getY()+i][this.getPosition().getX()+i-1].getNom().equals(".."))   )
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
