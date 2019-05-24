@@ -103,6 +103,7 @@ public class Piece {
 			System.out.println("Le roi est en échec");
 			return true;
 		}
+		
 		return false;
 	}
 }
