@@ -100,6 +100,7 @@ public class Echiquier {
 	
 	public boolean verificationMouvement(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
 	{// String A = coordonées de A; String B = coordonées de B 
+		B.toUpperCase();
 		int i = -1;
 		int j = -1;
 		int k;
@@ -166,7 +167,7 @@ public class Echiquier {
 				}
 			}
 		}
-	System.out.println("Un de vos codes est faux. Recommencez.");			// si coors entré inexistante
+	System.err.println("Un de vos codes est faux. Recommencez.");			// si coors entré inexistante
 	return false;
 	}
 
