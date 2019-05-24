@@ -68,6 +68,7 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-this.getPosition().getY()][i-1].getNom().equals(".."))) // SI case non vide
 					{
+						System.err.println("Le chemin n'est pas libre.");
 						return false;
 					}
 				}
