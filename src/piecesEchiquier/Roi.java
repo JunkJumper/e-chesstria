@@ -111,10 +111,7 @@ public class Roi extends Piece {
 		}
 		return false;
 	}
-	/*
-	public boolean isEnEchec()
-	{
-		
-	}*/
+	
 }
+
 

@@ -95,4 +95,14 @@ public class Piece {
 	{
 		return true;
 	}
+	
+	public boolean metEnEchec(Echiquier e, Piece p)
+	{
+		if(this.deplacable(e,p) == true) //1er cas : la pièce se deplace une seconde fois (pas vraiment) et verifie qu'elle tombe sur la position du roi (soit noir, soit blanc selon la couleur de la pièce)
+		{
+			System.out.println("Le roi est en échec");
+			return true;
+		}
+		return false;
+	}
 }

@@ -35,7 +35,10 @@ public class Pion extends Piece {
 		{
 			if (!(p.getNom().equals(".."))) // SI case non vide
 			{
-				System.err.println("Vous ne pouvez pas manger en avancant tout droit.");
+				if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+				{
+					System.err.println("Vous ne pouvez pas manger en avancant tout droit.");
+				}
 				return false;
 			}
 			if ( ((this.getCouleur().equals("Blanc")) && (p.getPosition().getY()-1 == this.getPosition().getY()) ) || ((this.getCouleur().equals("Noir")) && (p.getPosition().getY()+1 == this.getPosition().getY())))

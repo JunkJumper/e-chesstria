@@ -147,7 +147,7 @@ public class Echiquier {
 					
 					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
-						System.err.println("Déplacement impossiblec6. Recommencez ! \n");
+						System.err.println("Déplacement impossible. Recommencez ! \n");
 						return false;
 					}
 					
@@ -158,9 +158,38 @@ public class Echiquier {
 					stock = new Position(l+1,8-k); //stockage de la pos destination
 					stock2 = new Position(j+1,8-i); //stockage de la pos source 
 					this.getEchiquier()[k][l] = this.getEchiquier()[i][j]; //deplacement de la piece
-					this.getEchiquier()[k][l].setPosition(stock); //donner nouvelle position a la piece dépalcer
+					this.getEchiquier()[k][l].setPosition(stock); //donner nouvelle position a la piece déplacer
 					this.getEchiquier()[i][j] = new Piece(stock2); //mettre piece vide dans la pos source, car la case est maintenant vide
-					return true;
+					int p; 
+					int q; 
+					Piece stockageRoi=null;
+					if( this.getEchiquier( )[k][l].getCouleur().equals("Blanc") ) {  
+						for ( p=0; p < codes.length;p++)            //cherche le roi noir dans la matrice
+						{
+							for ( q=0; q < codes.length;q++)
+							{
+								if(this.getEchiquier()[p][q].getNom().equals("KN"))
+								{
+									stockageRoi=this.getEchiquier()[p][q];
+								}
+							}
+						}
+					}
+					else
+					{
+						for ( p=0; p < codes.length;p++)    //cherche le roi blanc dans la matrice
+						{
+							for ( q=0; q < codes.length;q++)
+							{
+								if(this.getEchiquier()[p][q].getNom().equals("KB"))
+								{
+									stockageRoi=this.getEchiquier()[p][q];
+								}
+							}
+						}
+					}
+					this.getEchiquier()[k][l].metEnEchec(this,stockageRoi); //Verifie si le roi sera en echec
+						return true;
 					}
 				}
 			}
