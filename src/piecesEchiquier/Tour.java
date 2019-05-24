@@ -25,7 +25,10 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-i][this.getPosition().getX()-1].getNom().equals(".."))) // SI case non vide
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
@@ -38,7 +41,10 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-i][this.getPosition().getX()-1].getNom().equals(".."))) // SI case non vide
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
@@ -55,7 +61,10 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-this.getPosition().getY()][i-1].getNom().equals(".."))) // SI case non vide
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
@@ -68,7 +77,10 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-this.getPosition().getY()][i-1].getNom().equals(".."))) // SI case non vide
 					{
-						System.err.println("Le chemin n'est pas libre.");
+						if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
+		                {
+							System.err.println("Le chemin n'est pas libre.");
+		                }
 						return false;
 					}
 				}
