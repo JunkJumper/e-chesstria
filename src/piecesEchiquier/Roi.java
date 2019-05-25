@@ -43,13 +43,22 @@ public class Roi extends Piece {
 				{
 					for (int j=0; j<8;j++)
 					{
+						
+						
+						
 						if((e.getEchiquier()[i][j].getCouleur() != this.getCouleur()) && (e.getEchiquier()[i][j].getCouleur() != "") ) //si la piece est de couleur adverse
 						{
-							if(e.getEchiquier()[i][j].metEnEchec(e,p) == true) //si la piece est en echec sur la 2eme coor
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Roi(this.getCouleur(),this.getNom(),new Position(p.getPosition().getX(),p.getPosition().getY()));
+							//e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
+							if(e.getEchiquier()[i][j].metEnEchec(e,e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1]) == true) //si la piece est en echec sur la 2eme coor
 							{
 								return false;
 							}
 						}
+						
+						
+						
+						
 					}
 				}
 				return true;
@@ -66,8 +75,10 @@ public class Roi extends Piece {
 					{
 						if((e.getEchiquier()[i][j].getCouleur() != this.getCouleur()) && (e.getEchiquier()[i][j].getCouleur() != "") ) //si la piece est de couleur adverse
 						{
-							if(e.getEchiquier()[i][j].metEnEchec(e,p) == true) //si la piece est en echec sur la 2eme coor
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Roi(this.getCouleur(),this.getNom(),new Position(p.getPosition().getX(),p.getPosition().getY()));
+							if(e.getEchiquier()[i][j].metEnEchec(e,e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1]) == true) //si la piece est en echec sur la 2eme coor
 							{
+								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
 						}
@@ -148,10 +159,20 @@ public class Roi extends Piece {
 				{
 					for (int j=0; j<8;j++)
 					{
+						/*
 						if((e.getEchiquier()[i][j].getCouleur() != this.getCouleur())&& (e.getEchiquier()[i][j].getCouleur() != "") ) //si la piece est de couleur adverse
 						{
 							if(e.getEchiquier()[i][j].metEnEchec(e,p) == true) //si la piece est en echec sur la 2eme coor
 							{
+								return false;
+							}
+						}*/
+						if((e.getEchiquier()[i][j].getCouleur() != this.getCouleur()) && (e.getEchiquier()[i][j].getCouleur() != "") ) //si la piece est de couleur adverse
+						{
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Roi(this.getCouleur(),this.getNom(),new Position(p.getPosition().getX(),p.getPosition().getY()));
+							if(e.getEchiquier()[i][j].metEnEchec(e,e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1]) == true) //si la piece est en echec sur la 2eme coor
+							{
+								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
 						}
