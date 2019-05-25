@@ -93,6 +93,9 @@ public class Piece {
 	
 	public boolean deplacable(Echiquier e,Piece p)
 	{
+		if(p.getCouleur().equals(this.getCouleur())) {
+			return false;
+		}
 		return true;
 	}
 	
