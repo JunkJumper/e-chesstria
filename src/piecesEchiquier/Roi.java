@@ -26,13 +26,6 @@ public class Roi extends Piece {
 	
 	public boolean deplacable(Echiquier e, Piece p) // vérifie que le roi peut être déplacé
 	{
-		if (e.estVide(p.getPosition()) == false) //si on mange une piece
-		{
-			if(!(p.getNom().equals("KN") || p.getNom().equals("KB"))) // si la pièce n'est pas un roi , on affiche le message
-			{
-				System.out.println("Vous avez mangé une pièce !");
-			}
-		}
 		
 		//Côté droit
 		if((p.getPosition().getX()) == (this.getPosition().getX()+1) && (p.getPosition().getY()) == (this.getPosition().getY()+1)) //Verifie deplacement y+1 vers le haut et x+1 vers la droite
@@ -51,8 +44,10 @@ public class Roi extends Piece {
 							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Roi(this.getCouleur(),this.getNom(),new Position(p.getPosition().getX(),p.getPosition().getY()));
 							if(e.getEchiquier()[i][j].metEnEchec(e,e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1]) == true) //si la piece est en echec sur la 2eme coor
 							{
+								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 						
 						
@@ -80,6 +75,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
@@ -103,6 +99,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
@@ -126,6 +123,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
@@ -149,6 +147,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
@@ -172,6 +171,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
@@ -195,6 +195,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
@@ -218,6 +219,7 @@ public class Roi extends Piece {
 								e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 								return false;
 							}
+							e.getEchiquier()[8-p.getPosition().getY()][p.getPosition().getX()-1] = new Piece(new Position(p.getPosition().getX(),p.getPosition().getY()));
 						}
 					}
 				}
