@@ -145,8 +145,30 @@ public class Echiquier {
 						return false;
 					}
 					
-					
-					else if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
+					if(this.getEchiquier()[i][j].getNom() == "KB" || this.getEchiquier()[i][j].getNom() == "KN")
+						{
+							if (this.getEchiquier()[i][j].getNom() == "KB")
+							{
+								if(this.getEchiquier()[k][l+1].getNom() == "KN" || this.getEchiquier()[k+1][l+1].getNom()=="KN" 
+										|| this.getEchiquier()[k-1][l+1].getNom()== "KN" || this.getEchiquier()[k-1][l].getNom()== "KN" || this.getEchiquier()[k+1][l].getNom()== "KN" 
+										|| this.getEchiquier()[k-1][l-1].getNom()== "KN" || this.getEchiquier()[k][l-1].getNom()== "KN" || this.getEchiquier()[k+1][l-1].getNom()== "KN")
+								{
+									System.err.println("Le roi ne peut pas se coller à l'autre roi");
+									return false;
+								}
+							}
+							if (this.getEchiquier()[i][j].getNom() == "KN")
+							{
+								if(this.getEchiquier()[k][l+1].getNom() == "KB" || this.getEchiquier()[k+1][l+1].getNom()=="KB" 
+										|| this.getEchiquier()[k-1][l+1].getNom()== "KB" || this.getEchiquier()[k-1][l].getNom()== "KB" || this.getEchiquier()[k+1][l].getNom()== "KB" 
+										|| this.getEchiquier()[k-1][l-1].getNom()== "KB" || this.getEchiquier()[k][l-1].getNom()== "KB" || this.getEchiquier()[k+1][l-1].getNom()== "KB")
+								{
+									System.err.println("Le roi ne peut pas se coller à l'autre roi");
+									return false;
+								}
+							}
+						}
+					 if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE
 					{
 						System.err.println("Déplacement impossible. Recommencez ! \n");
 						return false;
@@ -155,6 +177,7 @@ public class Echiquier {
 					
 					else //PARTIE DEPLACEMENT DE LA PIECE
 					{
+						
 					System.out.println("Choix validé ! Déplacement en cours.");
 					stock = new Position(l+1,8-k); //stockage de la pos destination
 					stock2 = new Position(j+1,8-i); //stockage de la pos source 
@@ -163,7 +186,7 @@ public class Echiquier {
 					this.getEchiquier()[i][j] = new Piece(stock2); //mettre piece vide dans la pos source, car la case est maintenant vide
 					int p; 
 					int q; 
-					Piece stockageRoi=null;
+					Piece stockageRoi=null;				
 					if( this.getEchiquier( )[k][l].getCouleur().equals("Blanc") ) {  
 						for ( p=0; p < codes.length;p++)            //cherche le roi noir dans la matrice
 						{
@@ -189,7 +212,8 @@ public class Echiquier {
 							}
 						}
 					}
-					this.getEchiquier()[k][l].metEnEchec(this,stockageRoi); //Verifie si le roi sera en echec
+					
+						this.getEchiquier()[k][l].metEnEchec(this,stockageRoi); //Verifie si le roi sera en echec
 						return true;
 					}
 				}
