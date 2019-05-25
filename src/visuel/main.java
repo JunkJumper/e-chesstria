@@ -37,7 +37,8 @@ public class main {
 		
 		//déclaration des variables de déplacement
 		String A; //coordonées de départ
-		String B; //coordonées d'arrivée		
+		String B; //coordonées d'arrivée
+		
 		//déclaration de l'échiquier
 		Echiquier e = new Echiquier();
 		
@@ -97,14 +98,30 @@ public class main {
 					System.out.println("\n" + "Tour de " + j1.getNom() + "\n");
 
 					do {
-						System.out.println(
-								"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+						if (e.getRoiB1().isRoiEchec() == true)
+						{
+							System.out.println(
+									"Comme votre roi est en echec la piec e a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+							A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
+							B = sc.nextLine();
+						}
+						else {
+							System.out.println(
+									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+							A = sc.nextLine();
+							System.out.println(
+									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+							B = sc.nextLine();
+						}
+							
 						
-						A = sc.nextLine();
-						System.out.println(
-								"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-						B = sc.nextLine();
+
 					} while (e.verificationMouvement(j1, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+					/*if (e.getRoiN1().enEchec(e,j2) && e.getRoiN1().enEchecEtMat(e,j2))
+					{
+						System.out.println("Le joueur 2 est echec et mat, il a perdu !");
+						jeu = false;
+					}*/
 					//REAFFICHAGE ECHIQUIER
 					System.out.println(e.toString());
 
@@ -115,6 +132,7 @@ public class main {
 						do {
 							System.out.println(
 									"Quelle piece voulez-vous deplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+						
 							A = sc.nextLine();
 
 							System.out.println(

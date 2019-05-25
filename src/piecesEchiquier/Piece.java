@@ -106,10 +106,10 @@ public class Piece {
 		if(this.deplacable(e,p) == true) //1er cas : la pièce se deplace une seconde fois (pas vraiment) et verifie qu'elle tombe sur la position du roi (soit noir, soit blanc selon la couleur de la pièce)
 		{
 			System.out.println("Le roi est en échec");
-			roiEchec=true;
+			p.roiEchec=true;
 			return true;
 		}
-		roiEchec=false;
+		p.roiEchec=false;
 		return false;
 	}
 
