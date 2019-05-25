@@ -145,7 +145,7 @@ public class Echiquier {
 						return false;
 					}
 					
-					if(this.getEchiquier()[i][j].getNom() == "KB" || this.getEchiquier()[i][j].getNom() == "KN")
+					if(this.getEchiquier()[i][j].getNom() == "KB" || this.getEchiquier()[i][j].getNom() == "KN") //test si le roi ne se colle pas à un autre roi
 						{
 							if (this.getEchiquier()[i][j].getNom() == "KB")
 							{

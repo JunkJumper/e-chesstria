@@ -9,7 +9,9 @@ public class Piece {
 	private Position position;
 	private Position ini;
 	private boolean verif = false;
+	private boolean roiEchec=false;
 	
+
 	//CONSTRUCTEURS
 	public Piece()
 	{
@@ -104,9 +106,26 @@ public class Piece {
 		if(this.deplacable(e,p) == true) //1er cas : la pièce se deplace une seconde fois (pas vraiment) et verifie qu'elle tombe sur la position du roi (soit noir, soit blanc selon la couleur de la pièce)
 		{
 			System.out.println("Le roi est en échec");
+			roiEchec=true;
 			return true;
 		}
-		
+		roiEchec=false;
 		return false;
+	}
+
+	public boolean isVerif() {
+		return verif;
+	}
+
+	public void setVerif(boolean verif) {
+		this.verif = verif;
+	}
+	
+	public boolean isRoiEchec() {
+		return roiEchec;
+	}
+
+	public void setRoiEchec(boolean roiEchec) {
+		this.roiEchec = roiEchec;
 	}
 }
