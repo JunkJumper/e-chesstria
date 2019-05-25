@@ -25,7 +25,7 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-i][this.getPosition().getX()-1].getNom().equals(".."))) // SI case non vide
 					{
-						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB") || p.getNom().equalsIgnoreCase("..") )) // si la pièce n'est pas un roi et que c'est pas une case vide , on affiche le message
+						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB") )) // si la pièce n'est pas un roi  , on affiche le message
 		                {
 							System.err.println("Le chemin n'est pas libre.");
 		                }
@@ -41,7 +41,7 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-i][this.getPosition().getX()-1].getNom().equals(".."))) // SI case non vide
 					{
-						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB") || p.getNom().equalsIgnoreCase("..") )) // si la pièce n'est pas un roi et que c'est pas une case vide , on affiche le message
+						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB"))) // si la pièce n'est pas un roi , on affiche le message
 		                {
 							System.err.println("Le chemin n'est pas libre.");
 		                }
@@ -61,7 +61,7 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-this.getPosition().getY()][i-1].getNom().equals(".."))) // SI case non vide
 					{
-						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB") || p.getNom().equalsIgnoreCase("..") )) // si la pièce n'est pas un roi et que c'est pas une case vide , on affiche le message
+						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB"))) // si la pièce n'est pas un roi , on affiche le message
 		                {
 							System.err.println("Le chemin n'est pas libre.");
 		                }
@@ -77,7 +77,7 @@ public class Tour extends Piece {
 				{
 					if (!(e.getEchiquier()[8-this.getPosition().getY()][i-1].getNom().equals(".."))) // SI case non vide
 					{
-						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB") || p.getNom().equalsIgnoreCase("..") )) // si la pièce n'est pas un roi et que c'est pas une case vide , on affiche le message
+						if(!(p.getNom().equalsIgnoreCase("KN") || p.getNom().equalsIgnoreCase("KB"))) // si la pièce n'est pas un roi, on affiche le message
 		                {
 							System.err.println("Le chemin n'est pas libre.");
 		                }
