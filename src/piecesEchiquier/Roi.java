@@ -9,18 +9,7 @@ public class Roi extends Piece {
 	{
 		super(c,l,pos);
 	}
-	
-	/*
-	public void enEchec(Piece piece, Position position) {
-		boolean[][] mouvementsPossibles;
-		mouvementsPossibles=piece.getMouvementsPossibles();
-		
-		positionCourante = super.getEmplacement();
-		
-		
-	}
-	*/	
-	
+
 	// verifie si le roi a bougé de sa place initiale NE SERT PAS POUR ROI 
 	public boolean aBouge()
 	{
