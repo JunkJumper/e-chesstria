@@ -40,10 +40,10 @@ public class main {
 		String B; //coordonées d'arrivée
 		
 		//déclaration de l'échiquier
-		Echiquier e = new Echiquier();
+		
 		
 			while (choixPartie >= 1) {
-
+				Echiquier e = new Echiquier();
 				while (choixPartie == 1) {
 
 					System.out.println(
@@ -176,7 +176,7 @@ public class main {
 								}
 						jeu = false;
 					}
-					};
+					}
 				}while(jeu == true);
 				System.out.println("Voulez vous redémarrer une nouvelle partie ? (oui / non)");
 				choixRedem = sc.nextLine();
@@ -198,14 +198,15 @@ public class main {
 				else if(choixRedem.equalsIgnoreCase("non")) {
 						System.out.println("Merci d'avoir joué à notre jeu d'échec - Team G00D3NOUGHT - CC BY !");
 						choixPartie = 0;
+						sc.close();
 				} 
 				else {
 					System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors de la fin du programme.");
 				}
-			
+			}	
 		System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors du démarrage du programme. (nom de joueur vide OU un mauvais numéro de configuration par exemple)");
-		sc.close();
+		
 	
-	}
+	
 	}
 }
