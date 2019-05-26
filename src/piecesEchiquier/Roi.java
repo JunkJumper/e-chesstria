@@ -260,7 +260,7 @@ public class Roi extends Piece {
 					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()]) == false // bas droite
 					)	
 			{
-				return true;
+				return false;
 			}
 		}
 		
