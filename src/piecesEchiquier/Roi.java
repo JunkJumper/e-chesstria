@@ -256,21 +256,31 @@ public class Roi extends Piece {
 			))
 			)
 	
-	{
-		if ( (8-(p.getPosition().getY()+1 ) )<0) //traite le cas où le roi se trouve sur la bordure du haut de l'échiquier
 		{
-			if (this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()-2]) == false      // gauche  verifie si le roi ne peut pas de deplacer autour de lui
-					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()]) ==false //droite
-					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-1]) == false // bas
-					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-2]) == false // bas gauche
-					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()]) == false)	// bas droite
+			if ( (8-(p.getPosition().getY()+1 ) )<0 ) //traite le cas où le roi se trouve sur la bordure du haut de l'échiquier
 			{
-				return true;
+				if (this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()-2]) == false      // gauche  verifie si le roi ne peut pas de deplacer autour de lui
+						&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()]) ==false //droite
+						&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-1]) == false // bas
+						&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-2]) == false // bas gauche
+						&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()]) == false)	// bas droite
+				{
+					return true;
+				}
 			}
-		}
-	}	
+		}	
 	}
-	if(!(e.getEchiquier()[7][4].getNom() == "KB" && p.aBouge()==false))
+	/*
+	if (this.getPosition().getX() == 5 && this.getPosition().getY() == 1 && e.getEchiquier()[7][4].getNom().equals("KB"))
+	{
+	if(!(e.getEchiquier()[7][4].getNom() == "KB" && p.aBouge()==false) ||  (e.getEchiquier()[0][4].getNom().equals("KB") && (
+			e.getEchiquier()[8-(p.getPosition().getY()+1)][p.getPosition().getX()-1].getNom().equals("..") || // HAUT
+			
+			))
+	)
+		
+		
+		
 	{
 		if ( 8-(p.getPosition().getY()-1 )>7) //traite le cas où le roi se trouve sur la bordure du bas de l'échiquier
 			{
@@ -284,6 +294,7 @@ public class Roi extends Piece {
 				}	
 			}
 	}
+	}*/
 		if ( (p.getPosition().getX()-2)<0) //traite le cas où le roi se trouve sur la bordure gauche de l'échiquier
 		{
 			if (this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()+1)][p.getPosition().getX()-1]) == false      //haut  verifie si le roi ne peut pas de deplacer autour de lui
