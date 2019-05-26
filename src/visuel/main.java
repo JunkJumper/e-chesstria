@@ -101,7 +101,7 @@ public class main {
 						if (e.getRoiB1().isRoiEchec() == true)
 						{
 							System.out.println(
-									"Comme votre roi est en echec la piec e a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+									"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
 							A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
 							B = sc.nextLine();
 						}
@@ -128,26 +128,38 @@ public class main {
 					// JOUEUR2
 					System.out.println("Tour de " + j2.getNom() + "\n");
 
-					if (jeu == true) {
 						do {
-							System.out.println(
-									"Quelle piece voulez-vous deplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
-						
-							A = sc.nextLine();
-
-							System.out.println(
-									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où la poser la pièce.\n");
-							B = sc.nextLine();
+							if (e.getRoiN1().isRoiEchec() == true)
+							{
+								System.out.println(
+										"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+								A = e.getCodes()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1];
+								B = sc.nextLine();
+							}
+							else {
+								System.out.println(
+										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+								A = sc.nextLine();
+								System.out.println(
+										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+								B = sc.nextLine();
+							}
 
 						} while (e.verificationMouvement(j2, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
-					}
 
-					/*if (e.getRoiB1().enEchec(e,j1) && e.getRoiN1().enEchecEtMat(e,j1))
+					if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true || //si un des 2 roi est en echecetmmat
+							e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
 					{
-						System.out.println("Le joueur 1 est echec et mat, il a perdu !");
+						if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true ) //si cest le roi blanc
+								{
+									System.out.println("Le joueur 1 "+ j1.getNom() +" est echec et mat, il a perdu !");
+								}
+						if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true )//si c'est le roi noir
+								{
+									System.out.println("Le joueur 2 " + j2.getNom() +" est echec et mat, il a perdu !");
+								}
 						jeu = false;
-					}*/
-					//jeu = false;
+					}
 
 				} while (jeu == true);
 

@@ -177,7 +177,6 @@ public class Echiquier {
 					
 					else //PARTIE DEPLACEMENT DE LA PIECE
 					{
-						
 					System.out.println("Choix validé ! Déplacement en cours.");
 					stock = new Position(l+1,8-k); //stockage de la pos destination
 					stock2 = new Position(j+1,8-i); //stockage de la pos source 

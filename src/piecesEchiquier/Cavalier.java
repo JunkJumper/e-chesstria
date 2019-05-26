@@ -78,7 +78,7 @@ public class Cavalier extends Piece {
 			}
 		}
 		
-		if((p.getPosition().getX()) == (this.getPosition().getX()-2) && (p.getPosition().getY()) == (this.getPosition().getY()-1)) //Verifie deplacement y+1 vers le haut et x-2 vers la gauche
+		if((p.getPosition().getX()) == (this.getPosition().getX()-2) && (p.getPosition().getY()) == (this.getPosition().getY()+1)) //Verifie deplacement y+1 vers le haut et x-2 vers la gauche
 		{
 			if(p.getCouleur()!=this.getCouleur())
 			{

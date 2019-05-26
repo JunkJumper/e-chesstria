@@ -229,6 +229,25 @@ public class Roi extends Piece {
 		return false;
 	}
 	
+	public boolean enEchecEtMat(Echiquier e, Piece p)
+	{
+		if ( !((8-(p.getPosition().getY()+1 ) )<0 || 8-(p.getPosition().getY()-1 )>7 || (p.getPosition().getX()-2 )<0 || (p.getPosition().getX() )>7)) //verifie que le roi n'est pas dans un coin
+		{
+			if (this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()+1)][p.getPosition().getX()-1]) == false      //verifie que si le roi ne peut pas de deplacer autour de lui
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-1]) ==false
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()+1)][p.getPosition().getX()]) == false
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()]) == false
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()]) == false
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()+1)][p.getPosition().getX()-2]) == false
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()-2]) == false
+					&& this.deplacable(e, e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-2]) == false)
+			{
+				return true;
+			}
+		}
+			return false;
+	}
+	
 }
 
 
