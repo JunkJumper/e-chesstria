@@ -212,7 +212,10 @@ public class Echiquier {
 						}
 					}
 					
-						this.getEchiquier()[k][l].metEnEchec(this,stockageRoi); //Verifie si le roi sera en echec
+						if (this.getEchiquier()[k][l].metEnEchec(this,stockageRoi) == true) //Verifie si le roi sera en echec
+						{
+							System.out.println("Le roi adverse est en échec");
+						}
 						return true;
 					}
 				}
