@@ -97,27 +97,60 @@ public class main {
 
 					System.out.println("\n" + "Tour de " + j1.getNom() + "\n");
 
-					do {
+					//do {
 						if (e.getRoiB1().isRoiEchec() == true)
 						{
-							System.out.println(
-									"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
-							A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
-							B = sc.nextLine();
+							do
+							{
+								System.out.println(
+										"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+								A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
+								B = sc.nextLine();
+								
+							}while(e.verificationMouvement(j1, A, B) != true );
+							
+						}
+						else if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true)
+						{
+							do
+							{
+								System.out.println(
+										"Votre roi est en echec et mat temporaire. Bougez une piece pour le sauver si vous pouvez. Sinon bougez une piece au hasard.\n");
+								System.out.println(
+										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+								A = sc.nextLine();
+								System.out.println(
+										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+								B = sc.nextLine();
+							}while(e.verificationMouvement(j1, A, B) != true  && e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true);
 						}
 						else {
+							do {
 							System.out.println(
 									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 							A = sc.nextLine();
 							System.out.println(
 									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 							B = sc.nextLine();
+							}while(e.verificationMouvement(j1, A, B) != true );
 						}
 							
 						
 
-					} while (e.verificationMouvement(j1, A, B) != true ); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+					//} while (e.verificationMouvement(j1, A, B) != true ); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 					
+					
+					if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true) // si roi blanc en echec etmat
+					{
+						if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true ) //si cest le roi blanc
+								{
+									System.out.println("Le joueur 1 "+ j1.getNom() +" est echec et mat, il a perdu !");
+								}
+						jeu = false;
+					}
+					
+					
+					/*
 					if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true || //si un des 2 roi est en echecetmmat
 							e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
 					{
@@ -130,7 +163,7 @@ public class main {
 									System.out.println("Le joueur 2 " + j2.getNom() +" est echec et mat, il a perdu !");
 								}
 						jeu = false;
-					}
+					}*/
 					
 					
 					if(jeu == true)
@@ -142,34 +175,48 @@ public class main {
 					
 					System.out.println("Tour de " + j2.getNom() + "\n");
 
-						do {
-							if (e.getRoiN1().isRoiEchec() == true)
+						//do {
+							if (e.getRoiN1().isRoiEchec())
 							{
+								do {
 								System.out.println(
 										"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
 								A = e.getCodes()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1];
 								B = sc.nextLine();
+							}while(e.verificationMouvement(j2, A, B) != true );
+							}
+							
+							else if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
+							{
+								do
+								{
+									System.out.println(
+											"Votre roi est en echec et mat temporaire. Bougez une piece pour le sauver si vous pouvez. Sinon bougez une piece au hasard.\n");
+									System.out.println(
+											"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+									A = sc.nextLine();
+									System.out.println(
+											"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+									B = sc.nextLine();
+								}while(e.verificationMouvement(j2, A, B) != true  && e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true);
 							}
 							else {
+								do {
 								System.out.println(
 										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 								A = sc.nextLine();
 								System.out.println(
 										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 								B = sc.nextLine();
+							}while(e.verificationMouvement(j2, A, B) != true );
 							}
 
-						} while (e.verificationMouvement(j2, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+						//} while (e.verificationMouvement(j2, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 					
 					
 					// VERIF ECHECMAT
-					if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true || //si un des 2 roi est en echecetmmat
-							e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
+					if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true) // si roi noir en echec et mat
 					{
-						if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true ) //si cest le roi blanc
-								{
-									System.out.println("Le joueur 1 "+ j1.getNom() +" est echec et mat, il a perdu !");
-								}
 						if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true )//si c'est le roi noir
 								{
 									System.out.println("Le joueur 2 " + j2.getNom() +" est echec et mat, il a perdu !");
@@ -199,6 +246,7 @@ public class main {
 						System.out.println("Merci d'avoir joué à notre jeu d'échec - Team G00D3NOUGHT - CC BY !");
 						choixPartie = 0;
 						sc.close();
+						System.exit (0);
 				} 
 				else {
 					System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors de la fin du programme.");
