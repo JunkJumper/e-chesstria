@@ -245,7 +245,17 @@ public class Roi extends Piece {
 				return true;
 			}
 		}
-	if(!(e.getEchiquier()[0][4].getNom() == "KN" && p.aBouge()==false))
+	if (this.getPosition().getX() == 5 && this.getPosition().getY() == 8 && e.getEchiquier()[0][4].getNom().equals("KN"))
+	{
+	if(!(e.getEchiquier()[0][4].getNom().equals("KN") && p.aBouge()==false) || ( e.getEchiquier()[0][4].getNom().equals("KN") && (
+			e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-1].getNom().equals("..") || 
+			e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()].getNom().equals("..")  ||
+			e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()].getNom().equals("..") ||
+			e.getEchiquier()[8-(p.getPosition().getY())][p.getPosition().getX()-2].getNom().equals("..") ||
+			e.getEchiquier()[8-(p.getPosition().getY()-1)][p.getPosition().getX()-2].getNom().equals("..") 
+			))
+			)
+	
 	{
 		if ( (8-(p.getPosition().getY()+1 ) )<0) //traite le cas où le roi se trouve sur la bordure du haut de l'échiquier
 		{
@@ -259,6 +269,7 @@ public class Roi extends Piece {
 			}
 		}
 	}	
+	}
 	if(!(e.getEchiquier()[7][4].getNom() == "KB" && p.aBouge()==false))
 	{
 		if ( 8-(p.getPosition().getY()-1 )>7) //traite le cas où le roi se trouve sur la bordure du bas de l'échiquier
