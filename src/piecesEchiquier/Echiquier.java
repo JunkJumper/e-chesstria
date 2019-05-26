@@ -149,6 +149,9 @@ public class Echiquier {
 						{
 							if (this.getEchiquier()[i][j].getNom() == "KB")
 							{
+								if(!(this.getEchiquier()[k+1][l].getPosition().getX()>7 ||this.getEchiquier()[k][l+1].getPosition().getY()>7 ||this.getEchiquier()[k-1][l].getPosition().getX()<0
+										||this.getEchiquier()[k][l-1].getPosition().getY()<0))//test le cas ou le roi se deplace sur une bordure
+								{
 								if(this.getEchiquier()[k][l+1].getNom() == "KN" || this.getEchiquier()[k+1][l+1].getNom()=="KN" 
 										|| this.getEchiquier()[k-1][l+1].getNom()== "KN" || this.getEchiquier()[k-1][l].getNom()== "KN" || this.getEchiquier()[k+1][l].getNom()== "KN" 
 										|| this.getEchiquier()[k-1][l-1].getNom()== "KN" || this.getEchiquier()[k][l-1].getNom()== "KN" || this.getEchiquier()[k+1][l-1].getNom()== "KN")
@@ -156,9 +159,13 @@ public class Echiquier {
 									System.err.println("Le roi ne peut pas se coller à l'autre roi");
 									return false;
 								}
+								}
 							}
 							if (this.getEchiquier()[i][j].getNom() == "KN")
 							{
+								if(!(this.getEchiquier()[k+1][l].getPosition().getX()>7 ||this.getEchiquier()[k][l+1].getPosition().getY()>7 ||this.getEchiquier()[k-1][l].getPosition().getX()<0
+										||this.getEchiquier()[k][l-1].getPosition().getY()<0))//test le cas ou le roi se deplace sur une bordure
+								{
 								if(this.getEchiquier()[k][l+1].getNom() == "KB" || this.getEchiquier()[k+1][l+1].getNom()=="KB" 
 										|| this.getEchiquier()[k-1][l+1].getNom()== "KB" || this.getEchiquier()[k-1][l].getNom()== "KB" || this.getEchiquier()[k+1][l].getNom()== "KB" 
 										|| this.getEchiquier()[k-1][l-1].getNom()== "KB" || this.getEchiquier()[k][l-1].getNom()== "KB" || this.getEchiquier()[k+1][l-1].getNom()== "KB")
@@ -166,6 +173,7 @@ public class Echiquier {
 									System.err.println("Le roi ne peut pas se coller à l'autre roi");
 									return false;
 								}
+							}
 							}
 						}
 					 if (this.getEchiquier()[i][j].deplacable(this,this.getEchiquier()[k][l]) == false) // VERIFICATION AVEC FONCTION DEPLACABLE

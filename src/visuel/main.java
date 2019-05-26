@@ -147,25 +147,7 @@ public class main {
 									System.out.println("Le joueur 1 "+ j1.getNom() +" est echec et mat, il a perdu !");
 								}
 						jeu = false;
-					}
-					
-					
-					/*
-					if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true || //si un des 2 roi est en echecetmmat
-							e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
-					{
-						if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true ) //si cest le roi blanc
-								{
-									System.out.println("Le joueur 1 "+ j1.getNom() +" est echec et mat, il a perdu !");
-								}
-						if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true )//si c'est le roi noir
-								{
-									System.out.println("Le joueur 2 " + j2.getNom() +" est echec et mat, il a perdu !");
-								}
-						jeu = false;
-					}*/
-					
-					
+					}			
 					if(jeu == true)
 					{
 					//REAFFICHAGE ECHIQUIER
@@ -252,9 +234,5 @@ public class main {
 					System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors de la fin du programme.");
 				}
 			}	
-		System.err.println("Une erreur s'est produite, les joueurs ont mal saisie des entrées lors du démarrage du programme. (nom de joueur vide OU un mauvais numéro de configuration par exemple)");
-		
-	
-	
 	}
 }
