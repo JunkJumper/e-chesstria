@@ -41,9 +41,17 @@ public class main {
 		String A; //coordonées de départ
 		String B; //coordonées d'arrivée
 		
+		char cA = 'y';//pour recup le premier char
+		char cB = 'z';
+		
+		char pA = '8';//pour recup le 2e char
+		char pB = '9';
+		
+		String sA;//pour concatener
+		String sB;
+		
+		
 		//déclaration de l'échiquier
-		
-		
 			while (choixPartie >= 1) {
 				Echiquier e = new Echiquier();
 				while (choixPartie == 1) {
@@ -141,11 +149,26 @@ public class main {
 							System.out.println(
 									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 							A = sc.nextLine();
-							A.toLowerCase();
+							
+							cA = A.charAt(0);
+							pA = A.charAt(1);
+							
+							System.out.println(cA);
+							char cAl = Character.toLowerCase(cA);
+							System.out.println(cAl);
+							
+							//pas finis
+							
+							System.out.println(A);
+							
 							System.out.println(
 									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 							B = sc.nextLine();
 							B.toLowerCase();
+							
+							B.charAt(0);
+							System.out.println(cB);
+							
 							}while(e.verificationMouvement(j1, A, B) != true );
 						}
 							
