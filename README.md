@@ -86,7 +86,7 @@ La lettre ``B`` signifie qu'une pièce est de couleur blanche et la lettre ``N``
 
 ## Crédits [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
-| Peronne ou Source                                                                | Role                                                                                                    |
+|                                 Peronne ou Source                                |                                                 Role                                                    |
 | :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
 | [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception et Développement                                                                             |
 | [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception et Développement                                                                             |
