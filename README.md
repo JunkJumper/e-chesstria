@@ -71,7 +71,7 @@ S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez
 
 Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) ou visitez les [crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire).
 
-Vous trouverez ici un tableau résumant les pièces :
+### Vous trouverez ici un tableau résumant les pièces :
 
 |   Pièce   |  Lettre  |
 |:---------:|:--------:|
