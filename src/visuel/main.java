@@ -107,7 +107,7 @@ public class main {
 
 					/*JOUEUR1*/
 
-					System.out.println("\n" + "Tour de " + j1.getNom() + "\n");
+					System.out.println("\n" + "Tour de " + j1.getNom() + "(" + j1.getCouleur() + ")\n");
 
 					//do {
 						if (e.getRoiB1().isRoiEchec() == true)
@@ -167,7 +167,7 @@ public class main {
 
 					// JOUEUR2
 					
-					System.out.println("Tour de " + j2.getNom() + "\n");
+					System.out.println("Tour de " + j2.getNom() + "(" + j2.getCouleur() + ")\n");
 
 						//do {
 							if (e.getRoiN1().isRoiEchec())
