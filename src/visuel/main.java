@@ -83,7 +83,9 @@ public class main {
 						j1.setCouleur("Noir");
 						System.out.println("Le joueur " + j2.getNom() + " jouera les blancs et le joueur " + j1.getNom()
 								+ " jouera les noirs.");
-						
+						/*
+						 * Alors ici on utilise un joueur temporaire pour faire passe le deuxième joueur en joueur numéro 1
+						 */
 						jTemp.setNom(j1.getNom());
 						jTemp.setCouleur(j1.getCouleur());
 						
