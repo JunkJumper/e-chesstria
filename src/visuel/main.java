@@ -31,6 +31,8 @@ public class main {
 		System.out.println("Entrez le nom du joueur 2 : ");
 		Joueur j2 = new Joueur(sc.nextLine(), null);
 		
+		Joueur jTemp = new Joueur(null, null); //  ce joueur sert de mémoire pour le choix de l'odre de jeu
+
 		if(j1.getNom().equalsIgnoreCase("") || j2.getNom().equalsIgnoreCase("") || j1.getNom().equalsIgnoreCase(null) || j2.getNom().equalsIgnoreCase(null)) {
 			choixPartie = -1;
 		}
@@ -78,6 +80,16 @@ public class main {
 						j1.setCouleur("Noir");
 						System.out.println("Le joueur " + j2.getNom() + " jouera les blancs et le joueur " + j1.getNom()
 								+ " jouera les noirs.");
+						
+						jTemp.setNom(j1.getNom());
+						jTemp.setCouleur(j1.getCouleur());
+						
+						j1.setCouleur(j2.getCouleur());
+						j1.setNom(j2.getNom());
+						
+						j2.setNom(jTemp.getNom());
+						j2.setCouleur(jTemp.getCouleur());
+						
 						choixPartie = 2;
 
 					} else {
