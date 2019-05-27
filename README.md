@@ -93,4 +93,4 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 
 [![logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) This project is available under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (or check [LICENSE.md](https://git-iutinfo.unice.fr/good3nought/echesstria/blob/master/LICENSE.md)).
 
-![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/gitalab.PNG) ![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/git.PNG) ![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/java.PNG)
+[![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/gitalab.PNG)](https://gitlab.com/gitlab-org) [![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/git.PNG)](https://git-scm.com/) [![logo](https://git-iutinfo.unice.fr/good3nought/echesstria/raw/master/imgs/java.PNG)](https://www.java.com/fr/download/)
