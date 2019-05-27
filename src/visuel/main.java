@@ -143,18 +143,18 @@ public class main {
 						}
 						else {
 							do {
-							System.out.println(
-									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
-							A = sc.nextLine();
-							
-							cA = A.charAt(0);
-							pA = A.charAt(1);
-							char cAl = Character.toLowerCase(cA);
-							sA = "" + cAl + pA;
-							
-							System.out.println(
-									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-							B = sc.nextLine();
+								System.out.println(
+										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+								A = sc.nextLine();
+								
+								cA = A.charAt(0);//ici on récupère le premier caractère du String
+								pA = A.charAt(1);//ici on récupère le second caratère
+								char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
+								sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
+								
+								System.out.println(
+										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+								B = sc.nextLine();
 
 							
 							}while(e.verificationMouvement(j1, sA, B) != true );
@@ -213,10 +213,10 @@ public class main {
 											"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 									A = sc.nextLine();
 									
-									cA = A.charAt(0);
-									pA = A.charAt(1);
-									char cAl = Character.toLowerCase(cA);
-									sA = "" + cAl + pA;
+									cA = A.charAt(0);//ici on récupère le premier caractère du String
+									pA = A.charAt(1);//ici on récupère le second caratère
+									char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
+									sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
 									
 									System.out.println(
 											"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
@@ -224,9 +224,7 @@ public class main {
 									
 
 							}while(e.verificationMouvement(j2, sA, B) != true );
-							}
-
-						//} while (e.verificationMouvement(j2, A, B) != true); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+							} // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 					
 					
 					// VERIF ECHECMAT
