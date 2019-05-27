@@ -27,18 +27,10 @@ public class main {
 		// déclaration des joueurs
 		System.out.println("Entrez le nom du joueur 1 : ");
 		Joueur j1 = new Joueur(sc.nextLine(), null);
-		if(j1.getNom().isEmpty()) {
-			j1.setNom("Joueur Par défaut 1");
-		}
 		
 		System.out.println("Entrez le nom du joueur 2 : ");
 		Joueur j2 = new Joueur(sc.nextLine(), null);
-		if(j2.getNom().isEmpty()) {
-			j2.setNom("Joueur Par défaut 2");
-		}
 		
-		Joueur jTemp = new Joueur(null, null); //  ce joueur sert de mémoire pour le choix de l'odre de jeu
-
 		if(j1.getNom().equalsIgnoreCase("") || j2.getNom().equalsIgnoreCase("") || j1.getNom().equalsIgnoreCase(null) || j2.getNom().equalsIgnoreCase(null)) {
 			choixPartie = -1;
 		}
@@ -47,12 +39,9 @@ public class main {
 		String A; //coordonées de départ
 		String B; //coordonées d'arrivée
 		
-		char cA = 'y';//pour recup le premier char
-		char pA = '8';//pour recup le 2e char
-		String sA;//pour concatener
-		
-		
 		//déclaration de l'échiquier
+		
+		
 			while (choixPartie >= 1) {
 				Echiquier e = new Echiquier();
 				while (choixPartie == 1) {
@@ -64,9 +53,6 @@ public class main {
 					System.out.println("3 = Aléatoire");
 
 					String choixP = sc.nextLine();
-					if(choixP.isEmpty()) {
-						choixP = "3";
-					}
 
 					if (choixP.equalsIgnoreCase("3")) {
 						int random = (int) (Math.random() * 2 + 1);
@@ -92,18 +78,6 @@ public class main {
 						j1.setCouleur("Noir");
 						System.out.println("Le joueur " + j2.getNom() + " jouera les blancs et le joueur " + j1.getNom()
 								+ " jouera les noirs.");
-						/*
-						 * Alors ici on utilise un joueur temporaire pour faire passe le deuxième joueur en joueur numéro 1
-						 */
-						jTemp.setNom(j1.getNom());
-						jTemp.setCouleur(j1.getCouleur());
-						
-						j1.setCouleur(j2.getCouleur());
-						j1.setNom(j2.getNom());
-						
-						j2.setNom(jTemp.getNom());
-						j2.setCouleur(jTemp.getCouleur());
-						
 						choixPartie = 2;
 
 					} else {
@@ -112,7 +86,7 @@ public class main {
 				}
 
 				System.out.println("Bienvenue " + j1.getNom() + " et " + j2.getNom()
-						+ " dans e-Chesstria  ! Le jeu d'echec sur console fait entièrement en java !\n");
+						+ " dans e-Chesstria  ! Le jeu d'echec équestrien sur console fait entièrement en java !\n");
 
 				do {
 
@@ -121,10 +95,10 @@ public class main {
 
 					/*JOUEUR1*/
 
-					System.out.println("\n" + "Tour de " + j1.getNom() + "(" + j1.getCouleur() + ")\n");
+					System.out.println("\n" + "Tour de " + j1.getNom() + " (Blanc)\n");
 
 					//do {
-					 if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true)
+						if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true)
 						{
 							do
 							{
@@ -136,45 +110,28 @@ public class main {
 								System.out.println(
 										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 								B = sc.nextLine();
-								
 							}while(e.verificationMouvement(j1, A, B) != true );
 							
 						}
-						
 						else if (e.getRoiB1().isRoiEchec() == true)
 						{
 							do
 							{
-								 System.out.println(
-											"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
-									A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
-									B = sc.nextLine();
+								System.out.println(
+										"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+								A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
+								B = sc.nextLine();
 							}while(e.verificationMouvement(j1, A, B) != true  && e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true);
 						}
 						else {
 							do {
-								System.out.println(
-										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
-								A = sc.nextLine();
-								if(A.isEmpty() || A.length() == 1) {
-									A = "Z99";
-								}
-								
-								cA = A.charAt(0);//ici on récupère le premier caractère du String
-								
-								pA = A.charAt(1);//ici on récupère le second caratère
-								char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
-								sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
-								
-								System.out.println(
-										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-								B = sc.nextLine();
-								if(B.isEmpty()) {
-									B = "Z99";
-								}
-
-							
-							}while(e.verificationMouvement(j1, sA, B) != true );
+							System.out.println(
+									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+							A = sc.nextLine();
+							System.out.println(
+									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+							B = sc.nextLine();
+							}while(e.verificationMouvement(j1, A, B) != true );
 						}
 					
 					
@@ -193,7 +150,7 @@ public class main {
 
 					// JOUEUR2
 					
-					System.out.println("Tour de " + j2.getNom() + "(" + j2.getCouleur() + ")\n");
+					System.out.println("Tour de " + j2.getNom() + " (Noir)\n");
 
 						//do {
 							if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
@@ -209,7 +166,7 @@ public class main {
 									B = sc.nextLine();
 							}while(e.verificationMouvement(j2, A, B) != true );
 							}
-							
+
 							else if (e.getRoiN1().isRoiEchec())
 							{
 								do
@@ -222,22 +179,14 @@ public class main {
 							}
 							else {
 								do {
-									System.out.println(
-											"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
-									A = sc.nextLine();
-									
-									cA = A.charAt(0);//ici on récupère le premier caractère du String
-									pA = A.charAt(1);//ici on récupère le second caratère
-									char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
-									sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
-									
-									System.out.println(
-											"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-									B = sc.nextLine();
-									
-
-							}while(e.verificationMouvement(j2, sA, B) != true );
-							} // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
+								System.out.println(
+										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+								A = sc.nextLine();
+								System.out.println(
+										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+								B = sc.nextLine();
+							}while(e.verificationMouvement(j2, A, B) != true );
+							}
 					
 					
 					// VERIF ECHECMAT
