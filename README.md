@@ -28,10 +28,7 @@ Il faut dans une premier temp cloner ce repo git en utilisant la commande suivan
 git clone https://git-iutinfo.unice.fr/good3nought/echesstria.git
 ```
 
-Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous [Eclipse](https://www.eclipse.org/downloads/) ou [Intellij](https://www.jetbrains.com/idea/download/#section=windows).
-
-Vous pouvez également, si vous êtes sur windows, exécuter la commande suivante en spécifiant la version de java entre \[crochets\] pour compiler le projet :
-
+Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous [Eclipse](https://www.eclipse.org/downloads/) ou [Intellij](https://www.jetbrains.com/idea/download/#section=windows). 
 
 ## Commandes [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
