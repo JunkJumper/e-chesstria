@@ -64,6 +64,9 @@ public class main {
 					System.out.println("3 = Aléatoire");
 
 					String choixP = sc.nextLine();
+					if(choixP.isEmpty()) {
+						choixP = "3";
+					}
 
 					if (choixP.equalsIgnoreCase("3")) {
 						int random = (int) (Math.random() * 2 + 1);
@@ -152,11 +155,12 @@ public class main {
 								System.out.println(
 										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 								A = sc.nextLine();
-								if(A.isEmpty()) {
+								if(A.isEmpty() || A.length() == 1) {
 									A = "Z99";
 								}
 								
 								cA = A.charAt(0);//ici on récupère le premier caractère du String
+								
 								pA = A.charAt(1);//ici on récupère le second caratère
 								char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
 								sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
