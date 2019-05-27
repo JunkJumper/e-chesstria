@@ -141,9 +141,11 @@ public class main {
 							System.out.println(
 									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 							A = sc.nextLine();
+							A.toLowerCase();
 							System.out.println(
 									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 							B = sc.nextLine();
+							B.toLowerCase();
 							}while(e.verificationMouvement(j1, A, B) != true );
 						}
 							
