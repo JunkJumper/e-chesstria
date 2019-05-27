@@ -1,5 +1,43 @@
 package piecesEchiquier;
-//voir equalsIgnoreCase
+
+	/*
+ 	 * Dans cette classes et bien d'autres, nous utilsons la méthode equalsIgnoreCase, voici sa documentation 
+ 	 * 
+     * Compares this {@code String} to another {@code String}, ignoring case
+     * considerations.  Two strings are considered equal ignoring case if they
+     * are of the same length and corresponding characters in the two strings
+     * are equal ignoring case.
+     *
+     * <p> Two characters {@code c1} and {@code c2} are considered the same
+     * ignoring case if at least one of the following is true:
+     * <ul>
+     *   <li> The two characters are the same (as compared by the
+     *        {@code ==} operator)
+     *   <li> Applying the method {@link
+     *        java.lang.Character#toUpperCase(char)} to each character
+     *        produces the same result
+     *   <li> Applying the method {@link
+     *        java.lang.Character#toLowerCase(char)} to each character
+     *        produces the same result
+     * </ul>
+     *
+     * @param  anotherString
+     *         The {@code String} to compare this {@code String} against
+     *
+     * @return  {@code true} if the argument is not {@code null} and it
+     *          represents an equivalent {@code String} ignoring case; {@code
+     *          false} otherwise
+     *
+     * @see  #equals(Object)
+     * 
+     * public boolean equalsIgnoreCase(String anotherString) {
+     *   return (this == anotherString) ? true
+     *           : (anotherString != null)
+     *           && (anotherString.value.length == value.length)
+     *           && regionMatches(true, 0, anotherString, 0, value.length);
+     * }
+     */
+
 import joueurs.Joueur;
 
 public class Echiquier {
@@ -100,6 +138,13 @@ public class Echiquier {
 	
 	public boolean verificationMouvement(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
 	{// String A = coordonées de A; String B = coordonées de B 
+		
+		/**
+		 * Converts all of the characters in this String to lowercase using the rules of the default locale. This is equivalent to calling toLowerCase(Locale.getDefault()). 
+		 * Note: This method is locale sensitive, and may produce unexpectedresults if used for strings that are intended to be interpreted localeindependently.Examples are programming language identifiers, protocol keys, and HTMLtags.For instance, "TITLE".toLowerCase() in a Turkish localereturns "t\u0131tle", where '\u0131' is theLATIN SMALL LETTER DOTLESS I character.To obtain correct results for locale insensitive strings, use toLowerCase(Locale.ROOT).
+		 * 
+		 * Ceci est pour forcer le passage en minuscule au cas ou la méthode dans le main ne fonctionne pas
+		 */		
 		A.toLowerCase();
 		B.toLowerCase();
 		
