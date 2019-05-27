@@ -98,12 +98,13 @@ class testPiece {
 		 assertEquals(4, e.getFouB1().getPosition().getX());
 		 assertEquals(4, e.getFouB1().getPosition().getY());
 		 
-		 e.verificationMouvement(jb, "D4", "B3"); //d?placement bas / gauche
-		 assertEquals(2, e.getFouB1().getPosition().getX());
+		 e.verificationMouvement(jb, "D4", "C3"); //d?placement bas / gauche
+		 System.out.println(e.toString());
+		 assertEquals(3, e.getFouB1().getPosition().getX());
 		 assertEquals(3, e.getFouB1().getPosition().getY());
 		 
-		 e.verificationMouvement(jb, "B3", "f7"); //verif mangeage 
-		 assertEquals(6, e.getFouB1().getPosition().getX());
+		 e.verificationMouvement(jb, "C3", "g7"); //verif mangeage 
+		 assertEquals(7, e.getFouB1().getPosition().getX());
 		 assertEquals(7, e.getFouB1().getPosition().getY());
 	 }
 	 

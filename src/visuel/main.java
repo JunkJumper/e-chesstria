@@ -101,7 +101,7 @@ public class main {
 				}
 
 				System.out.println("Bienvenue " + j1.getNom() + " et " + j2.getNom()
-						+ " dans e-Chesstria  ! Le jeu d'echec équestrien sur console fait entièrement en java !\n");
+						+ " dans e-Chesstria  ! Le jeu d'echec sur console fait entièrement en java !\n");
 
 				do {
 
