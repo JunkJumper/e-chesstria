@@ -27,9 +27,15 @@ public class main {
 		// déclaration des joueurs
 		System.out.println("Entrez le nom du joueur 1 : ");
 		Joueur j1 = new Joueur(sc.nextLine(), null);
+		if(j1.getNom().isEmpty()) {
+			j1.setNom("Joueur Par défaut 1");
+		}
 		
 		System.out.println("Entrez le nom du joueur 2 : ");
 		Joueur j2 = new Joueur(sc.nextLine(), null);
+		if(j2.getNom().isEmpty()) {
+			j2.setNom("Joueur Par défaut 2");
+		}
 		
 		Joueur jTemp = new Joueur(null, null); //  ce joueur sert de mémoire pour le choix de l'odre de jeu
 
@@ -83,7 +89,9 @@ public class main {
 						j1.setCouleur("Noir");
 						System.out.println("Le joueur " + j2.getNom() + " jouera les blancs et le joueur " + j1.getNom()
 								+ " jouera les noirs.");
-						
+						/*
+						 * Alors ici on utilise un joueur temporaire pour faire passe le deuxième joueur en joueur numéro 1
+						 */
 						jTemp.setNom(j1.getNom());
 						jTemp.setCouleur(j1.getCouleur());
 						
@@ -142,18 +150,24 @@ public class main {
 						}
 						else {
 							do {
-							System.out.println(
-									"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
-							A = sc.nextLine();
-							
-							cA = A.charAt(0);
-							pA = A.charAt(1);
-							char cAl = Character.toLowerCase(cA);
-							sA = "" + cAl + pA;
-							
-							System.out.println(
-									"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
-							B = sc.nextLine();
+								System.out.println(
+										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
+								A = sc.nextLine();
+								if(A.isEmpty()) {
+									A = "Z99";
+								}
+								
+								cA = A.charAt(0);//ici on récupère le premier caractère du String
+								pA = A.charAt(1);//ici on récupère le second caratère
+								char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
+								sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
+								
+								System.out.println(
+										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+								B = sc.nextLine();
+								if(B.isEmpty()) {
+									B = "Z99";
+								}
 
 							
 							}while(e.verificationMouvement(j1, sA, B) != true );
@@ -208,10 +222,10 @@ public class main {
 											"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 									A = sc.nextLine();
 									
-									cA = A.charAt(0);
-									pA = A.charAt(1);
-									char cAl = Character.toLowerCase(cA);
-									sA = "" + cAl + pA;
+									cA = A.charAt(0);//ici on récupère le premier caractère du String
+									pA = A.charAt(1);//ici on récupère le second caratère
+									char cAl = Character.toLowerCase(cA); //ici on convertis un 'A' en 'a'
+									sA = "" + cAl + pA; //ici on concatène dans un nouveau string le a transformé avec le chiffre récupéré.
 									
 									System.out.println(
 											"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
@@ -219,8 +233,7 @@ public class main {
 									
 
 							}while(e.verificationMouvement(j2, sA, B) != true );
-							}
-
+							} // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 					
 					
 					// VERIF ECHECMAT

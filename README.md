@@ -71,9 +71,22 @@ S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez
 
 Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) ou visitez les [crédits](https://git-iutinfo.unice.fr/good3nought/echesstria#cr%C3%A9dits-revenir-au-sommaire).
 
+### Vous trouverez ici un tableau résumant les pièces :
+
+|   Pièce   |  Lettre  |
+|:---------:|:--------:|
+|Cavalier   | C        |
+|Fou        | F        |
+|Pion       | P        |
+|Reine      | Q        |
+|Roi        | K        |
+|Tour       | T        |
+
+La lettre ``B`` signifie qu'une pièce est de couleur blanche et la lettre ``N`` signifie qu'une pièce est de couleur noire.
+
 ## Crédits [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)
 
-| Peronne ou Source                                                                | Role                                                                                                    |
+|                                 Peronne ou Source                                |                                                 Role                                                    |
 | :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
 | [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception et Développement                                                                             |
 | [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception et Développement                                                                             |
@@ -83,7 +96,6 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 |                                                                                                                                                                                            |
 | [PRITCHARD Adam](https://github.com/adam-p)                                      | [Utilisation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) & syntaxe Markdown      |
 | [http://www.echecs.club](http://www.echecs.club)                                 | [Règles](http://www.echecs.club/regles/) du jeu d'échec                                                 |
-|                                                                                                                                                                                            |
 
 
 ## License [[revenir au sommaire]](https://git-iutinfo.unice.fr/good3nought/echesstria#sommaire)

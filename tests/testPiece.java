@@ -6,6 +6,21 @@ import org.junit.jupiter.api.Test;
 import joueurs.Joueur;
 import piecesEchiquier.*;
 
+/*
+ * @AfterEach is used to signal that the annotated method should beexecuted after each @Test, @RepeatedTest, @ParameterizedTest, @TestFactory,and @TestTemplate method in the current test class. 
+ * org.junit.jupiter.api.AfterEach;
+ * 
+ * @BeforeEach is used to signal that the annotated method should beexecuted before each @Test, @RepeatedTest, @ParameterizedTest, @TestFactory,and @TestTemplate method in the current test class. 
+ * org.junit.jupiter.api.BeforeEach;
+ *
+ * @Test is used to signal that the annotated method is a test method. 
+ * @Test methods must not be private or staticand must not return a value.
+ * @Test methods may optionally declare parameters to beresolved by ParameterResolvers.
+ * @Test may also be used as a meta-annotation in order to createa custom composed annotation that inherits the semantics of @Test. 
+ * org.junit.jupiter.api.Test;
+ * */
+
+
 class testPiece {
 	private Echiquier e;
 	private Joueur jb;
