@@ -73,7 +73,7 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 
 Vous trouverez ici un tableau résumant les pièces :
 
-| Pièce     | Lettre   |
+|   Pièce   |  Lettre  |
 |:---------:|:--------:|
 |Cavalier   | C        |
 |Fou        | F        |
