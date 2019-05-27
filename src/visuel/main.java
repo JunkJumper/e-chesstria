@@ -27,9 +27,15 @@ public class main {
 		// déclaration des joueurs
 		System.out.println("Entrez le nom du joueur 1 : ");
 		Joueur j1 = new Joueur(sc.nextLine(), null);
+		if(j1.getNom().isEmpty()) {
+			j1.setNom("Joueur Par défaut 1");
+		}
 		
 		System.out.println("Entrez le nom du joueur 2 : ");
 		Joueur j2 = new Joueur(sc.nextLine(), null);
+		if(j2.getNom().isEmpty()) {
+			j2.setNom("Joueur Par défaut 2");
+		}
 		
 		Joueur jTemp = new Joueur(null, null); //  ce joueur sert de mémoire pour le choix de l'odre de jeu
 
@@ -146,6 +152,9 @@ public class main {
 								System.out.println(
 										"Quelle pièce voulez-vous déplacer ? Donnez le code correspondant de la pièce à déplacer(ex : A1).\n");
 								A = sc.nextLine();
+								if(A.isEmpty()) {
+									A = "Z99";
+								}
 								
 								cA = A.charAt(0);//ici on récupère le premier caractère du String
 								pA = A.charAt(1);//ici on récupère le second caratère
@@ -155,6 +164,9 @@ public class main {
 								System.out.println(
 										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 								B = sc.nextLine();
+								if(B.isEmpty()) {
+									B = "Z99";
+								}
 
 							
 							}while(e.verificationMouvement(j1, sA, B) != true );
