@@ -100,8 +100,8 @@ public class Echiquier {
 	
 	public boolean verificationMouvement(Joueur J, String A, String B)	// FONCTION TRADUCTION, VERIF + DEPLACEMENTS SI POSSIBLE
 	{// String A = coordonées de A; String B = coordonées de B 
-		//A.toLowerCase();
-		//B.toLowerCase();
+		A.toLowerCase();
+		B.toLowerCase();
 		
 		int i = -1;
 		int j = -1;
