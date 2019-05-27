@@ -124,19 +124,7 @@ public class main {
 					System.out.println("\n" + "Tour de " + j1.getNom() + "(" + j1.getCouleur() + ")\n");
 
 					//do {
-						if (e.getRoiB1().isRoiEchec() == true)
-						{
-							do
-							{
-								System.out.println(
-										"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
-								A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
-								B = sc.nextLine();
-								
-							}while(e.verificationMouvement(j1, A, B) != true );
-							
-						}
-						else if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true)
+					 if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true)
 						{
 							do
 							{
@@ -148,6 +136,19 @@ public class main {
 								System.out.println(
 										"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
 								B = sc.nextLine();
+								
+							}while(e.verificationMouvement(j1, A, B) != true );
+							
+						}
+						
+						else if (e.getRoiB1().isRoiEchec() == true)
+						{
+							do
+							{
+								 System.out.println(
+											"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+									A = e.getCodes()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1];
+									B = sc.nextLine();
 							}while(e.verificationMouvement(j1, A, B) != true  && e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true);
 						}
 						else {
@@ -175,10 +176,6 @@ public class main {
 							
 							}while(e.verificationMouvement(j1, sA, B) != true );
 						}
-							
-						
-
-					//} while (e.verificationMouvement(j1, A, B) != true ); // Tant que le mouvement n'est pas faisable on demande 2 coordonnées
 					
 					
 					if (e.getRoiB1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiB1().getPosition().getY()][e.getRoiB1().getPosition().getX()-1]) == true) // si roi blanc en echec etmat
@@ -199,20 +196,9 @@ public class main {
 					System.out.println("Tour de " + j2.getNom() + "(" + j2.getCouleur() + ")\n");
 
 						//do {
-							if (e.getRoiN1().isRoiEchec())
+							if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
 							{
 								do {
-								System.out.println(
-										"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
-								A = e.getCodes()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1];
-								B = sc.nextLine();
-							}while(e.verificationMouvement(j2, A, B) != true );
-							}
-							
-							else if (e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true)
-							{
-								do
-								{
 									System.out.println(
 											"Votre roi est en echec et mat temporaire. Bougez une piece pour le sauver si vous pouvez. Sinon bougez une piece au hasard.\n");
 									System.out.println(
@@ -220,6 +206,17 @@ public class main {
 									A = sc.nextLine();
 									System.out.println(
 											"À quel endroit la poser ?  Donnez le code correspondant à l'endroit où poser la pièce.\n");
+									B = sc.nextLine();
+							}while(e.verificationMouvement(j2, A, B) != true );
+							}
+							
+							else if (e.getRoiN1().isRoiEchec())
+							{
+								do
+								{
+									System.out.println(
+											"Comme votre roi est en echec la piece a bouger est forcement cette derniere. Ou voulez vous la poser ?\n");
+									A = e.getCodes()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1];
 									B = sc.nextLine();
 								}while(e.verificationMouvement(j2, A, B) != true  && e.getRoiN1().enEchecEtMat(e,e.getEchiquier()[8-e.getRoiN1().getPosition().getY()][e.getRoiN1().getPosition().getX()-1]) == true);
 							}
