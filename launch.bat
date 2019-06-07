@@ -1,1 +1,1 @@
-java -jar echesstria.jar
+java -jar e-chesstria.jar
