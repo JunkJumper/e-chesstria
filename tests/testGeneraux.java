@@ -30,14 +30,14 @@ class testGeneraux {
 	public void initialisation() {
 		e = new Echiquier();
 		jb = new Joueur("Joueur Blanc","Blanc");
-		jn = new Joueur("Joueur Noir", "Noir");
+		setJn(new Joueur("Joueur Noir", "Noir"));
 	}
 	
 	@AfterEach
 	public void netoyage () {
 		e = null;
 		jb = null;
-		jn = null;
+		setJn(null);
 	}
 	
 	@Test
@@ -90,6 +90,14 @@ class testGeneraux {
 		assertTrue(e.getPionB3().aBouge());
 		
 		assertFalse(e.getCavalierB1().aBouge());
+	}
+
+	public Joueur getJn() {
+		return jn;
+	}
+
+	public void setJn(Joueur jn) {
+		this.jn = jn;
 	}
 	
 	/*@Test
