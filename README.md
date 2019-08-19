@@ -5,9 +5,9 @@
 ## Table of content
 
 1. **[Description](https://github.com/JunkJumper/e-chesstria#description-back-to-table-of-content)**
-2. **[Requirements](https://github.com/JunkJumper/e-chesstria#Requirements-back-to-table-of-content)**
+2. **[Requirements](https://github.com/JunkJumper/e-chesstria#requirements-back-to-table-of-content)**
 3. **[Installation](https://github.com/JunkJumper/e-chesstria#installation-back-to-table-of-content)**
-4. **[Commandes](https://github.com/JunkJumper/e-chesstria#commandes-back-to-table-of-content)**
+4. **[Commandes](https://github.com/JunkJumper/e-chesstria#commands-back-to-table-of-content)**
 6. **[Règles des échecs](https://github.com/JunkJumper/e-chesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-back-to-table-of-content)**
 7. **[Crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content)**
 8. **[License](https://github.com/JunkJumper/e-chesstria#license-back-to-table-of-content)**
@@ -22,33 +22,33 @@ This project requires a [java JDK SE 1.8](https://www.oracle.com/technetwork/jav
 
 ## Installation [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
-Il faut dans une premier temp cloner ce repo git en utilisant la commande suivante :
+Firstly, you have to clone the repo using
 
 ```
 git clone https://github.com/JunkJumper/e-chesstria.git
 ```
 
-Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous [Eclipse](https://www.eclipse.org/downloads/) ou [Intellij](https://www.jetbrains.com/idea/download/#section=windows). 
+After that, you can compile the project by using a terminal prompt or using IDE's GUI compiler such as [Eclipse](https://www.eclipse.org/downloads/). 
 
-## Commandes [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
+## Commands [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
-Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueurs, si ces derniers sont vides, le jeu ne se lancera pas. 
+To play the game, you have to type the name of the two players. If one are blank, the game will put the default name (like "Default Player No1").
 
 ![logo](https://github.com/JunkJumper/e-chesstria/raw/master/imgs/joueurs.PNG) 
 
-Dans un second temps, vous devrez choisir qui jouera les blancs et qui jouera les noirs, vous pouvez également laisser le jeu choisir pour vous. 
+After that, you have to choose what side each player will take, white or black. You can let the game choose for you. If there are no selection, the game will choose for you.
 
 ![logo](https://github.com/JunkJumper/e-chesstria/raw/master/imgs/choix-c.PNG) 
 
-Une fois ces choix effectués, le jeu demarrera en vous affichant le nom du joueur actif ainsi que l'échiquier actuel. 
+The game will began by displaying the chessfield and the current player name.
 
 ![logo](https://github.com/JunkJumper/e-chesstria/raw/master/imgs/echi1.PNG) 
 
-Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la première étant celle d'une pièce de l'échiquier et la seconde étant la position de destination. 
+The game will ask you to type two positions : the first one is one of the current alives chess pieces of you side and the second one is the destination position.
 
 ![logo](https://github.com/JunkJumper/e-chesstria/raw/master/imgs/pos-E.PNG) 
 
-Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
+The game will display again the chessfield and will ask you to do the previous actions until one of the two players will be defeated.
 
 ## Règles du jeu d'échec [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 > source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content)) 
