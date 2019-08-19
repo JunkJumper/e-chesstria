@@ -2,25 +2,25 @@
  
 ![logo](https://github.com/JunkJumper/e-chesstria/raw/master/logo.png "e-Chesstria logo")
 
-## Sommaire
+## Table of content
 
-1. **[Description](https://github.com/JunkJumper/e-chesstria#description-revenir-au-sommaire)**
-2. **[Pré-requis](https://github.com/JunkJumper/e-chesstria#pr%C3%A9-requis-revenir-au-sommaire)**
-3. **[Installation](https://github.com/JunkJumper/e-chesstria#installation-revenir-au-sommaire)**
-4. **[Commandes](https://github.com/JunkJumper/e-chesstria#commandes-revenir-au-sommaire)**
-6. **[Règles des échecs](https://github.com/JunkJumper/e-chesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-revenir-au-sommaire)**
-7. **[Crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-revenir-au-sommaire)**
-8. **[License](https://github.com/JunkJumper/e-chesstria#license-revenir-au-sommaire)**
+1. **[Description](https://github.com/JunkJumper/e-chesstria#description-back-to-table-of-content)**
+2. **[Requirements](https://github.com/JunkJumper/e-chesstria#Requirements-back-to-table-of-content)**
+3. **[Installation](https://github.com/JunkJumper/e-chesstria#installation-back-to-table-of-content)**
+4. **[Commandes](https://github.com/JunkJumper/e-chesstria#commandes-back-to-table-of-content)**
+6. **[Règles des échecs](https://github.com/JunkJumper/e-chesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-back-to-table-of-content)**
+7. **[Crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content)**
+8. **[License](https://github.com/JunkJumper/e-chesstria#license-back-to-table-of-content)**
 
-## Description [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
+## Description [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
-Projet tutoré de jeux d'échec ~~sérieux~~ équestrien par le groupe "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)".
+~~Serious~~equestrian school project  from "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)" group.
 
-## Pré-requis [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
+## Requirements [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
-Pour fonctionner, ce projet necessite d'avoir un [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **à jour** pour compiler et un [java JRE](https://java.com/fr/download/manual.jsp) **à jour** pour éxecuter et lancer le programme. Si vous ne savez pas jouer aux échecs, vous pouvez consulter les [règles des échecs](https://github.com/JunkJumper/e-chesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-revenir-au-sommaire).
+This project requires a [java JDK SE 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) **up to date** to build and a  [java JRE](https://java.com/fr/download/manual.jsp) **up to date** tu launch and run the game. If you don't know chess rulling, you can checkout [chess rules](https://github.com/JunkJumper/e-chesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-back-to-table-of-content).
 
-## Installation [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
+## Installation [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
 Il faut dans une premier temp cloner ce repo git en utilisant la commande suivante :
 
@@ -30,7 +30,7 @@ git clone https://github.com/JunkJumper/e-chesstria.git
 
 Pour installer le projet, vous pouvez lancer le fichier [echesstria.jar](#) ou bien compiler le projet en créant un nouveau projet sous [Eclipse](https://www.eclipse.org/downloads/) ou [Intellij](https://www.jetbrains.com/idea/download/#section=windows). 
 
-## Commandes [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
+## Commandes [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
 Pour pouvoir jouer, vous devez dans un premier temps rentrer deux noms de joueurs, si ces derniers sont vides, le jeu ne se lancera pas. 
 
@@ -50,8 +50,8 @@ Le jeu vous demandra ensuite de rentrer deux positions sur l'échiquier, la prem
 
 Le jeu affichera ensuite de nouveau l'échiquier et vous redemendera de refaire la manipulation précédente.
 
-## Règles du jeu d'échec [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
-> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-revenir-au-sommaire)) 
+## Règles du jeu d'échec [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
+> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content)) 
 
 ### Déroulement du jeu
 
@@ -69,7 +69,7 @@ Chaque fois que vous pouvez prendre le roi de votre adversaire à votre prochain
 
 S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez donc la partie.
 
-Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) ou visitez les [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-revenir-au-sommaire).
+Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) ou visitez les [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content).
 
 ### Vous trouverez ici un tableau résumant les pièces :
 
@@ -84,7 +84,7 @@ Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.cl
 
 La lettre ``B`` signifie qu'une pièce est de couleur blanche et la lettre ``N`` signifie qu'une pièce est de couleur noire.
 
-## Crédits [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
+## Crédits [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
 |                                 Peronne ou Source                                |                                                 Role                                                    |
 | :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
@@ -98,7 +98,7 @@ La lettre ``B`` signifie qu'une pièce est de couleur blanche et la lettre ``N``
 | [http://www.echecs.club](http://www.echecs.club)                                 | [Règles](http://www.echecs.club/regles/) du jeu d'échec                                                 |
 
 
-## License [[revenir au sommaire]](https://github.com/JunkJumper/e-chesstria#sommaire)
+## License [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
 [![logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/) This project is available under the terms of the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) (or check [LICENSE.md](https://github.com/JunkJumper/e-chesstria/blob/master/LICENSE.md)).
 
