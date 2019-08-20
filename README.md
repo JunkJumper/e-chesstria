@@ -1,4 +1,4 @@
-# e-Chesstria - Projet Tutoré Equipe [G00D3N0UGHT](https://git-iutinfo.unice.fr/good3nought) Semestre 2
+# e-Chesstria - 2nd Semester Project - Team [G00D3N0UGHT](https://git-iutinfo.unice.fr/good3nought)
  
 ![logo](https://github.com/JunkJumper/e-chesstria/raw/master/logo.png "e-Chesstria logo")
 
@@ -7,14 +7,14 @@
 1. **[Description](https://github.com/JunkJumper/e-chesstria#description-back-to-table-of-content)**
 2. **[Requirements](https://github.com/JunkJumper/e-chesstria#requirements-back-to-table-of-content)**
 3. **[Installation](https://github.com/JunkJumper/e-chesstria#installation-back-to-table-of-content)**
-4. **[Commandes](https://github.com/JunkJumper/e-chesstria#commands-back-to-table-of-content)**
-6. **[Règles des échecs](https://github.com/JunkJumper/e-chesstria#r%C3%A8gles-du-jeu-d%C3%A9chec-back-to-table-of-content)**
-7. **[Crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content)**
+4. **[Commands](https://github.com/JunkJumper/e-chesstria#commands-back-to-table-of-content)**
+6. **[Chess rules](https://github.com/JunkJumper/e-chesstria#chess-rules-back-to-table-of-content)**
+7. **[Credits](https://github.com/JunkJumper/e-chesstria#credits-back-to-table-of-content)**
 8. **[License](https://github.com/JunkJumper/e-chesstria#license-back-to-table-of-content)**
 
 ## Description [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
-~~Serious~~equestrian school project  from "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)" group.
+~~Serious~~ equestrian school project  from "[Good 3nough Team](https://git-iutinfo.unice.fr/good3nought)" group.
 
 ## Requirements [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
@@ -50,52 +50,52 @@ The game will ask you to type two positions : the first one is one of the curren
 
 The game will display again the chessfield and will ask you to do the previous actions until one of the two players will be defeated.
 
-## Règles du jeu d'échec [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
-> source [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (voir [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content)) 
+## Chess rules [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
+> source (french only) : [http://www.echecs.club/regles/](http://www.echecs.club/regles/) (look at [credits](https://github.com/JunkJumper/e-chesstria#credits-back-to-table-of-content)) 
 
-### Déroulement du jeu
+### Game Fonctionement
 
-Au début d’une partie d’échecs, ce sont toujours les blancs qui commencent. Lors d’un tour de jeu, le joueur peut effectuer soit un déplacement, soit une prise soit un coup spécial.
+At the begining of the game, it's always the players with white pieces to begin. During a turn, the player has to make a move, take an oppontent piece or a special move.
 
-### But du jeu
+### Goal
 
-Ces différents déplacements sont proposées aux joueurs pour parvenir à réaliser leur objectif qui est de prendre le roi adverse. Lorsque ce but est atteint, le joueur qui y est parvenu gagne immédiatement la partie qui prend fin automatiquement. 
+The Differents moves alow to players to defeat the opponent king. When he's defeated, the current players automaticly win the game and the party is finished.
 
-### Échec
+### Check
 
-Chaque fois que vous pouvez prendre le roi de votre adversaire à votre prochain coup, vous devez le prévenir en annonçant « échec ». Il doit alors tenter de parer votre échec, lors de son tour de jeu. 
+Each time you can move your pieces to check the opponent king, you have to warn your opponent by saying « check ». Your opponent will have only one choice : try to exit of the « checkstate » by move his king or protect it by putting another piece or by taking the oppentent piece that make himslelf in « checkstate ».
 
-### Échec et mat
+### Checkmate
 
-S’il n’y parvient pas, son roi est alors « échec et mat ». Vous remportez donc la partie.
+If your opponent can't escape from the « checkstate », his king is « checkmate » and you win the game.
 
-Pour plus d'informations sur les règles, visitez [ce site](http://www.echecs.club/regles/) ou visitez les [crédits](https://github.com/JunkJumper/e-chesstria#cr%C3%A9dits-back-to-table-of-content).
+For more informations, you can check this [website](http://www.echecs.club/regles/) (french) or check [credits](https://github.com/JunkJumper/e-chesstria#credits-back-to-table-of-content).
 
-### Vous trouverez ici un tableau résumant les pièces :
+### Here, you can find what letters are used to display the chess field.
 
 |   Pièce   |  Lettre  |
 |:---------:|:--------:|
-|Cavalier   | C        |
-|Fou        | F        |
-|Pion       | P        |
-|Reine      | Q        |
+|Knight     | k        |
+|Bishop     | B        |
+|Pawn       | P        |
+|Queen      | Q        |
 |Roi        | K        |
-|Tour       | T        |
+|Rook       | R        |
 
-La lettre ``B`` signifie qu'une pièce est de couleur blanche et la lettre ``N`` signifie qu'une pièce est de couleur noire.
+``W`` letter is used for white pieces. ``B`` letter is used for black pieces.
 
-## Crédits [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
+## Credits [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
 
 |                                 Peronne ou Source                                |                                                 Role                                                    |
 | :-------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------:|
-| [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception et Développement                                                                             |
-| [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception et Développement                                                                             |
-| [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)                          | Secrétariat, Conception et Développement                                                                |
-| [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)                              | Chef de projet, Conception et Développement                                                             |
-| [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)                          | Conception et Développement                                                                             |
-|                                                                                                                                                                                            |
-| [PRITCHARD Adam](https://github.com/adam-p)                                      | [Utilisation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) & syntaxe Markdown      |
-| [http://www.echecs.club](http://www.echecs.club)                                 | [Règles](http://www.echecs.club/regles/) du jeu d'échec                                                 |
+| [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception & Developpement                                                                             |
+| [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception & Developpement                                                                             |
+| [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)                          | Secretariat, Conception & Developpement                                                                |
+| [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)                              | Projet Manager, Conception & Developpement                                                             |
+| [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)                          | Conception & Developpement                                                                             |
+|                                                                                                                                                                                           |
+| [PRITCHARD Adam](https://github.com/adam-p)                                      | [Markdown syntax & cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)|
+| [http://www.echecs.club](http://www.echecs.club)                                 | [Chess Ruling](http://www.echecs.club/regles/) du jeu d'échec                                          |
 
 
 ## License [[back to table of content]](https://github.com/JunkJumper/e-chesstria#table-of-content)
