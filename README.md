@@ -79,7 +79,7 @@ For more informations, you can check this [website](http://www.echecs.club/regle
 |Bishop     | B        |
 |Pawn       | P        |
 |Queen      | Q        |
-|Roi        | K        |
+|King       | K        |
 |Rook       | R        |
 
 ``W`` letter is used for white pieces. ``B`` letter is used for black pieces.
