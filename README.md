@@ -91,7 +91,7 @@ For more informations, you can check this [website](http://www.echecs.club/regle
 | [ALEXOVITZ Anthony](https://git-iutinfo.unice.fr/aa700867)                       | Conception & Developpement                                                                             |
 | [NOWICKI Johann](https://git-iutinfo.unice.fr/nj715143)                          | Conception & Developpement                                                                             |
 | [RELEVAT Chiara](https://git-iutinfo.unice.fr/rc804998)                          | Secretariat, Conception & Developpement                                                                |
-| [SRIFI Jose](https://git-iutinfo.unice.fr/sj801446)                              | Projet Manager, Conception & Developpement                                                             |
+| [SRIFI Pauline](https://git-iutinfo.unice.fr/sj801446)                              | Projet Manager, Conception & Developpement                                                             |
 | [THEBAULT Manon](https://git-iutinfo.unice.fr/tm802036)                          | Conception & Developpement                                                                             |
 |                                                                                                                                                                                           |
 | [PRITCHARD Adam](https://github.com/adam-p)                                      | [Markdown syntax & cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)|
